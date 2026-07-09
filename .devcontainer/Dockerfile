@@ -19,6 +19,7 @@ RUN python -m pip install --upgrade pip setuptools wheel uv
 # in devcontainer.json). ArcKit itself is installed at runtime as a Claude
 # Code plugin — see .devcontainer/post-create.sh.
 RUN uv pip install --system \
+      ruff \
       pylint \
       pytest \
       pyyaml \
