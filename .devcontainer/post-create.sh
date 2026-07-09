@@ -33,7 +33,6 @@ git config --global credential.helper store
 git config --global core.eol lf
 git config --global core.autocrlf input
 git config --global --bool push.autoSetupRemote true
-git config --global alias.wip '!f() { git add -A && git commit -m "${1:-WIP}" && git push; }; f'
 git config --global alias.aliases "config --get-regexp '^alias.'"
 git config --global credential.useHttpPath true
 
