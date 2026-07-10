@@ -199,4 +199,25 @@ claude plugin install arckit-au \
   && claude plugin enable arckit-au@arc-kit \
   || echo "Warning: arckit-au plugin install/enable failed — continuing without it."
 
+echo "Configuring Codex..."
+
+# ~/.codex is a named volume so Codex credentials survive container rebuilds.
+# Docker creates a fresh volume mountpoint owned by root.
+if [[ -d "$HOME/.codex" && ! -w "$HOME/.codex" ]]; then
+  sudo chown -R "$(id -u):$(id -g)" "$HOME/.codex"
+fi
+
+if ! command -v codex >/dev/null 2>&1; then
+  echo "Warning: codex not found on PATH — skipping Codex setup."
+elif codex login status >/dev/null 2>&1; then
+  echo "Codex already authenticated."
+elif [[ -n "${OPENAI_API_KEY:-}" ]]; then
+  printf '%s' "$OPENAI_API_KEY" | codex login --with-api-key \
+    && echo "Codex authenticated using OPENAI_API_KEY." \
+    || echo "Warning: codex login --with-api-key failed — run 'codex login' manually."
+else
+  echo "Codex is not authenticated. Run 'codex login' to sign in with ChatGPT,"
+  echo "or set OPENAI_API_KEY on the host (or in .env) and rebuild."
+fi
+
 echo "Dev environment ready."
