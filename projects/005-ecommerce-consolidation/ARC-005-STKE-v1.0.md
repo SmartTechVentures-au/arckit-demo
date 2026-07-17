@@ -14,7 +14,7 @@
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-06 |
 | **Review Cycle** | Quarterly |
-| **Owner** | Sam Whitford, Digital & E-Commerce Lead — Project Sponsor |
+| **Owner** | George Jetson, Digital & E-Commerce Lead — Project Sponsor |
 | **Distribution** | Executive team, wholesale team, retail management, solution architecture advisor |
 
 ## Revision History
@@ -40,7 +40,7 @@ platform footprint.
 The core tension is **brand strategy vs operational sanity**: the five brand
 storefronts exist because distributed brands (iGPSport, CYCPLUS, Farsports…)
 want distinct presences, yet each duplicate catalogue multiplies content work
-and pricing errors. Wholesale (Tom Barker) is protective of the Magento trade
+and pricing errors. Wholesale (Barney Rubble) is protective of the Magento trade
 portal — it works, and B2B customers hate change — but it is a self-managed
 stack carrying security patching burden and hosting cost. The decision shape:
 one platform with multi-storefront capability vs a deliberate two-platform
@@ -58,15 +58,15 @@ platform, and on how many B2C storefronts survive.
 
 | Stakeholder | Role | Influence | Interest | Engagement Strategy |
 |-------------|------|-----------|----------|---------------------|
-| Sam Whitford | Digital Lead — Sponsor [STK-G1] | HIGH | HIGH | Manage Closely — owns platform, content ops, roadmap |
-| Tom Barker | Head of Wholesale [STK-G2] | HIGH | HIGH | Manage Closely — trade portal continuity, pricing tiers |
-| Nathan Dyke | CEO [STK-G3] | HIGH | MEDIUM | Manage Closely — brand strategy call on storefront count |
-| Kirralee Dyke | COO [STK-G4] | HIGH | MEDIUM | Manage Closely — hub integration, fulfilment promises |
-| Priya Nair | GM Retail [STK-G5] | MEDIUM | MEDIUM | Consult — click-and-collect, ship-from-store (with 004) |
+| George Jetson | Digital Lead — Sponsor [STK-G1] | HIGH | HIGH | Manage Closely — owns platform, content ops, roadmap |
+| Barney Rubble | Head of Wholesale [STK-G2] | HIGH | HIGH | Manage Closely — trade portal continuity, pricing tiers |
+| Fred Flintstone | CEO [STK-G3] | HIGH | MEDIUM | Manage Closely — brand strategy call on storefront count |
+| Wilma Flintstone | COO [STK-G4] | HIGH | MEDIUM | Manage Closely — hub integration, fulfilment promises |
+| Betty Rubble | GM Retail [STK-G5] | MEDIUM | MEDIUM | Consult — click-and-collect, ship-from-store (with 004) |
 | Brand principals (suppliers) [STK-G6] | iGPSport, CYCPLUS, etc. | MEDIUM | HIGH | Consult — brand presentation expectations, MAP pricing |
 | Trade customers ×250 [STK-G7] | Bike shops | Beneficiary | HIGH | Involve — portal UX testing; change communication |
 | B2C customers [STK-G8] | Public | Beneficiary | MEDIUM | Research — analytics, UX testing |
-| Chris McKelt | Architecture advisor [STK-G9] | MEDIUM-HIGH | HIGH | Involve — platform decision, hub-first gate |
+| Velma Dinkley | Architecture advisor [STK-G9] | MEDIUM-HIGH | HIGH | Involve — platform decision, hub-first gate |
 
 ---
 

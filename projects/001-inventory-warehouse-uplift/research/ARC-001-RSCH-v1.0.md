@@ -16,10 +16,10 @@
 | **Last Modified** | 2026-06-30 |
 | **Review Cycle** | Per phase gate |
 | **Next Review Date** | 2026-09-29 |
-| **Owner** | Nathan Dyke, CEO — Cycle Motion (Executive Sponsor) |
+| **Owner** | Fred Flintstone, CEO — Cycle Motion (Executive Sponsor) |
 | **Reviewed By** | PENDING |
 | **Approved By** | PENDING |
-| **Distribution** | Cycle Motion leadership (Nathan & Kirralee Dyke), Order & Supply Chain team, solution architecture advisor (Chris McKelt) |
+| **Distribution** | Cycle Motion leadership (Fred & Wilma Flintstone), Order & Supply Chain team, solution architecture advisor (Velma Dinkley) |
 
 ## Revision History
 

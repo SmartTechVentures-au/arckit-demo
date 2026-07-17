@@ -16,10 +16,10 @@
 | **Last Modified** | 2026-06-29 |
 | **Review Cycle** | Quarterly |
 | **Next Review Date** | 2026-09-29 |
-| **Owner** | Nathan Dyke, CEO — Cycle Motion (Executive Sponsor) |
+| **Owner** | Fred Flintstone, CEO — Cycle Motion (Executive Sponsor) |
 | **Reviewed By** | PENDING |
 | **Approved By** | PENDING |
-| **Distribution** | Cycle Motion leadership (Nathan & Kirralee Dyke), Order & Supply Chain team, solution architecture advisor |
+| **Distribution** | Cycle Motion leadership (Fred & Wilma Flintstone), Order & Supply Chain team, solution architecture advisor |
 
 ## Revision History
 
@@ -37,7 +37,7 @@ This document identifies the key stakeholders in Cycle Motion's inventory and wa
 
 ### Key Findings
 
-Cycle Motion is a small, owner-led business: two executive sponsors (Nathan Dyke, CEO; Kirralee Dyke, COO) and a five-person Order & Supply Chain team carry the entire operation [STK-C1][STK-C2][STK-C3]. Alignment on the *problem* is strong — everyone feels the pain of manual re-keying across five B2C stores and the oversell risk from stock that is never synced in real time [CB-C2][CB-C3]. The genuine tension is over the *solution*: the CEO's pull toward the fastest, lowest-cost, least-disruptive move versus the strategically stronger but riskier "inventory hub" architecture, and the operations team's understandable wariness of automation that touches their roles.
+Cycle Motion is a small, owner-led business: two executive sponsors (Fred Flintstone, CEO; Wilma Flintstone, COO) and a five-person Order & Supply Chain team carry the entire operation [STK-C1][STK-C2][STK-C3]. Alignment on the *problem* is strong — everyone feels the pain of manual re-keying across five B2C stores and the oversell risk from stock that is never synced in real time [CB-C2][CB-C3]. The genuine tension is over the *solution*: the CEO's pull toward the fastest, lowest-cost, least-disruptive move versus the strategically stronger but riskier "inventory hub" architecture, and the operations team's understandable wariness of automation that touches their roles.
 
 ### Critical Success Factors
 
@@ -60,15 +60,15 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 | Stakeholder | Role/Department | Influence | Interest | Engagement Strategy |
 |-------------|----------------|-----------|----------|---------------------|
-| Nathan Dyke | CEO — Strategic Sponsor [STK-C1] | HIGH | HIGH | Manage Closely — strategic decisions, investment sign-off, source-of-truth and vendor approval |
-| Kirralee Dyke | COO — Operational Sponsor [STK-C2] | HIGH | HIGH | Manage Closely — process design, day-to-day decisions, primary contact for current workflows |
+| Fred Flintstone | CEO — Strategic Sponsor [STK-C1] | HIGH | HIGH | Manage Closely — strategic decisions, investment sign-off, source-of-truth and vendor approval |
+| Wilma Flintstone | COO — Operational Sponsor [STK-C2] | HIGH | HIGH | Manage Closely — process design, day-to-day decisions, primary contact for current workflows |
 | Order & Supply Chain Team (5 staff) | Operations / end users [STK-C3] | MEDIUM | HIGH | Keep Informed & actively involve — discovery interviews, process mapping, pilot testing, training |
 
 ### External Stakeholders
 
 | Stakeholder | Organization | Relationship | Influence | Interest |
 |-------------|--------------|--------------|-----------|----------|
-| Chris McKelt | Solution architecture advisory [STK-C4] | Trusted advisor (school friend of the CEO) | MEDIUM-HIGH (informal) | HIGH |
+| Velma Dinkley | Solution architecture advisory [STK-C4] | Trusted advisor (school friend of the CEO) | MEDIUM-HIGH (informal) | HIGH |
 | Implementation vendor | Datapel / Unleashed / Cin7 (shortlist) [CB-C7] | Supplier / delivery partner | MEDIUM | HIGH |
 | Wholesale (B2B) trade customers | Australian bike shops | Beneficiary | LOW | HIGH |
 | Retail (B2C) customers | Direct consumers | Beneficiary | LOW | MEDIUM |
@@ -86,9 +86,9 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
         │                     │                         │
         │   KEEP SATISFIED    │     MANAGE CLOSELY       │
    High │                     │                         │
-        │  (none — small,     │  • Nathan Dyke (CEO)     │
-        │   flat business)    │  • Kirralee Dyke (COO)   │
- P      │                     │  • Chris McKelt (advisor)│
+        │  (none — small,     │  • Fred Flintstone (CEO)     │
+        │   flat business)    │  • Wilma Flintstone (COO)   │
+ P      │                     │  • Velma Dinkley (advisor)│
  O      ├─────────────────────┼─────────────────────────┤
  W      │                     │                         │
  E      │      MONITOR        │      KEEP INFORMED       │
@@ -102,9 +102,9 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 | Stakeholder | Power | Interest | Quadrant | Engagement Strategy |
 |-------------|-------|----------|----------|---------------------|
-| Nathan Dyke (CEO) | HIGH | HIGH | Manage Closely | Strategic checkpoints, investment & vendor sign-off |
-| Kirralee Dyke (COO) | HIGH | HIGH | Manage Closely | Frequent working sessions on process & rollout |
-| Chris McKelt (advisor) | MEDIUM-HIGH | HIGH | Manage Closely | Architecture decisions, vendor evaluation, de-risking |
+| Fred Flintstone (CEO) | HIGH | HIGH | Manage Closely | Strategic checkpoints, investment & vendor sign-off |
+| Wilma Flintstone (COO) | HIGH | HIGH | Manage Closely | Frequent working sessions on process & rollout |
+| Velma Dinkley (advisor) | MEDIUM-HIGH | HIGH | Manage Closely | Architecture decisions, vendor evaluation, de-risking |
 | Order & Supply Chain team | MEDIUM | HIGH | Keep Informed / Involve | Discovery, pilot, training; address job-security concerns |
 | Implementation vendor | MEDIUM | HIGH | Keep Informed | Discovery checklist, reference checks, pilot delivery |
 | B2B trade customers | LOW | HIGH | Keep Informed | Reliable availability/fulfilment; comms on improvements |
@@ -123,15 +123,15 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 ## Stakeholder Drivers Analysis
 
-### SD-1: Nathan Dyke (CEO) — De-risked growth and a sound investment
+### SD-1: Fred Flintstone (CEO) — De-risked growth and a sound investment
 
-**Stakeholder**: Nathan Dyke, CEO [STK-C1]
+**Stakeholder**: Fred Flintstone, CEO [STK-C1]
 
 **Driver Category**: STRATEGIC / FINANCIAL / RISK
 
 **Driver Statement**: Scale the business across channels and volume without a proportional rise in headcount, cost, or operational risk — and make a single significant systems investment that pays off rather than becoming a costly, disruptive mistake.
 
-**Context & Background**: Cycle Motion has grown from a garage operation to a Perth warehouse-and-office footprint, distributing a cluster of performance cycling brands [CB-C1]. The current architecture — one channel automated, five run by hand off paper, with accounting doing inventory's job — is the ceiling on further growth [CB-C2]. As owner, Nathan carries the commercial consequence of both inaction and a botched change.
+**Context & Background**: Cycle Motion has grown from a garage operation to a Perth warehouse-and-office footprint, distributing a cluster of performance cycling brands [CB-C1]. The current architecture — one channel automated, five run by hand off paper, with accounting doing inventory's job — is the ceiling on further growth [CB-C2]. As owner, Fred carries the commercial consequence of both inaction and a botched change.
 
 **Driver Intensity**: HIGH
 
@@ -146,19 +146,19 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 - Ambiguity over scope (e.g., the 5-vs-7 storefront count) inflating cost and effort [CB-C8]
 - A large, all-at-once migration with real disruption risk [CB-C6]
 
-**Related Stakeholders**: Kirralee (COO), Chris McKelt (advisor)
+**Related Stakeholders**: Wilma (COO), Velma Dinkley (advisor)
 
 ---
 
-### SD-2: Kirralee Dyke (COO) — End the manual firefighting
+### SD-2: Wilma Flintstone (COO) — End the manual firefighting
 
-**Stakeholder**: Kirralee Dyke, COO [STK-C2]
+**Stakeholder**: Wilma Flintstone, COO [STK-C2]
 
 **Driver Category**: OPERATIONAL / PERSONAL
 
 **Driver Statement**: Eliminate the manual re-keying, oversell, and paper-based warehouse chaos that consume the team's time and create daily risk — and make operations scalable, disciplined, and far less dependent on heroics.
 
-**Context & Background**: As operational sponsor and the best source of truth on current workflows [STK-C2], Kirralee owns the pain directly: every B2C order re-keyed into accounting by hand, stock that can oversell because it is never synced in real time, and a warehouse with no system discipline [CB-C2][CB-C3]. This is labour cost, error rate, and stress that compound as volume grows.
+**Context & Background**: As operational sponsor and the best source of truth on current workflows [STK-C2], Wilma owns the pain directly: every B2C order re-keyed into accounting by hand, stock that can oversell because it is never synced in real time, and a warehouse with no system discipline [CB-C2][CB-C3]. This is labour cost, error rate, and stress that compound as volume grows.
 
 **Driver Intensity**: CRITICAL
 
@@ -173,7 +173,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 - Team change-resistance or fear, slowing adoption [STK-C3]
 - A WMS-only fix that leaves the five manual B2C stores untouched [CB-C2]
 
-**Related Stakeholders**: Order & Supply Chain team, Nathan (CEO)
+**Related Stakeholders**: Order & Supply Chain team, Fred (CEO)
 
 ---
 
@@ -200,13 +200,13 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 - Fear that automation reduces roles, breeding quiet resistance
 - Change introduced top-down with no consultation or training
 
-**Related Stakeholders**: Kirralee (COO), implementation vendor
+**Related Stakeholders**: Wilma (COO), implementation vendor
 
 ---
 
-### SD-4: Chris McKelt (Solution Architecture Advisor) — A defensible, de-risked architecture
+### SD-4: Velma Dinkley (Solution Architecture Advisor) — A defensible, de-risked architecture
 
-**Stakeholder**: Chris McKelt, advisory — trusted by the CEO [STK-C4]
+**Stakeholder**: Velma Dinkley, advisory — trusted by the CEO [STK-C4]
 
 **Driver Category**: STRATEGIC / RISK
 
@@ -226,7 +226,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 - Pressure to pick a product first and retrofit the architecture
 - Skipping the pilot to save time, exposing live failure modes [CB-C5]
 
-**Related Stakeholders**: Nathan (CEO), implementation vendor
+**Related Stakeholders**: Fred (CEO), implementation vendor
 
 ---
 
@@ -252,7 +252,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 - Vague scope and the unresolved storefront count [CB-C8]
 - Being selected on price alone, then blamed for thin support
 
-**Related Stakeholders**: Chris McKelt (advisor), Kirralee (COO)
+**Related Stakeholders**: Velma Dinkley (advisor), Wilma (COO)
 
 ---
 
@@ -278,7 +278,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 - Continued oversell causing post-purchase cancellations
 - Slow or error-prone manual fulfilment
 
-**Related Stakeholders**: Kirralee (COO), Order & Supply Chain team
+**Related Stakeholders**: Wilma (COO), Order & Supply Chain team
 
 ---
 
@@ -288,7 +288,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 **Derived From Drivers**: SD-1, SD-4 (supported by SD-2)
 
-**Goal Owner**: Nathan Dyke (CEO), advised by Chris McKelt
+**Goal Owner**: Fred Flintstone (CEO), advised by Velma Dinkley
 
 **Goal Statement**: Make and document an explicit decision between Path 1 (accounting platform remains inventory master + WMS layer) and Path 2 (inventory/order hub as master) **before** evaluating any product — within the discovery phase.
 
@@ -315,7 +315,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 **Derived From Drivers**: SD-2, SD-3, SD-1
 
-**Goal Owner**: Kirralee Dyke (COO)
+**Goal Owner**: Wilma Flintstone (COO)
 
 **Goal Statement**: Automate order flow from every storefront into the system of record so that 100% of orders are captured automatically and manual re-keying falls to zero by the end of rollout.
 
@@ -342,7 +342,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 **Derived From Drivers**: SD-2, SD-6, SD-1
 
-**Goal Owner**: Kirralee Dyke (COO)
+**Goal Owner**: Wilma Flintstone (COO)
 
 **Goal Statement**: Achieve near-real-time stock synchronisation across all channels with idempotent order handling, reducing oversell incidents to zero and preventing duplicate orders.
 
@@ -369,7 +369,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 **Derived From Drivers**: SD-2, SD-3
 
-**Goal Owner**: Kirralee Dyke (COO)
+**Goal Owner**: Wilma Flintstone (COO)
 
 **Goal Statement**: Replace the paper-based warehouse with system-guided operations (bins/locations, directed picking, barcode scanning, cycle counts), achieving stock accuracy of ≥ 98%.
 
@@ -396,7 +396,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 **Derived From Drivers**: SD-1, SD-4, SD-5
 
-**Goal Owner**: Chris McKelt (advisor) with Nathan Dyke (CEO)
+**Goal Owner**: Velma Dinkley (advisor) with Fred Flintstone (CEO)
 
 **Goal Statement**: Select a proven product through a reference-checked evaluation (no custom build), then pilot it on one channel with real data — explicitly testing duplicate-order and oversell failure modes — before any full cutover.
 
@@ -423,7 +423,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 **Derived From Drivers**: SD-1, SD-4, SD-5
 
-**Goal Owner**: Kirralee Dyke (COO)
+**Goal Owner**: Wilma Flintstone (COO)
 
 **Goal Statement**: Capture SKU count, monthly order volume per channel, accounting-platform edition, BOM complexity, warehouse locations/bins, and the confirmed storefront count by the end of discovery, so vendors quote against reality.
 
@@ -450,7 +450,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 **Derived From Drivers**: SD-1, SD-2
 
-**Goal Owner**: Kirralee Dyke (COO)
+**Goal Owner**: Wilma Flintstone (COO)
 
 **Goal Statement**: Ensure the selected architecture and product preserve and support Cycle Motion's manufacturing / bill-of-materials requirements (e.g., custom wheel-build line) with no loss of capability at cutover.
 
@@ -506,8 +506,8 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 **Stakeholder Benefits**:
 
-- **Nathan (CEO)**: A scalable, de-risked foundation for growth
-- **Kirralee (COO)**: One trusted number instead of conflicting counts
+- **Fred (CEO)**: A scalable, de-risked foundation for growth
+- **Wilma (COO)**: One trusted number instead of conflicting counts
 
 **Leading Indicators**: Source-of-truth decision signed; pilot reconciliation clean
 **Lagging Indicators**: Sustained ≥ 98% stock accuracy across all channels
@@ -583,7 +583,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 **Stakeholder Benefits**:
 
 - **Team**: Drudgery removed; clearer, less stressful work [STK-C3]
-- **Nathan (CEO)**: Growth without proportional cost
+- **Fred (CEO)**: Growth without proportional cost
 
 **Leading Indicators**: First automated channel live; re-keying hours falling
 **Lagging Indicators**: Orders/FTE up; manual entry at ~0
@@ -621,7 +621,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 **Stakeholder Benefits**:
 
-- **Nathan (CEO)**: Investment protected; surprises minimised
+- **Fred (CEO)**: Investment protected; surprises minimised
 - **Advisor**: Defensible, reference-able outcome
 
 **Leading Indicators**: Buy decision recorded; pilot scoped
@@ -635,24 +635,24 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 | Stakeholder | Driver ID | Driver Summary | Goal ID | Goal Summary | Outcome ID | Outcome Summary |
 |-------------|-----------|----------------|---------|--------------|------------|-----------------|
-| Nathan (CEO) | SD-1 | De-risked growth & sound investment | G-1 | Decide source of truth first | O-1 | Single trusted inventory truth |
-| Nathan (CEO) | SD-1 | De-risked growth & sound investment | G-5 | Buy proven product + pilot | O-4 | De-risked, reversible delivery |
-| Kirralee (COO) | SD-2 | End manual firefighting | G-2 | Eliminate re-keying | O-3 | Ops time reclaimed & scalable |
-| Kirralee (COO) | SD-2 | End manual firefighting | G-3 | Eliminate oversell (idempotent sync) | O-2 | Zero oversell / duplicates |
-| Kirralee (COO) | SD-2 | End manual firefighting | G-4 | Warehouse discipline | O-1 | Single trusted inventory truth |
+| Fred (CEO) | SD-1 | De-risked growth & sound investment | G-1 | Decide source of truth first | O-1 | Single trusted inventory truth |
+| Fred (CEO) | SD-1 | De-risked growth & sound investment | G-5 | Buy proven product + pilot | O-4 | De-risked, reversible delivery |
+| Wilma (COO) | SD-2 | End manual firefighting | G-2 | Eliminate re-keying | O-3 | Ops time reclaimed & scalable |
+| Wilma (COO) | SD-2 | End manual firefighting | G-3 | Eliminate oversell (idempotent sync) | O-2 | Zero oversell / duplicates |
+| Wilma (COO) | SD-2 | End manual firefighting | G-4 | Warehouse discipline | O-1 | Single trusted inventory truth |
 | Ops team (5) | SD-3 | Less drudgery, job security | G-2 | Eliminate re-keying | O-3 | Ops time reclaimed & scalable |
 | Ops team (5) | SD-3 | Less drudgery, job security | G-4 | Warehouse discipline | O-1 | Single trusted inventory truth |
-| Chris McKelt | SD-4 | Defensible, de-risked architecture | G-1 | Decide source of truth first | O-1 | Single trusted inventory truth |
-| Chris McKelt | SD-4 | Defensible, de-risked architecture | G-5 | Buy + pilot failure modes | O-4 | De-risked, reversible delivery |
+| Velma Dinkley | SD-4 | Defensible, de-risked architecture | G-1 | Decide source of truth first | O-1 | Single trusted inventory truth |
+| Velma Dinkley | SD-4 | Defensible, de-risked architecture | G-5 | Buy + pilot failure modes | O-4 | De-risked, reversible delivery |
 | Vendor | SD-5 | Win, deliver, be reference-able | G-6 | Quantify the operation | O-4 | De-risked, reversible delivery |
 | Customers | SD-6 | Accurate availability & fulfilment | G-3 | Eliminate oversell | O-2 | Zero oversell / duplicates |
-| Kirralee / Nathan | SD-1/SD-2 | Preserve core capability | G-7 | Preserve BOM/manufacturing | O-4 | De-risked, reversible delivery |
+| Wilma / Fred | SD-1/SD-2 | Preserve core capability | G-7 | Preserve BOM/manufacturing | O-4 | De-risked, reversible delivery |
 
 ### Conflict Analysis
 
 **Competing Drivers**:
 
-- **Conflict 1 — Lowest-disruption vs strategically-complete**: Nathan (SD-1) is pulled toward the fastest, lowest-cost, least-disruptive move (Path 1 — WMS layer), while the strategic case (SD-4) favours Path 2 (an inventory hub) that fixes the warehouse, the five manual stores, and multichannel truth in one architecture but with larger migration risk [CB-C1].
+- **Conflict 1 — Lowest-disruption vs strategically-complete**: Fred (SD-1) is pulled toward the fastest, lowest-cost, least-disruptive move (Path 1 — WMS layer), while the strategic case (SD-4) favours Path 2 (an inventory hub) that fixes the warehouse, the five manual stores, and multichannel truth in one architecture but with larger migration risk [CB-C1].
   - **Resolution Strategy**: Make the source-of-truth decision explicit and evidence-led **before** product selection (G-1), with appetite-for-change recorded. Use a staged approach — Path 1 is the right low-risk move if the priority is warehouse discipline while keeping the trusted record; Path 2 is the stronger long-term answer if the goal is to fix all three problems at once, at the cost of a carefully managed implementation [CB-C6]. Decision is the CEO's, informed by the advisor.
 
 - **Conflict 2 — "We need a WMS" vs the deeper problem**: The project was framed internally as a warehouse management system need, but the higher-urgency risks are the five manual B2C stores and the missing single source of truth [CB-C2].
@@ -676,7 +676,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 ### Stakeholder-Specific Messaging
 
-#### Nathan Dyke (CEO)
+#### Fred Flintstone (CEO)
 
 **Primary Message**: This is a de-risked, evidence-led investment that removes the ceiling on your growth — decided in the right order, proven by a pilot, and bought rather than built.
 
@@ -690,7 +690,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 **Preferred Channel**: Short decision briefings + decision records
 **Success Story**: "We added a channel without adding people, and we haven't oversold since."
 
-#### Kirralee Dyke (COO)
+#### Wilma Flintstone (COO)
 
 **Primary Message**: This ends the daily firefighting — no more re-keying, no more oversell clean-up, and a warehouse the system actually guides.
 
@@ -718,7 +718,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 **Preferred Channel**: Hands-on sessions, demos, training
 **Success Story**: "No more re-keying five stores by hand or cleaning up oversells."
 
-#### Chris McKelt (Advisor)
+#### Velma Dinkley (Advisor)
 
 **Primary Message**: Hold the line on the sequence — decide the source of truth, quantify the operation, pilot on real data, reference-check support, phase the rollout.
 
@@ -754,8 +754,8 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 | Stakeholder | Current State | Future State | Change Magnitude | Resistance Risk | Mitigation Strategy |
 |-------------|---------------|--------------|------------------|-----------------|---------------------|
-| Nathan (CEO) | Carries growth/risk; systems are the ceiling [CB-C2] | Scalable, de-risked platform | MEDIUM | LOW | Evidence-led decisions; staged value |
-| Kirralee (COO) | Manages manual firefighting daily [CB-C2] | System-guided, scalable ops | HIGH | LOW | Co-design; early involvement |
+| Fred (CEO) | Carries growth/risk; systems are the ceiling [CB-C2] | Scalable, de-risked platform | MEDIUM | LOW | Evidence-led decisions; staged value |
+| Wilma (COO) | Manages manual firefighting daily [CB-C2] | System-guided, scalable ops | HIGH | LOW | Co-design; early involvement |
 | Ops team (5) | Manual re-keying, oversell clean-up, paper [CB-C3] | Automated flow, guided warehouse | HIGH | MEDIUM | Involve as experts; reassure on roles; train |
 | Customers | Risk of oversell/cancellations [CB-C2] | Accurate availability, reliable fulfilment | MEDIUM | LOW | Comms on improvements |
 | Vendor | N/A (not yet engaged) | Delivery partner | MEDIUM | LOW | Clear scope; pilot; reference checks |
@@ -764,12 +764,12 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 **Champions** (Enthusiastic supporters):
 
-- Kirralee (COO) — owns the pain directly and the operational upside [STK-C2]
-- Chris McKelt (advisor) — architected the de-risked approach [STK-C4]
+- Wilma (COO) — owns the pain directly and the operational upside [STK-C2]
+- Velma Dinkley (advisor) — architected the de-risked approach [STK-C4]
 
 **Fence-sitters** (Neutral, need convincing):
 
-- Nathan (CEO) — supportive of the outcome but weighing Path 1 vs Path 2 cost/risk [CB-C1]
+- Fred (CEO) — supportive of the outcome but weighing Path 1 vs Path 2 cost/risk [CB-C1]
 - Order & Supply Chain team — supportive of less drudgery but wary of automation's effect on roles [STK-C3]
 
 **Resisters** (Opposed or skeptical):
@@ -888,7 +888,7 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 | Decision Type | Responsible | Accountable | Consulted | Informed |
 |---------------|-------------|-------------|-----------|----------|
-| Source-of-truth (Path 1 vs Path 2) | Chris McKelt (advisor), COO | CEO | Ops team, vendor | Ops team |
+| Source-of-truth (Path 1 vs Path 2) | Velma Dinkley (advisor), COO | CEO | Ops team, vendor | Ops team |
 | Vendor selection | COO, advisor | CEO | Ops team | Ops team, vendor |
 | Budget / investment approval | CEO | CEO | COO | Advisor |
 | Operational process & workflow design | COO, Ops team | COO | Advisor, vendor | CEO |
@@ -897,8 +897,8 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 ### Escalation Path
 
-1. **Level 1**: COO (Kirralee) and advisor (Chris) — day-to-day delivery and design decisions
-2. **Level 2**: CEO (Nathan) — scope, budget, source-of-truth, vendor, and go/no-go decisions
+1. **Level 1**: COO (Wilma) and advisor (Velma) — day-to-day delivery and design decisions
+2. **Level 2**: CEO (Fred) — scope, budget, source-of-truth, vendor, and go/no-go decisions
 3. **Level 3**: CEO with any external investors/board (if applicable) — strategic direction and major conflicts
 
 > In a flat, owner-led SME, the CEO is the final authority; this analysis keeps the heavy decisions (source of truth, vendor, go-live) explicitly at that level while delegating process design to the COO and team.
@@ -911,17 +911,17 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 | Stakeholder | Review Date | Comments | Status |
 |-------------|-------------|----------|--------|
-| Nathan Dyke (CEO) | PENDING | — | PENDING |
-| Kirralee Dyke (COO) | PENDING | — | PENDING |
-| Chris McKelt (advisor) | PENDING | — | PENDING |
+| Fred Flintstone (CEO) | PENDING | — | PENDING |
+| Wilma Flintstone (COO) | PENDING | — | PENDING |
+| Velma Dinkley (advisor) | PENDING | — | PENDING |
 
 ### Document Approval
 
 | Role | Name | Signature | Date |
 |------|------|-----------|------|
-| Project Sponsor (CEO) | Nathan Dyke | | |
-| Operational Sponsor (COO) | Kirralee Dyke | | |
-| Solution Architecture Advisor | Chris McKelt | | |
+| Project Sponsor (CEO) | Fred Flintstone | | |
+| Operational Sponsor (COO) | Wilma Flintstone | | |
+| Solution Architecture Advisor | Velma Dinkley | | |
 
 ---
 
@@ -929,12 +929,12 @@ Stakeholders agree strongly on the problem and the desired end state. The MEDIUM
 
 ### Appendix A: Stakeholder Interview Summaries
 
-> No direct interviews have yet been conducted. Per the engagement priorities in `stakeholders.md`, the next discovery step is to confirm goals with Nathan, map current processes with Kirralee, and capture practical issues from the five operational staff [STK-C5]. Summaries will be added here after those sessions.
+> No direct interviews have yet been conducted. Per the engagement priorities in `stakeholders.md`, the next discovery step is to confirm goals with Fred, map current processes with Wilma, and capture practical issues from the five operational staff [STK-C5]. Summaries will be added here after those sessions.
 
 **Planned discovery sessions**:
 
-- Nathan Dyke (CEO) — confirm business goals, priorities, and appetite for change [STK-C5]
-- Kirralee Dyke (COO) — walk the current wholesale and retail order flow and supply chain steps [STK-C5]
+- Fred Flintstone (CEO) — confirm business goals, priorities, and appetite for change [STK-C5]
+- Wilma Flintstone (COO) — walk the current wholesale and retail order flow and supply chain steps [STK-C5]
 - Order & Supply Chain team — capture manual workarounds, exceptions, and bottlenecks [STK-C5]
 
 ### Appendix B: Survey Results
@@ -965,11 +965,11 @@ No stakeholder surveys have been conducted at this stage.
 
 | Citation ID | Doc ID | Page/Section | Category | Quoted Passage |
 |-------------|--------|--------------|----------|----------------|
-| STK-C1 | STK | Key Stakeholders / Executive Leadership | Stakeholder Need | "Nathan Dyke | CEO ... Business leadership, strategy, commercial direction ... Primary executive stakeholder. Likely decision-maker for business priorities, investment, and strategic change." |
-| STK-C2 | STK | Key Stakeholders / Executive Leadership | Stakeholder Need | "Kirralee Dyke | COO ... Operations, supply chain, order fulfilment, process management ... Primary operational stakeholder. Likely best contact for understanding current workflows, pain points, and day-to-day business processes." |
+| STK-C1 | STK | Key Stakeholders / Executive Leadership | Stakeholder Need | "Fred Flintstone | CEO ... Business leadership, strategy, commercial direction ... Primary executive stakeholder. Likely decision-maker for business priorities, investment, and strategic change." |
+| STK-C2 | STK | Key Stakeholders / Executive Leadership | Stakeholder Need | "Wilma Flintstone | COO ... Operations, supply chain, order fulfilment, process management ... Primary operational stakeholder. Likely best contact for understanding current workflows, pain points, and day-to-day business processes." |
 | STK-C3 | STK | Key Stakeholders / Operations Team | Stakeholder Need | "Order and Supply Chain Team | 5 staff ... Key user group. Important for understanding manual work, bottlenecks, exceptions, and opportunities for process improvement or automation." |
-| STK-C4 | STK | Key Stakeholders | Stakeholder Need | "Nathan Dyke | CEO | Went to school with Chris McKelt" |
-| STK-C5 | STK | Initial Engagement Priorities | Stakeholder Need | "Confirm business goals and priorities with Nathan Dyke. Understand current operating processes with Kirralee Dyke. ... Speak with the five operational staff to capture practical issues and improvement opportunities." |
+| STK-C4 | STK | Key Stakeholders | Stakeholder Need | "Fred Flintstone | CEO | Went to school with Velma Dinkley" |
+| STK-C5 | STK | Initial Engagement Priorities | Stakeholder Need | "Confirm business goals and priorities with Fred Flintstone. Understand current operating processes with Wilma Flintstone. ... Speak with the five operational staff to capture practical issues and improvement opportunities." |
 | CB-C1 | CB | B4 | Design Decision | "Where should the single source of inventory truth live going forward? ... Every downstream choice ... hangs off one question." |
 | CB-C2 | CB | B2 | Risk Factor | "a fragmented systems architecture with no automated single source of inventory truth ... oversell exposure because stock is never synced in real time across channels." |
 | CB-C3 | CB | B1 / B2 | Integration Requirement | "5× Shopify — B2C | None — orders and inventory keyed into MYOB by hand ... Every B2C order is re-keyed into MYOB by hand — ongoing labour cost, data-entry errors." |

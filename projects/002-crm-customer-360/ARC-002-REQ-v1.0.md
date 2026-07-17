@@ -15,7 +15,7 @@
 | **Created Date** | 2026-07-06 |
 | **Last Modified** | 2026-07-06 |
 | **Review Date** | 2026-08-06 |
-| **Owner** | Kirralee Dyke (COO) — Operational Sponsor |
+| **Owner** | Wilma Flintstone (COO) — Operational Sponsor |
 | **Reviewed By** | [PENDING] |
 | **Approved By** | [PENDING] |
 | **Distribution** | Executive team, channel leads, shortlisted vendors, solution architecture advisor |

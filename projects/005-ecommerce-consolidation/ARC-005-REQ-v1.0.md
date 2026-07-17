@@ -14,7 +14,7 @@
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-06 |
 | **Review Date** | 2026-08-06 |
-| **Owner** | Sam Whitford (Digital & E-Commerce Lead) — Sponsor |
+| **Owner** | George Jetson (Digital & E-Commerce Lead) — Sponsor |
 | **Distribution** | Executive team, wholesale team, shortlisted vendors, solution architecture advisor |
 
 ## Revision History

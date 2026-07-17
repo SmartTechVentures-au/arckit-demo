@@ -14,7 +14,7 @@
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-06 |
 | **Review Cycle** | Quarterly |
-| **Owner** | Grace Liu, Finance Manager — Project Sponsor |
+| **Owner** | Jane Jetson, Finance Manager — Project Sponsor |
 | **Distribution** | Executive team, finance team, Order & Supply Chain team, solution architecture advisor |
 
 ## Revision History
@@ -39,7 +39,7 @@ month-end close currently taking 12 business days.
 
 ### Key Findings
 
-Finance (Grace Liu) is the driving stakeholder — MYOB constraints land on her
+Finance (Jane Jetson) is the driving stakeholder — MYOB constraints land on her
 team monthly. The CEO's driver is the opposite risk: an ERP migration is the
 single most disruptive project in the portfolio, and starting it too early
 would destabilise Projects 001–005 integrations. The COO's condition is that
@@ -53,13 +53,13 @@ PR-5). Alignment is HIGH on destination, MEDIUM on timing.
 
 | Stakeholder | Role | Influence | Interest | Engagement Strategy |
 |-------------|------|-----------|----------|---------------------|
-| Grace Liu | Finance Manager — Sponsor [STK-E1] | HIGH | HIGH | Manage Closely — owns close, payroll, compliance calendar |
-| Nathan Dyke | CEO [STK-E2] | HIGH | HIGH | Manage Closely — sequencing, investment, risk appetite |
-| Kirralee Dyke | COO [STK-E3] | HIGH | MEDIUM | Manage Closely — operational continuity conditions |
+| Jane Jetson | Finance Manager — Sponsor [STK-E1] | HIGH | HIGH | Manage Closely — owns close, payroll, compliance calendar |
+| Fred Flintstone | CEO [STK-E2] | HIGH | HIGH | Manage Closely — sequencing, investment, risk appetite |
+| Wilma Flintstone | COO [STK-E3] | HIGH | MEDIUM | Manage Closely — operational continuity conditions |
 | Payroll officer + AP/AR (3 staff) | Finance ops [STK-E4] | LOW | HIGH | Involve — process design, UAT |
 | Order & Supply Chain team | Operations [STK-E5] | MEDIUM | MEDIUM | Keep Informed — purchasing/landed cost workflows |
-| Priya Nair / Tom Barker / Sam Whitford | Channel leads [STK-E6] | MEDIUM | LOW | Keep Informed — downstream reporting consumers |
-| Chris McKelt | Architecture advisor [STK-E7] | MEDIUM-HIGH | HIGH | Involve — supersession design of ADR-001 |
+| Betty Rubble / Barney Rubble / George Jetson | Channel leads [STK-E6] | MEDIUM | LOW | Keep Informed — downstream reporting consumers |
+| Velma Dinkley | Architecture advisor [STK-E7] | MEDIUM-HIGH | HIGH | Involve — supersession design of ADR-001 |
 | External accountant / tax agent | Advisory firm [STK-E8] | MEDIUM | MEDIUM | Consult — chart of accounts, tax config sign-off |
 | ATO | Regulator [STK-E9] | LOW (until non-compliance) | LOW | Comply — STP Phase 2, BAS, Peppol readiness |
 

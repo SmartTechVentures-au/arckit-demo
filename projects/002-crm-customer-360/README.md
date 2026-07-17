@@ -1,7 +1,7 @@
 # Project 002 — CRM & Customer 360
 
 **Organisation**: Cycle Motion Group Pty Ltd t/a Spoke & Rim (FICTIONAL DEMONSTRATION)
-**Project ID**: 002 · **Created**: 2026-07-06 · **Sponsor**: Kirralee Dyke (COO)
+**Project ID**: 002 · **Created**: 2026-07-06 · **Sponsor**: Wilma Flintstone (COO)
 
 ## Summary
 

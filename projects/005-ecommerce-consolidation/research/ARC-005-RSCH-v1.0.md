@@ -13,7 +13,7 @@
 | **Status** | DRAFT — FICTIONAL DEMONSTRATION |
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-06 |
-| **Owner** | Sam Whitford (Digital & E-Commerce Lead) |
+| **Owner** | George Jetson (Digital & E-Commerce Lead) |
 | **Distribution** | Executive team, wholesale team, solution architecture advisor |
 
 ## Revision History

@@ -1,7 +1,7 @@
 # Project 004 — Retail POS Consolidation
 
 **Organisation**: Cycle Motion Group Pty Ltd t/a Spoke & Rim (FICTIONAL DEMONSTRATION)
-**Project ID**: 004 · **Created**: 2026-07-06 · **Sponsor**: Priya Nair (GM Retail)
+**Project ID**: 004 · **Created**: 2026-07-06 · **Sponsor**: Betty Rubble (GM Retail)
 
 ## Summary
 

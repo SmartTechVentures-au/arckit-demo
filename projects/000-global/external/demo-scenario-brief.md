@@ -62,15 +62,15 @@ digital transformation portfolio — each run as a governed ArcKit project:
 
 | Person | Role | Portfolio involvement |
 |---|---|---|
-| Nathan Dyke | CEO | Executive sponsor, investment authority |
-| Kirralee Dyke | COO | Operational sponsor across all projects |
-| Priya Nair | GM Retail (Spoke & Rim) | Sponsor: 004 POS; key stakeholder: 002, 005 |
-| Tom Barker | Head of Wholesale | Key stakeholder: 002 CRM, 005 E-Commerce |
-| Grace Liu | Finance Manager | Sponsor: 003 ERP |
-| Sam Whitford | Digital & E-Commerce Lead | Sponsor: 005; key stakeholder: 002, 004 |
+| Fred Flintstone | CEO | Executive sponsor, investment authority |
+| Wilma Flintstone | COO | Operational sponsor across all projects |
+| Betty Rubble | GM Retail (Spoke & Rim) | Sponsor: 004 POS; key stakeholder: 002, 005 |
+| Barney Rubble | Head of Wholesale | Key stakeholder: 002 CRM, 005 E-Commerce |
+| Jane Jetson | Finance Manager | Sponsor: 003 ERP |
+| George Jetson | Digital & E-Commerce Lead | Sponsor: 005; key stakeholder: 002, 004 |
 | Order & Supply Chain team (5) | Operations | End users across portfolio |
 | 12 store managers | Retail operations | End users: 004, 002 |
-| Chris McKelt | Solution architecture advisor | ArcKit-governed advisory across portfolio |
+| Velma Dinkley | Solution architecture advisor | ArcKit-governed advisory across portfolio |
 
 ## S4. Regulatory context (Australian, private-sector retail)
 

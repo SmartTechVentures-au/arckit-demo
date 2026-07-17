@@ -6,7 +6,7 @@
 
 | | | | |
 |---|---|---|---|
-| **Prepared for** | Nathan, CEO — Cycle Motion | **Date** | 30 June 2026 |
+| **Prepared for** | Fred, CEO — Cycle Motion | **Date** | 30 June 2026 |
 | **Prepared by** | Enterprise Solution Architecture advisory | **Status** | Draft for discussion |
 | **Subject** | Strategic IT uplift: inventory & warehouse management | **Version** | 0.2 (merged) |
 
@@ -25,7 +25,7 @@
 | **Status** | Active from 15 Feb 2013 | **GST** | Registered from 15 Feb 2013 |
 | **Location** | WA 6090 (northern Perth) | **Business name** | Spoke and Rim (from Apr 2020) |
 
-**Leadership:** Nathan (CEO).
+**Leadership:** Fred (CEO).
 
 *Directors, shareholding and financials are not on the public register — a paid ASIC company extract is required to verify ownership and solvency. The ABR record was last updated April 2020.*
 

@@ -14,7 +14,7 @@
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-06 |
 | **Review Cycle** | Quarterly |
-| **Owner** | Priya Nair, GM Retail — Project Sponsor |
+| **Owner** | Betty Rubble, GM Retail — Project Sponsor |
 | **Distribution** | Executive team, store managers, digital team, solution architecture advisor |
 
 ## Revision History
@@ -57,14 +57,14 @@ separate tool.
 
 | Stakeholder | Role | Influence | Interest | Engagement Strategy |
 |-------------|------|-----------|----------|---------------------|
-| Priya Nair | GM Retail — Sponsor [STK-F1] | HIGH | HIGH | Manage Closely — owns rollout, store P&L |
-| Nathan Dyke | CEO [STK-F2] | HIGH | MEDIUM | Manage Closely — payments economics, contract timing, spend |
-| Kirralee Dyke | COO [STK-F3] | HIGH | MEDIUM | Manage Closely — hub integration integrity |
+| Betty Rubble | GM Retail — Sponsor [STK-F1] | HIGH | HIGH | Manage Closely — owns rollout, store P&L |
+| Fred Flintstone | CEO [STK-F2] | HIGH | MEDIUM | Manage Closely — payments economics, contract timing, spend |
+| Wilma Flintstone | COO [STK-F3] | HIGH | MEDIUM | Manage Closely — hub integration integrity |
 | Store managers ×12 (3 cohorts) [STK-F4] | Operations | MEDIUM | HIGH | Involve — pilot stores drawn from each cohort |
 | Workshop leads (per store) [STK-F5] | Servicing | LOW | HIGH | Involve — job management workflows are make-or-break |
-| Sam Whitford | Digital Lead [STK-F6] | MEDIUM | MEDIUM | Consult — click-and-collect, endless-aisle with Project 005 |
-| Grace Liu | Finance [STK-F7] | MEDIUM | MEDIUM | Consult — reconciliation, surcharge configuration |
-| Chris McKelt | Architecture advisor [STK-F8] | MEDIUM-HIGH | HIGH | Involve — hub-first design gate |
+| George Jetson | Digital Lead [STK-F6] | MEDIUM | MEDIUM | Consult — click-and-collect, endless-aisle with Project 005 |
+| Jane Jetson | Finance [STK-F7] | MEDIUM | MEDIUM | Consult — reconciliation, surcharge configuration |
+| Velma Dinkley | Architecture advisor [STK-F8] | MEDIUM-HIGH | HIGH | Involve — hub-first design gate |
 | Payments acquirer(s) | Banks / PSPs [STK-F9] | MEDIUM | MEDIUM | Negotiate — least-cost routing, terminal fleet |
 | Customers (walk-in + loyalty) | Public [STK-F10] | LOW | MEDIUM | Beneficiary — faster checkout, cross-store returns |
 

@@ -13,7 +13,7 @@
 | **Status** | DRAFT — FICTIONAL DEMONSTRATION |
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-06 |
-| **Owner** | Grace Liu (Finance Manager) |
+| **Owner** | Jane Jetson (Finance Manager) |
 | **Distribution** | Executive team, finance team, solution architecture advisor |
 
 ## Revision History

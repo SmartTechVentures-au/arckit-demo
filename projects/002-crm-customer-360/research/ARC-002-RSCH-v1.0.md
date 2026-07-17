@@ -13,7 +13,7 @@
 | **Status** | DRAFT — FICTIONAL DEMONSTRATION |
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-06 |
-| **Owner** | Kirralee Dyke (COO) |
+| **Owner** | Wilma Flintstone (COO) |
 | **Distribution** | Executive team, channel leads, solution architecture advisor |
 
 ## Revision History

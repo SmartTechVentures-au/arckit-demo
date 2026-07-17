@@ -13,7 +13,7 @@
 | **Status** | DRAFT — FICTIONAL DEMONSTRATION |
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-06 |
-| **Owner** | Priya Nair (GM Retail) |
+| **Owner** | Betty Rubble (GM Retail) |
 | **Distribution** | Executive team, store managers, solution architecture advisor |
 
 ## Revision History

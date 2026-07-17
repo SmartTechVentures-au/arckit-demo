@@ -14,7 +14,7 @@
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-06 |
 | **Review Date** | 2026-08-06 |
-| **Owner** | Grace Liu (Finance Manager) — Sponsor |
+| **Owner** | Jane Jetson (Finance Manager) — Sponsor |
 | **Distribution** | Executive team, finance team, shortlisted vendors, solution architecture advisor |
 
 ## Revision History

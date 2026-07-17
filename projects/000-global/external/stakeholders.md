@@ -12,15 +12,15 @@ Cyclemotion is a bicycle parts business selling through both wholesale and retai
 
 | Stakeholder | Role | Relationship / Context | Likely Responsibilities | Engagement Notes |
 |---|---|---|---|---|
-| Nathan Dyke | CEO | Went to school with Chris McKelt | Business leadership, strategy, commercial direction, key supplier/customer relationships | Primary executive stakeholder. Likely decision-maker for business priorities, investment, and strategic change. |
-| Kirralee Dyke | COO | Executive operations lead | Operations, supply chain, order fulfilment, process management, staff coordination | Primary operational stakeholder. Likely best contact for understanding current workflows, pain points, and day-to-day business processes. |
+| Fred Flintstone | CEO | Went to school with Velma Dinkley | Business leadership, strategy, commercial direction, key supplier/customer relationships | Primary executive stakeholder. Likely decision-maker for business priorities, investment, and strategic change. |
+| Wilma Flintstone | COO | Executive operations lead | Operations, supply chain, order fulfilment, process management, staff coordination | Primary operational stakeholder. Likely best contact for understanding current workflows, pain points, and day-to-day business processes. |
 | Order and Supply Chain Team | 5 staff | Staff managing wholesale and retail order flow | Order processing, inventory coordination, supply chain tracking, customer/supplier coordination, fulfilment support | Key user group. Important for understanding manual work, bottlenecks, exceptions, and opportunities for process improvement or automation. |
 
 ## Stakeholder Groups
 
 ### Executive Leadership
 
-Nathan Dyke and Kirralee Dyke provide overall leadership for the business. Nathan is the CEO and should be treated as the main strategic sponsor. Kirralee is the COO and should be treated as the main operational sponsor.
+Fred Flintstone and Wilma Flintstone provide overall leadership for the business. Fred is the CEO and should be treated as the main strategic sponsor. Wilma is the COO and should be treated as the main operational sponsor.
 
 ### Operations Team
 
@@ -28,8 +28,8 @@ The operations team includes five staff who manage orders and supply chain activ
 
 ## Initial Engagement Priorities
 
-1. Confirm business goals and priorities with Nathan Dyke.
-2. Understand current operating processes with Kirralee Dyke.
+1. Confirm business goals and priorities with Fred Flintstone.
+2. Understand current operating processes with Wilma Flintstone.
 3. Map the wholesale and retail order management flow.
 4. Identify key supply chain steps, systems, spreadsheets, manual handoffs, and bottlenecks.
 5. Speak with the five operational staff to capture practical issues and improvement opportunities.
@@ -49,4 +49,4 @@ The operations team includes five staff who manage orders and supply chain activ
 
 ## Notes
 
-This stakeholder list is based on the currently provided information and should be updated after direct discovery with Nathan, Kirralee, and the operations team.
+This stakeholder list is based on the currently provided information and should be updated after direct discovery with Fred, Wilma, and the operations team.

@@ -13,7 +13,7 @@
 | **Version** | 1.0 |
 | **Created Date** | 2026-06-29 |
 | **Last Researched** | 2026-06-29 |
-| **Owner** | Cycle Motion solution architecture advisor (Chris McKelt) |
+| **Owner** | Cycle Motion solution architecture advisor (Velma Dinkley) |
 | **Confidence** | High (5+ data points: editions/pricing, MYOB connector maturity, BOM/MRP, WMS, eCommerce connectors, implementation cost) |
 
 ## Revision History

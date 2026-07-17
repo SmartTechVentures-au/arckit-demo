@@ -15,10 +15,10 @@
 | **Created Date** | 2026-06-30 |
 | **Last Modified** | 2026-06-30 |
 | **Review Date** | 2026-07-30 |
-| **Owner** | Kirralee Dyke (COO, Cycle Motion) — Evaluation Lead |
+| **Owner** | Wilma Flintstone (COO, Cycle Motion) — Evaluation Lead |
 | **Reviewed By** | [PENDING] |
 | **Approved By** | [PENDING] |
-| **Distribution** | Cycle Motion leadership (Nathan & Kirralee Dyke), solution architecture advisor |
+| **Distribution** | Cycle Motion leadership (Fred & Wilma Flintstone), solution architecture advisor |
 
 ## Revision History
 
@@ -58,9 +58,9 @@ Per **ADR-001**, the accounting system is fixed (MYOB AccountRight). Candidates 
 
 | Name | Role | Evaluation Focus |
 |------|------|------------------|
-| Kirralee Dyke (COO) | Evaluation Lead | Operational/functional fit, process, final scoring |
-| Chris McKelt (Advisor) | Technical Evaluator | Integration architecture, idempotent sync, security |
-| Nathan Dyke (CEO) | Decision Authority | Cost, value, strategic fit, final selection |
+| Wilma Flintstone (COO) | Evaluation Lead | Operational/functional fit, process, final scoring |
+| Velma Dinkley (Advisor) | Technical Evaluator | Integration architecture, idempotent sync, security |
+| Fred Flintstone (CEO) | Decision Authority | Cost, value, strategic fit, final selection |
 | Order & Supply Chain rep | Business Evaluator | Usability, day-to-day fit, exceptions handling |
 
 ### 1.5 Conflict of Interest
@@ -292,13 +292,13 @@ Key questions: Does multichannel stock stay accurate (no oversell)? How fast and
 
 ### 9.3 Selection Approval
 
-**Decision Authority**: Nathan Dyke (CEO), on the recommendation of the COO and advisor.
+**Decision Authority**: Fred Flintstone (CEO), on the recommendation of the COO and advisor.
 
 | Role | Name | Signature | Date |
 |------|------|-----------|------|
-| Evaluation Lead (COO) | Kirralee Dyke | | [PENDING] |
-| Solution Architecture Advisor | Chris McKelt | | [PENDING] |
-| Decision Authority (CEO) | Nathan Dyke | | [PENDING] |
+| Evaluation Lead (COO) | Wilma Flintstone | | [PENDING] |
+| Solution Architecture Advisor | Velma Dinkley | | [PENDING] |
+| Decision Authority (CEO) | Fred Flintstone | | [PENDING] |
 
 ---
 

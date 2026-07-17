@@ -1,7 +1,7 @@
 # Project 005 — E-Commerce Consolidation
 
 **Organisation**: Cycle Motion Group Pty Ltd t/a Spoke & Rim (FICTIONAL DEMONSTRATION)
-**Project ID**: 005 · **Created**: 2026-07-06 · **Sponsor**: Sam Whitford (Digital & E-Commerce Lead)
+**Project ID**: 005 · **Created**: 2026-07-06 · **Sponsor**: George Jetson (Digital & E-Commerce Lead)
 
 ## Summary
 

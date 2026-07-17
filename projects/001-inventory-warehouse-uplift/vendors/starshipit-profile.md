@@ -13,7 +13,7 @@
 | **Version** | 1.0 |
 | **Created Date** | 2026-06-29 |
 | **Last Researched** | 2026-06-29 |
-| **Owner** | Cycle Motion solution architecture advisor (Chris McKelt) |
+| **Owner** | Cycle Motion solution architecture advisor (Velma Dinkley) |
 | **Confidence** | Medium (3–4 data points: pricing, integrations, carriers) |
 
 ## Revision History

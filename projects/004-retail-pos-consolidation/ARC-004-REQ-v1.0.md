@@ -14,7 +14,7 @@
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-06 |
 | **Review Date** | 2026-08-06 |
-| **Owner** | Priya Nair (GM Retail) — Sponsor |
+| **Owner** | Betty Rubble (GM Retail) — Sponsor |
 | **Distribution** | Executive team, store managers, shortlisted vendors, solution architecture advisor |
 
 ## Revision History

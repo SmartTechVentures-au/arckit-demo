@@ -16,7 +16,7 @@
 | **Last Modified** | 2026-06-29 |
 | **Review Cycle** | Annual |
 | **Next Review Date** | 2027-06-29 |
-| **Owner** | Nathan, CEO — Cycle Motion (Executive Sponsor) |
+| **Owner** | Fred, CEO — Cycle Motion (Executive Sponsor) |
 | **Reviewed By** | PENDING |
 | **Approved By** | PENDING |
 | **Distribution** | Cycle Motion leadership, delivery partners, and implementation vendors |

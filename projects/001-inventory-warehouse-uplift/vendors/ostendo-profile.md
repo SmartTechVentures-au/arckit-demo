@@ -13,7 +13,7 @@
 | **Version** | 1.0 |
 | **Created Date** | 2026-06-30 |
 | **Last Researched** | 2026-06-30 |
-| **Owner** | Cycle Motion solution architecture advisor (Chris McKelt) |
+| **Owner** | Cycle Motion solution architecture advisor (Velma Dinkley) |
 | **Confidence** | High (5+ data points: MYOB-native integration, BOM/job-costing, WMS/Freeway, POS, pricing model, AU presence) |
 
 ## Revision History

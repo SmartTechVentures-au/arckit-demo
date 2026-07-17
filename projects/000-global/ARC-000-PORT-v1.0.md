@@ -16,7 +16,7 @@
 | **Last Modified** | 2026-07-06 |
 | **Review Cycle** | Quarterly |
 | **Next Review Date** | 2026-10-06 |
-| **Owner** | Nathan Dyke, CEO — Executive Sponsor |
+| **Owner** | Fred Flintstone, CEO — Executive Sponsor |
 | **Reviewed By** | [PENDING] |
 | **Approved By** | [PENDING] |
 | **Distribution** | Executive team, project sponsors, solution architecture advisor |
@@ -37,11 +37,11 @@ an ArcKit project with its own artefact chain; this document governs the
 
 | # | Project | Sponsor | GDS Phase (current) | Key artefacts |
 |---|---------|---------|---------------------|---------------|
-| 001 | Inventory & Warehouse Uplift | Kirralee Dyke (COO) | Beta (vendor selection) | STKE, REQ, RSCH, EVAL, ADR-001 |
-| 002 | CRM & Customer 360 | Kirralee Dyke (COO) | Alpha | STKE, REQ, RSCH, ADR-001 |
-| 003 | ERP Modernisation | Grace Liu (Finance) | Discovery → Alpha | STKE, REQ, RSCH, ADR-001 |
-| 004 | Retail POS Consolidation | Priya Nair (GM Retail) | Alpha | STKE, REQ, RSCH, ADR-001 |
-| 005 | E-Commerce Consolidation | Sam Whitford (Digital) | Alpha | STKE, REQ, RSCH, ADR-001 |
+| 001 | Inventory & Warehouse Uplift | Wilma Flintstone (COO) | Beta (vendor selection) | STKE, REQ, RSCH, EVAL, ADR-001 |
+| 002 | CRM & Customer 360 | Wilma Flintstone (COO) | Alpha | STKE, REQ, RSCH, ADR-001 |
+| 003 | ERP Modernisation | Jane Jetson (Finance) | Discovery → Alpha | STKE, REQ, RSCH, ADR-001 |
+| 004 | Retail POS Consolidation | Betty Rubble (GM Retail) | Alpha | STKE, REQ, RSCH, ADR-001 |
+| 005 | E-Commerce Consolidation | George Jetson (Digital) | Alpha | STKE, REQ, RSCH, ADR-001 |
 
 ## 2. The portfolio's shared architectural spine
 

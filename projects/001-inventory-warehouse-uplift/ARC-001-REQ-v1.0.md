@@ -15,10 +15,10 @@
 | **Created Date** | 2026-06-30 |
 | **Last Modified** | 2026-06-30 |
 | **Review Date** | 2026-07-30 |
-| **Owner** | Kirralee Dyke (COO, Cycle Motion) — Operational Sponsor |
+| **Owner** | Wilma Flintstone (COO, Cycle Motion) — Operational Sponsor |
 | **Reviewed By** | [PENDING] |
 | **Approved By** | [PENDING] |
-| **Distribution** | Cycle Motion leadership (Nathan & Kirralee Dyke), Order & Supply Chain team, solution architecture advisor, shortlisted vendors |
+| **Distribution** | Cycle Motion leadership (Fred & Wilma Flintstone), Order & Supply Chain team, solution architecture advisor, shortlisted vendors |
 
 ## Revision History
 
@@ -83,10 +83,10 @@ This project establishes a reliable, automated **single source of inventory trut
 
 | Stakeholder | Role | Organization | Involvement Level |
 |-------------|------|--------------|-------------------|
-| Nathan Dyke | CEO — Strategic Sponsor [STK-C1] | Cycle Motion | Decision maker (investment, source-of-truth, vendor, go-live) |
-| Kirralee Dyke | COO — Operational Sponsor [STK-C2] | Cycle Motion | Requirements definition, process design, day-to-day decisions |
+| Fred Flintstone | CEO — Strategic Sponsor [STK-C1] | Cycle Motion | Decision maker (investment, source-of-truth, vendor, go-live) |
+| Wilma Flintstone | COO — Operational Sponsor [STK-C2] | Cycle Motion | Requirements definition, process design, day-to-day decisions |
 | Order & Supply Chain Team (5 staff) | Operations / end users [STK-C3] | Cycle Motion | Requirements elicitation, user acceptance, pilot testing |
-| Chris McKelt | Solution Architecture Advisor [STK-C4] | Advisory | Technical oversight, vendor evaluation, de-risking |
+| Velma Dinkley | Solution Architecture Advisor [STK-C4] | Advisory | Technical oversight, vendor evaluation, de-risking |
 | Implementation vendor | Delivery partner | Datapel / Ostendo / Unleashed / Cin7 (shortlist) | Solution delivery, integration |
 | B2B & B2C customers | Beneficiaries | External | User acceptance (indirect — accurate availability, reliable fulfilment) |
 
@@ -108,7 +108,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Priority**: MUST_HAVE
 
-**Stakeholder**: Nathan Dyke (CEO), Kirralee Dyke (COO) — supports goals G-1, G-3; principle P6.
+**Stakeholder**: Fred Flintstone (CEO), Wilma Flintstone (COO) — supports goals G-1, G-3; principle P6.
 
 ---
 
@@ -125,7 +125,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Priority**: MUST_HAVE
 
-**Stakeholder**: Kirralee Dyke (COO), Order & Supply Chain team — goals G-2; drivers SD-2, SD-3; principle P3.
+**Stakeholder**: Wilma Flintstone (COO), Order & Supply Chain team — goals G-2; drivers SD-2, SD-3; principle P3.
 
 ---
 
@@ -142,7 +142,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Priority**: MUST_HAVE
 
-**Stakeholder**: Kirralee Dyke (COO), customers — goals G-3, G-stakeholder-trust; drivers SD-2, SD-6; principles P10, P15.
+**Stakeholder**: Wilma Flintstone (COO), customers — goals G-3, G-stakeholder-trust; drivers SD-2, SD-6; principles P10, P15.
 
 ---
 
@@ -159,7 +159,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Priority**: MUST_HAVE
 
-**Stakeholder**: Kirralee Dyke (COO), Order & Supply Chain team — goal G-4; drivers SD-2, SD-3.
+**Stakeholder**: Wilma Flintstone (COO), Order & Supply Chain team — goal G-4; drivers SD-2, SD-3.
 
 ---
 
@@ -176,7 +176,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Priority**: MUST_HAVE
 
-**Stakeholder**: Kirralee Dyke (COO) — goal G-7; principle P-data quality.
+**Stakeholder**: Wilma Flintstone (COO) — goal G-7; principle P-data quality.
 
 ---
 
@@ -193,7 +193,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Priority**: MUST_HAVE
 
-**Stakeholder**: Nathan Dyke (CEO), Chris McKelt (advisor) — goal G-5; driver SD-1; principle P1.
+**Stakeholder**: Fred Flintstone (CEO), Velma Dinkley (advisor) — goal G-5; driver SD-1; principle P1.
 
 ---
 
@@ -210,7 +210,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Priority**: MUST_HAVE
 
-**Stakeholder**: Chris McKelt (advisor), Nathan Dyke (CEO) — goal G-5; driver SD-4; principle P17.
+**Stakeholder**: Velma Dinkley (advisor), Fred Flintstone (CEO) — goal G-5; driver SD-4; principle P17.
 
 ---
 
@@ -227,7 +227,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Priority**: SHOULD_HAVE
 
-**Stakeholder**: Nathan Dyke (CEO) — goal G-1 (scalability); driver SD-1; principle P2.
+**Stakeholder**: Fred Flintstone (CEO) — goal G-1 (scalability); driver SD-1; principle P2.
 
 ---
 
@@ -244,7 +244,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Priority**: MUST_HAVE
 
-**Stakeholder**: Kirralee Dyke (COO), vendor — goal G-6; driver SD-5.
+**Stakeholder**: Wilma Flintstone (COO), vendor — goal G-6; driver SD-5.
 
 ---
 
@@ -261,7 +261,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Priority**: SHOULD_HAVE
 
-**Stakeholder**: Nathan Dyke (CEO) — driver SD-1 (financial); principle P1.
+**Stakeholder**: Fred Flintstone (CEO) — driver SD-1 (financial); principle P1.
 
 ---
 
@@ -269,7 +269,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 ### User Personas
 
-#### Persona 1: Kirralee Dyke — COO / Operations Lead
+#### Persona 1: Wilma Flintstone — COO / Operations Lead
 
 - **Role**: Operational sponsor; owns workflows, fulfilment, and process management [STK-C2].
 - **Goals**: End manual firefighting; one trusted inventory number; scalable, disciplined operations.
@@ -290,7 +290,7 @@ This project establishes a reliable, automated **single source of inventory trut
 - **Pain Points**: Paper-based picking, no system guidance, stock not where the record says.
 - **Technical Proficiency**: Low.
 
-#### Persona 4: Nathan Dyke — CEO
+#### Persona 4: Fred Flintstone — CEO
 
 - **Role**: Strategic sponsor; investment and go/no-go authority [STK-C1].
 - **Goals**: De-risked growth, sound investment, no disruption to trading.
@@ -913,7 +913,7 @@ This project establishes a reliable, automated **single source of inventory trut
 
 **Decision**: Deferred to a formal decision gate (ADR pending) informed by BR-009 quantification and CEO appetite. Recommended default: Path 1 (MYOB-native), with a parallel Shopify-automation workstream.
 
-**Decision Authority**: CEO (per STKE RACI), advised by Chris McKelt.
+**Decision Authority**: CEO (per STKE RACI), advised by Velma Dinkley.
 
 **Stakeholder Management**: If Path 1 is chosen, the advisor's strategic concern is managed by keeping Path 4 as the documented future scaling option.
 
@@ -995,16 +995,16 @@ This project establishes a reliable, automated **single source of inventory trut
 
 | Reviewer | Role | Status | Date | Comments |
 |----------|------|--------|------|----------|
-| Nathan Dyke | CEO / Business Sponsor | [ ] Approved | [PENDING] | |
-| Kirralee Dyke | COO / Operational Sponsor | [ ] Approved | [PENDING] | |
-| Chris McKelt | Solution Architecture Advisor | [ ] Approved | [PENDING] | |
+| Fred Flintstone | CEO / Business Sponsor | [ ] Approved | [PENDING] | |
+| Wilma Flintstone | COO / Operational Sponsor | [ ] Approved | [PENDING] | |
+| Velma Dinkley | Solution Architecture Advisor | [ ] Approved | [PENDING] | |
 
 ### Sign-Off
 
 | Stakeholder | Signature | Date |
 |-------------|-----------|------|
-| Nathan Dyke, CEO | _________ | [PENDING] |
-| Kirralee Dyke, COO | _________ | [PENDING] |
+| Fred Flintstone, CEO | _________ | [PENDING] |
+| Wilma Flintstone, COO | _________ | [PENDING] |
 
 ---
 
@@ -1054,10 +1054,10 @@ This project establishes a reliable, automated **single source of inventory trut
 | CB-C8 | CB | B7 | Design Decision | "Phase the rollout — start with the pain bleeding most (likely the five manual Shopify stores) rather than a big-bang cutover." |
 | CB-C9 | CB | B3 / B7 | Non-Functional Requirement | "An architecture that scales with channel and volume growth." / "Quantify the operation — SKU count, monthly order volume per channel, MYOB edition, must-have workflows (BOM, multi-location) — so vendors quote against reality." |
 | CB-C10 | CB | B8 | Risk Factor | "the brief states seven storefronts total but enumerates one B2B + five B2C (six) ... Confirm the exact number ... before scoping connectors, as this directly drives integration count and licensing." |
-| STK-C1 | STK | Key Stakeholders | Stakeholder Need | "Nathan Dyke | CEO ... Primary executive stakeholder. Likely decision-maker for business priorities, investment, and strategic change." |
-| STK-C2 | STK | Key Stakeholders | Stakeholder Need | "Kirralee Dyke | COO ... Operations, supply chain, order fulfilment, process management ... Primary operational stakeholder." |
+| STK-C1 | STK | Key Stakeholders | Stakeholder Need | "Fred Flintstone | CEO ... Primary executive stakeholder. Likely decision-maker for business priorities, investment, and strategic change." |
+| STK-C2 | STK | Key Stakeholders | Stakeholder Need | "Wilma Flintstone | COO ... Operations, supply chain, order fulfilment, process management ... Primary operational stakeholder." |
 | STK-C3 | STK | Operations Team | Stakeholder Need | "Order and Supply Chain Team | 5 staff ... Important for understanding manual work, bottlenecks, exceptions, and opportunities for process improvement or automation." |
-| STK-C4 | STK | Key Stakeholders | Stakeholder Need | "Nathan Dyke | CEO | Went to school with Chris McKelt" |
+| STK-C4 | STK | Key Stakeholders | Stakeholder Need | "Fred Flintstone | CEO | Went to school with Velma Dinkley" |
 
 ### Unreferenced Documents
 

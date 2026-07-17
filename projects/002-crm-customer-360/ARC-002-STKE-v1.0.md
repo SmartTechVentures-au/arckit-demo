@@ -16,7 +16,7 @@
 | **Last Modified** | 2026-07-06 |
 | **Review Cycle** | Quarterly |
 | **Next Review Date** | 2026-10-06 |
-| **Owner** | Kirralee Dyke, COO — Operational Sponsor |
+| **Owner** | Wilma Flintstone, COO — Operational Sponsor |
 | **Reviewed By** | [PENDING] |
 | **Approved By** | [PENDING] |
 | **Distribution** | Executive team, wholesale team, retail management, digital team, solution architecture advisor |
@@ -43,8 +43,8 @@ no auditable consent trail.
 ### Key Findings
 
 The dual-channel nature of the business creates the central tension: wholesale
-(Tom Barker) needs an account-based B2B pipeline and trade credit visibility,
-while retail (Priya Nair) and digital (Sam Whitford) need a high-volume B2C
+(Barney Rubble) needs an account-based B2B pipeline and trade credit visibility,
+while retail (Betty Rubble) and digital (George Jetson) need a high-volume B2C
 customer and loyalty engine. A single platform serving both is the strategic
 preference but risks over-fitting one channel. Privacy exposure is the sharpest
 driver: consolidating 38k customer records without a consent audit and PIA
@@ -64,11 +64,11 @@ store managers about being asked to capture customer data at the counter.
 
 | Stakeholder | Role | Influence | Interest | Engagement Strategy |
 |-------------|------|-----------|----------|---------------------|
-| Kirralee Dyke | COO — Operational Sponsor [STK-D1] | HIGH | HIGH | Manage Closely — owns process design and cross-channel priorities |
-| Nathan Dyke | CEO — Investment authority [STK-D2] | HIGH | MEDIUM | Manage Closely — approves platform decision and spend |
-| Tom Barker | Head of Wholesale [STK-D3] | HIGH | HIGH | Manage Closely — B2B pipeline, trade account and credit views |
-| Priya Nair | GM Retail [STK-D4] | HIGH | HIGH | Manage Closely — loyalty programme, in-store capture, clienteling |
-| Sam Whitford | Digital & E-Commerce Lead [STK-D5] | MEDIUM | HIGH | Involve — marketing automation, consent, e-commerce identity (dep. Project 005) |
+| Wilma Flintstone | COO — Operational Sponsor [STK-D1] | HIGH | HIGH | Manage Closely — owns process design and cross-channel priorities |
+| Fred Flintstone | CEO — Investment authority [STK-D2] | HIGH | MEDIUM | Manage Closely — approves platform decision and spend |
+| Barney Rubble | Head of Wholesale [STK-D3] | HIGH | HIGH | Manage Closely — B2B pipeline, trade account and credit views |
+| Betty Rubble | GM Retail [STK-D4] | HIGH | HIGH | Manage Closely — loyalty programme, in-store capture, clienteling |
+| George Jetson | Digital & E-Commerce Lead [STK-D5] | MEDIUM | HIGH | Involve — marketing automation, consent, e-commerce identity (dep. Project 005) |
 | Store managers ×12 | Retail operations [STK-D6] | LOW | MEDIUM | Keep Informed — counter workflows must stay under 10 seconds |
 | Order & Supply Chain team | Operations [STK-D7] | LOW | MEDIUM | Keep Informed — order history views, service cases |
 
@@ -76,7 +76,7 @@ store managers about being asked to capture customer data at the counter.
 
 | Stakeholder | Organisation | Relationship | Influence | Interest |
 |-------------|--------------|--------------|-----------|----------|
-| Chris McKelt | Solution architecture advisory [STK-D8] | Trusted advisor | MEDIUM-HIGH | HIGH |
+| Velma Dinkley | Solution architecture advisory [STK-D8] | Trusted advisor | MEDIUM-HIGH | HIGH |
 | Wholesale trade customers ×250 | Independent bike shops | Beneficiary | LOW | HIGH |
 | Loyalty members ×38,000 | Riders Club | Data subjects / beneficiaries | LOW | MEDIUM |
 | CRM vendor (TBD) | Shortlist per ARC-002-RSCH | Supplier | MEDIUM | HIGH |
@@ -90,9 +90,9 @@ store managers about being asked to capture customer data at the counter.
 
 | ID | Driver | Stakeholder(s) | Type |
 |----|--------|----------------|------|
-| SD-1 | Wholesale account knowledge is trapped in one team's spreadsheets — key-person risk on 250 trade relationships | Tom Barker, CEO | Risk |
-| SD-2 | Loyalty programme cannot grow: no segmentation, no automation, manual point adjustments | Priya Nair | Growth |
-| SD-3 | Marketing consent is unauditable — Spam Act and Privacy Act exposure on the 38k-member list | Sam Whitford, COO | Compliance |
+| SD-1 | Wholesale account knowledge is trapped in one team's spreadsheets — key-person risk on 250 trade relationships | Barney Rubble, CEO | Risk |
+| SD-2 | Loyalty programme cannot grow: no segmentation, no automation, manual point adjustments | Betty Rubble | Growth |
+| SD-3 | Marketing consent is unauditable — Spam Act and Privacy Act exposure on the 38k-member list | George Jetson, COO | Compliance |
 | SD-4 | No single customer view: a trade customer who also shops retail is two unrelated records | COO, Digital | Efficiency |
 | SD-5 | Store staff have no visibility of customer history — servicing and warranty conversations start cold | Store managers, GM Retail | Experience |
 | SD-6 | Every future project (004 POS loyalty, 005 e-commerce accounts) needs a customer master to build on | Advisor, COO | Architecture |
