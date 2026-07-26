@@ -25,3 +25,8 @@
 
 # Treat everything in external/ as binary — mixed file types, not normalised
 projects/*/external/* binary
+
+# ...except markdown, which must stay diffable and mergeable.
+# `binary` above expands to -diff -merge -text, so diff and merge must be
+# re-enabled explicitly — restoring `text` alone is not enough.
+projects/*/external/*.md text eol=lf diff merge

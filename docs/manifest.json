@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26T09:41:20.045Z",
+  "generated": "2026-07-26T10:40:02.220Z",
   "repository": {
     "name": "arkit-demo"
   },
@@ -1849,6 +1849,12 @@
           "path": "projects/001-lt-ecosystem/ARC-001-STKE-v1.0.md",
           "title": "Stakeholder Analysis",
           "documentId": "ARC-001-STKE-v1.0",
+          "category": "Discovery"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-REQ-v1.0.md",
+          "title": "Requirements",
+          "documentId": "ARC-001-REQ-v1.0",
           "category": "Discovery"
         }
       ]
