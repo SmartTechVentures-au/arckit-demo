@@ -1,9 +1,9 @@
 {
-  "generated": "2026-07-09T22:45:14.097Z",
+  "generated": "2026-07-26T09:41:20.045Z",
   "repository": {
     "name": "arkit-demo"
   },
-  "defaultDocument": null,
+  "defaultDocument": "projects/000-global/ARC-000-PRIN-v1.0.md",
   "guides": [
     {
       "path": "docs/guides/adm-preliminary.md",
@@ -371,7 +371,7 @@
     },
     {
       "path": "docs/guides/ca-ocap.md",
-      "title": "Canada First Nations OCAP\u00ae Sovereignty Playbook",
+      "title": "Canada First Nations OCAP® Sovereignty Playbook",
       "category": "Canada Federal Overlay",
       "status": "community",
       "section": "Overlay Packs",
@@ -411,7 +411,7 @@
     },
     {
       "path": "docs/guides/codes-of-practice.md",
-      "title": "UK Government Codes of Practice \u2014 ArcKit Reference Guide",
+      "title": "UK Government Codes of Practice — ArcKit Reference Guide",
       "category": "Compliance",
       "status": "beta",
       "section": "Core Workflows"
@@ -468,7 +468,7 @@
     },
     {
       "path": "docs/guides/data-quality-framework.md",
-      "title": "UK Government Data Quality Framework \u2014 ArcKit Reference Guide",
+      "title": "UK Government Data Quality Framework — ArcKit Reference Guide",
       "category": "Governance",
       "status": "beta",
       "section": "Core Workflows"
@@ -679,7 +679,7 @@
     },
     {
       "path": "docs/guides/fr-irn.md",
-      "title": "IRN \u2014 Indice de R\u00e9silience Num\u00e9rique Playbook",
+      "title": "IRN — Indice de Résilience Numérique Playbook",
       "category": "Community overlays - France",
       "status": "community",
       "section": "Overlay Packs",
@@ -791,7 +791,7 @@
     },
     {
       "path": "docs/guides/govs-007-security.md",
-      "title": "GovS 007: Security \u2014 ArcKit Reference Guide",
+      "title": "GovS 007: Security — ArcKit Reference Guide",
       "category": "Compliance",
       "status": "beta",
       "section": "Core Workflows"
@@ -805,7 +805,7 @@
     },
     {
       "path": "docs/guides/graph-report.md",
-      "title": "`/arckit:graph-report` \u2014 governance metrics dashboard",
+      "title": "`/arckit:graph-report` — governance metrics dashboard",
       "category": "Governance",
       "status": "live",
       "section": "Core Workflows"
@@ -903,14 +903,14 @@
     },
     {
       "path": "docs/guides/national-data-strategy.md",
-      "title": "UK National Data Strategy \u2014 ArcKit Reference Guide",
+      "title": "UK National Data Strategy — ArcKit Reference Guide",
       "category": "Compliance",
       "status": "beta",
       "section": "Core Workflows"
     },
     {
       "path": "docs/guides/navigator.md",
-      "title": "`/arckit:navigator` \u2014 what should I do next?",
+      "title": "`/arckit:navigator` — what should I do next?",
       "category": "Governance",
       "status": "live",
       "section": "Core Workflows"
@@ -1465,7 +1465,7 @@
     },
     {
       "path": "docs/guides/us-privacy-pia.md",
-      "title": "US Privacy Impact Assessment (E-Gov \u00a7208)",
+      "title": "US Privacy Impact Assessment (E-Gov §208)",
       "category": "USA Federal Civilian Overlay",
       "status": "community",
       "section": "Overlay Packs",
@@ -1670,7 +1670,15 @@
     "Community",
     "Other"
   ],
-  "global": [],
+  "global": [
+    {
+      "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
+      "title": "Architecture Principles",
+      "documentId": "ARC-000-PRIN-v1.0",
+      "category": "Architecture",
+      "isDefault": true
+    }
+  ],
   "typeCategories": {
     "REQ": "Discovery",
     "STKE": "Discovery",
@@ -1832,7 +1840,20 @@
     "MMOD": "Governance"
   },
   "globalExternal": [],
-  "projects": [],
+  "projects": [
+    {
+      "id": "001-lt-ecosystem",
+      "name": "Lt Ecosystem",
+      "documents": [
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-STKE-v1.0.md",
+          "title": "Stakeholder Analysis",
+          "documentId": "ARC-001-STKE-v1.0",
+          "category": "Discovery"
+        }
+      ]
+    }
+  ],
   "dependencyGraph": {
     "nodes": {},
     "edges": []
