@@ -25,7 +25,8 @@
         "anthropic.claude-code",
         "timonwong.shellcheck",
         "bierner.markdown-mermaid",
-        "MermaidChart.vscode-mermaid-chart"
+        "MermaidChart.vscode-mermaid-chart",
+        "JohnSutray.run-npm-buttons"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
