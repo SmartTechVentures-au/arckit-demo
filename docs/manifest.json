@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26T10:40:02.220Z",
+  "generated": "2026-07-26T22:38:12.548Z",
   "repository": {
     "name": "arkit-demo"
   },
@@ -1856,6 +1856,12 @@
           "title": "Requirements",
           "documentId": "ARC-001-REQ-v1.0",
           "category": "Discovery"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-DATA-v1.0.md",
+          "title": "Data Model",
+          "documentId": "ARC-001-DATA-v1.0",
+          "category": "Architecture"
         }
       ]
     }
