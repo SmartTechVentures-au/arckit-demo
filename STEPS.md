@@ -1,12 +1,12 @@
 # Live Sequence
 
-1. **Orient the session**
+1. **Orient the session - branch demo/stage1**
 
    `/arckit:start`
 
    Review the harness status, connected tools and decision tree.
 
-2. **Create the organisation-wide governance space**
+2. **Create the organisation-wide governance space - branch demo/stage2**
 
    ```text
    /arckit:init 000-global
@@ -16,7 +16,7 @@
 
    Inputs are located in `demo-inputs/`.
 
-3. **Define organisation-wide principles**
+3. **Define organisation-wide principles  - branch demo/stage3**
 
    ```text
    /arckit:principles
@@ -29,7 +29,7 @@
    * Platform governance
    * Student experience consistency
 
-4. **Create the Learning & Teaching engagement**
+4. **Create the Learning & Teaching engagement - branch demo/stage4**
 
    ```text
    /arckit:init 001-lt-ecosystem
@@ -51,7 +51,7 @@
 
    `demo-inputs/stakeholders.md`
 
-6. **Generate the requirements**
+6. **Generate the requirements - branch demo/stage5**
 
    ```text
    /arckit:requirements
@@ -61,7 +61,7 @@
 
    `demo-inputs/requirements-register.md`
 
-7. **Assess key risks**
+7. **Assess key risks - branch demo/stage6**
 
    ```text
    /arckit:risk
@@ -73,13 +73,13 @@
    * Licence waste
    * Shadow IT
 
-8. **Create the architecture decision record**
+8. **Create the architecture decision record - branch demo/stage7**
 
    ```text
    /arckit:adr Echo360 vs Microsoft Stream for lecture capture
    ```
 
-9. **Conduct the Australian Privacy Impact Assessment**
+9. **Conduct the Australian Privacy Impact Assessment - branch demo/stage8**
 
    ```text
    /arckit:au-pia
@@ -95,7 +95,7 @@
    * Sensitive data held in Sonia
    * APP 8 and offshore disclosure
 
-10. **Assess Essential Eight posture**
+10. **Assess Essential Eight posture  - branch demo/stage9**
 
     ```text
     /arckit:au-e8-posture
@@ -105,7 +105,7 @@
 
     `demo-inputs/privacy-context.md` — §3
 
-11. **Build the engagement outputs**
+11. **Build the engagement outputs - branch demo/stage10**
 
     First, generate the build plan:
 
@@ -119,15 +119,15 @@
     /arckit:build 001
     ```
 
-    **This is the finale.**
+    **Onto the finale.**
 
-12. **Demonstrate end-to-end traceability**
+12. **Demonstrate end-to-end traceability - branch demo/stage11**
 
     ```text
     /arckit:traceability
     ```
 
-    Close by showing:
+    This shows:
 
     ```text
     Requirement → System → Decision → Risk → APP Finding → Roadmap
