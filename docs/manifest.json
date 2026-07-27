@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26T22:38:12.548Z",
+  "generated": "2026-07-27T00:34:08.059Z",
   "repository": {
     "name": "arkit-demo"
   },
@@ -1862,6 +1862,12 @@
           "title": "Data Model",
           "documentId": "ARC-001-DATA-v1.0",
           "category": "Architecture"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-RISK-v1.0.md",
+          "title": "Risk Register",
+          "documentId": "ARC-001-RISK-v1.0",
+          "category": "Governance"
         }
       ]
     }
