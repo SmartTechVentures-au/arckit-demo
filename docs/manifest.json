@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T08:25:27.574Z",
+  "generated": "2026-07-28T10:22:05.635Z",
   "repository": {
     "name": "arckit-demo"
   },
@@ -1945,6 +1945,13 @@
           "title": "system-landscape.md",
           "type": "md"
         }
+      ],
+      "wardleyMaps": [
+        {
+          "path": "projects/001-lt-ecosystem/wardley-maps/ARC-001-WARD-001-v1.0.md",
+          "title": "Wardley Map: An Estate With No Differentiation In It",
+          "documentId": "ARC-001-WARD-001-v1.0"
+        }
       ]
     },
     {
@@ -2020,6 +2027,11 @@
           "title": "Wardley Map: Where Differentiation Actually Lives",
           "documentId": "ARC-002-WARD-001-v1.0",
           "extension": ".md"
+        },
+        {
+          "path": "projects/002-lecture-capture/wardley-maps/ARC-002-WARD-002-v1.0.md",
+          "title": "Wardley Map",
+          "documentId": "ARC-002-WARD-002-v1.0"
         }
       ],
       "research": [
