@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-09T22:45:14.097Z",
+  "generated": "2026-07-28T11:18:28.847Z",
   "repository": {
-    "name": "arkit-demo"
+    "name": "arckit-demo"
   },
   "defaultDocument": "projects/000-global/ARC-000-PRIN-v1.0.md",
   "guides": [
@@ -1001,6 +1001,22 @@
       "section": "Plugin and Extension Operations"
     },
     {
+      "path": "docs/guides/repo-audit.md",
+      "title": "Codebase Audit Guide",
+      "category": "Repository Plugin",
+      "status": "community",
+      "section": "Overlay Packs",
+      "pack": "Repository Plugin"
+    },
+    {
+      "path": "docs/guides/repo-docs.md",
+      "title": "Repository Documentation Wiki Guide",
+      "category": "Repository Plugin",
+      "status": "community",
+      "section": "Overlay Packs",
+      "pack": "Repository Plugin"
+    },
+    {
       "path": "docs/guides/requirements.md",
       "title": "Requirements Guide",
       "category": "Discovery",
@@ -1656,6 +1672,7 @@
     "Plugin Operations",
     "AI Agent Architecture Overlay",
     "FDE Site Generator",
+    "Repository Plugin",
     "TOGAF ADM Overlay",
     "Australian Federal / Energy Overlay",
     "Community overlays - Austria",
@@ -1671,13 +1688,6 @@
     "Other"
   ],
   "global": [
-    {
-      "path": "projects/000-global/ARC-000-PORT-v1.0.md",
-      "title": "PORT",
-      "category": "Other",
-      "documentId": "ARC-000-PORT-v1.0",
-      "extension": ".md"
-    },
     {
       "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
       "title": "Architecture Principles",
@@ -1735,6 +1745,7 @@
     "DECK": "Reporting",
     "ANAL": "Governance",
     "GAPS": "Governance",
+    "CDAU": "Governance",
     "TCOP": "Compliance",
     "SECD": "Compliance",
     "SECD-MOD": "Compliance",
@@ -1849,494 +1860,1375 @@
   },
   "globalExternal": [
     {
-      "path": "projects/000-global/external/company-brief.md",
-      "title": "company-brief.md",
+      "path": "projects/000-global/external/capability-taxonomy.md",
+      "title": "capability-taxonomy.md",
+      "type": "md"
+    }
+  ],
+  "globalPolicies": [
+    {
+      "path": "projects/000-global/policies/README.md",
+      "title": "README.md",
       "type": "md"
     },
     {
-      "path": "projects/000-global/external/demo-scenario-brief.md",
-      "title": "demo-scenario-brief.md",
-      "type": "md"
-    },
-    {
-      "path": "projects/000-global/external/stakeholders.md",
-      "title": "stakeholders.md",
+      "path": "projects/000-global/policies/solution-governance-process.md",
+      "title": "solution-governance-process.md",
       "type": "md"
     }
   ],
   "projects": [
     {
-      "id": "001-inventory-warehouse-uplift",
-      "name": "Inventory Warehouse Uplift",
+      "id": "001-lt-ecosystem",
+      "name": "Lt Ecosystem",
       "documents": [
         {
-          "path": "projects/001-inventory-warehouse-uplift/ARC-001-EVAL-v1.0.md",
-          "title": "Evaluation Criteria",
-          "category": "Procurement",
-          "documentId": "ARC-001-EVAL-v1.0",
+          "path": "projects/001-lt-ecosystem/ARC-001-DATA-v1.0.md",
+          "title": "Data Model",
+          "category": "Architecture",
+          "documentId": "ARC-001-DATA-v1.0",
           "extension": ".md"
         },
         {
-          "path": "projects/001-inventory-warehouse-uplift/ARC-001-REQ-v1.0.md",
+          "path": "projects/001-lt-ecosystem/ARC-001-REQ-v1.0.md",
           "title": "Requirements",
           "category": "Discovery",
           "documentId": "ARC-001-REQ-v1.0",
           "extension": ".md"
         },
         {
-          "path": "projects/001-inventory-warehouse-uplift/ARC-001-STKE-v1.0.md",
+          "path": "projects/001-lt-ecosystem/ARC-001-RISK-v1.0.md",
+          "title": "Risk Register",
+          "category": "Governance",
+          "documentId": "ARC-001-RISK-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-STKE-v1.0.md",
           "title": "Stakeholder Analysis",
           "category": "Discovery",
           "documentId": "ARC-001-STKE-v1.0",
           "extension": ".md"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-SOBC-v1.0.md",
+          "title": "Strategic Outline Business Case",
+          "documentId": "ARC-001-SOBC-v1.0",
+          "category": "Planning"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-TRAC-v1.0.md",
+          "title": "Traceability Matrix",
+          "documentId": "ARC-001-TRAC-v1.0",
+          "category": "Governance"
         }
       ],
       "decisions": [
         {
-          "path": "projects/001-inventory-warehouse-uplift/decisions/ARC-001-ADR-001-v1.0.md",
-          "title": "Architecture Decision Record: Retain MYOB AccountRight as the Accounting System of Record",
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-001-v1.0.md",
+          "title": "ADR-001: Integration Mediation Approach for the L&T Ecosystem",
           "documentId": "ARC-001-ADR-001-v1.0",
           "extension": ".md"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-002-v1.0.md",
+          "title": "ADR-002: Authoritative Source for Institutional Role Assignment",
+          "documentId": "ARC-001-ADR-002-v1.0"
         }
       ],
-      "research": [
+      "external": [
         {
-          "path": "projects/001-inventory-warehouse-uplift/research/ARC-001-RSCH-v1.0.md",
-          "title": "Technology and Service Research: Inventory & Warehouse Management Uplift",
-          "documentId": "ARC-001-RSCH-v1.0",
-          "extension": ".md"
+          "path": "projects/001-lt-ecosystem/external/consultant-brief.md",
+          "title": "consultant-brief.md",
+          "type": "md"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/external/privacy-context.md",
+          "title": "privacy-context.md",
+          "type": "md"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/external/requirements-register.md",
+          "title": "requirements-register.md",
+          "type": "md"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/external/stakeholders.md",
+          "title": "stakeholders.md",
+          "type": "md"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/external/system-landscape.md",
+          "title": "system-landscape.md",
+          "type": "md"
         }
       ],
-      "vendorProfiles": [
+      "wardleyMaps": [
         {
-          "path": "projects/001-inventory-warehouse-uplift/vendors/cin7-profile.md",
-          "title": "Cin7"
-        },
-        {
-          "path": "projects/001-inventory-warehouse-uplift/vendors/datapel-profile.md",
-          "title": "Datapel"
-        },
-        {
-          "path": "projects/001-inventory-warehouse-uplift/vendors/erpnext-profile.md",
-          "title": "Erpnext"
-        },
-        {
-          "path": "projects/001-inventory-warehouse-uplift/vendors/myob-acumatica-profile.md",
-          "title": "Myob Acumatica"
-        },
-        {
-          "path": "projects/001-inventory-warehouse-uplift/vendors/odoo-profile.md",
-          "title": "Odoo"
-        },
-        {
-          "path": "projects/001-inventory-warehouse-uplift/vendors/ostendo-profile.md",
-          "title": "Ostendo"
-        },
-        {
-          "path": "projects/001-inventory-warehouse-uplift/vendors/starshipit-profile.md",
-          "title": "Starshipit"
-        },
-        {
-          "path": "projects/001-inventory-warehouse-uplift/vendors/unleashed-profile.md",
-          "title": "Unleashed"
+          "path": "projects/001-lt-ecosystem/wardley-maps/ARC-001-WARD-001-v1.0.md",
+          "title": "Wardley Map: An Estate With No Differentiation In It",
+          "documentId": "ARC-001-WARD-001-v1.0"
         }
       ],
-      "techNotes": [
+      "diagrams": [
         {
-          "path": "projects/001-inventory-warehouse-uplift/tech-notes/idempotent-multichannel-inventory-sync.md",
-          "title": "Tech Note: Idempotent Multichannel Inventory Sync"
-        },
-        {
-          "path": "projects/001-inventory-warehouse-uplift/tech-notes/myob-accountright-integration.md",
-          "title": "Tech Note: MYOB AccountRight Integration for Inventory/WMS Platforms"
+          "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-001-v1.0.md",
+          "title": "Architecture Diagrams",
+          "documentId": "ARC-001-DIAG-001-v1.0"
         }
       ]
     },
     {
-      "id": "002-crm-customer-360",
-      "name": "Crm Customer 360",
+      "id": "002-lecture-capture",
+      "name": "Lecture Capture",
       "documents": [
         {
-          "path": "projects/002-crm-customer-360/ARC-002-REQ-v1.0.md",
+          "path": "projects/002-lecture-capture/ARC-002-ANAL-v1.0.md",
+          "title": "Analysis Report",
+          "category": "Governance",
+          "documentId": "ARC-002-ANAL-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-lecture-capture/ARC-002-EVAL-v1.0.md",
+          "title": "Evaluation Criteria",
+          "category": "Procurement",
+          "documentId": "ARC-002-EVAL-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-lecture-capture/ARC-002-REQ-v1.0.md",
           "title": "Requirements",
           "category": "Discovery",
           "documentId": "ARC-002-REQ-v1.0",
           "extension": ".md"
         },
         {
-          "path": "projects/002-crm-customer-360/ARC-002-STKE-v1.0.md",
+          "path": "projects/002-lecture-capture/ARC-002-RISK-v1.0.md",
+          "title": "Risk Register",
+          "category": "Governance",
+          "documentId": "ARC-002-RISK-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-lecture-capture/ARC-002-SOW-v1.0.md",
+          "title": "Statement of Work",
+          "category": "Procurement",
+          "documentId": "ARC-002-SOW-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-lecture-capture/ARC-002-STKE-v1.0.md",
           "title": "Stakeholder Analysis",
           "category": "Discovery",
           "documentId": "ARC-002-STKE-v1.0",
           "extension": ".md"
+        },
+        {
+          "path": "projects/002-lecture-capture/ARC-002-DATA-v1.0.md",
+          "title": "Data Model",
+          "documentId": "ARC-002-DATA-v1.0",
+          "category": "Architecture"
+        },
+        {
+          "path": "projects/002-lecture-capture/ARC-002-TRAC-v1.1.md",
+          "title": "Traceability Matrix",
+          "documentId": "ARC-002-TRAC-v1.1",
+          "category": "Governance"
         }
       ],
-      "decisions": [
+      "diagrams": [
         {
-          "path": "projects/002-crm-customer-360/decisions/ARC-002-ADR-001-v1.0.md",
-          "title": "Architecture Decision Record: Single CRM Platform as the Customer Master Across B2B and B2C",
-          "documentId": "ARC-002-ADR-001-v1.0",
+          "path": "projects/002-lecture-capture/diagrams/ARC-002-DIAG-001-v1.0.md",
+          "title": "Architecture Diagram: System Context — Lecture Capture Platform",
+          "documentId": "ARC-002-DIAG-001-v1.0",
           "extension": ".md"
+        }
+      ],
+      "wardleyMaps": [
+        {
+          "path": "projects/002-lecture-capture/wardley-maps/ARC-002-WARD-001-v1.0.md",
+          "title": "Wardley Map: Where Differentiation Actually Lives",
+          "documentId": "ARC-002-WARD-001-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-lecture-capture/wardley-maps/ARC-002-WARD-002-v1.0.md",
+          "title": "Wardley Map",
+          "documentId": "ARC-002-WARD-002-v1.0"
         }
       ],
       "research": [
         {
-          "path": "projects/002-crm-customer-360/research/ARC-002-RSCH-v1.0.md",
-          "title": "Technology and Service Research: CRM & Customer 360",
+          "path": "projects/002-lecture-capture/research/ARC-002-RSCH-v1.0.md",
+          "title": "Technology and Service Research: Lecture Capture Platform Consolidation",
           "documentId": "ARC-002-RSCH-v1.0",
           "extension": ".md"
         }
-      ]
-    },
-    {
-      "id": "003-erp-modernisation",
-      "name": "Erp Modernisation",
-      "documents": [
+      ],
+      "vendorProfiles": [
         {
-          "path": "projects/003-erp-modernisation/ARC-003-REQ-v1.0.md",
-          "title": "Requirements",
-          "category": "Discovery",
-          "documentId": "ARC-003-REQ-v1.0",
-          "extension": ".md"
+          "path": "projects/002-lecture-capture/vendors/echo360-profile.md",
+          "title": "Echo360"
         },
         {
-          "path": "projects/003-erp-modernisation/ARC-003-STKE-v1.0.md",
-          "title": "Stakeholder Analysis",
-          "category": "Discovery",
-          "documentId": "ARC-003-STKE-v1.0",
-          "extension": ".md"
-        }
-      ],
-      "decisions": [
-        {
-          "path": "projects/003-erp-modernisation/decisions/ARC-003-ADR-001-v1.0.md",
-          "title": "Architecture Decision Record: Adopt Cloud ERP as Future Financial System of Record — Governed Supersession of ARC-001-ADR-001",
-          "documentId": "ARC-003-ADR-001-v1.0",
-          "extension": ".md"
-        }
-      ],
-      "research": [
-        {
-          "path": "projects/003-erp-modernisation/research/ARC-003-RSCH-v1.0.md",
-          "title": "Technology and Service Research: ERP Modernisation",
-          "documentId": "ARC-003-RSCH-v1.0",
-          "extension": ".md"
-        }
-      ]
-    },
-    {
-      "id": "004-retail-pos-consolidation",
-      "name": "Retail Pos Consolidation",
-      "documents": [
-        {
-          "path": "projects/004-retail-pos-consolidation/ARC-004-REQ-v1.0.md",
-          "title": "Requirements",
-          "category": "Discovery",
-          "documentId": "ARC-004-REQ-v1.0",
-          "extension": ".md"
+          "path": "projects/002-lecture-capture/vendors/kaltura-profile.md",
+          "title": "Kaltura"
         },
         {
-          "path": "projects/004-retail-pos-consolidation/ARC-004-STKE-v1.0.md",
-          "title": "Stakeholder Analysis",
-          "category": "Discovery",
-          "documentId": "ARC-004-STKE-v1.0",
-          "extension": ".md"
-        }
-      ],
-      "decisions": [
-        {
-          "path": "projects/004-retail-pos-consolidation/decisions/ARC-004-ADR-001-v1.0.md",
-          "title": "Architecture Decision Record: POS Integrates Hub-First — Single Platform, No Direct Financial or Web Coupling",
-          "documentId": "ARC-004-ADR-001-v1.0",
-          "extension": ".md"
-        }
-      ],
-      "research": [
-        {
-          "path": "projects/004-retail-pos-consolidation/research/ARC-004-RSCH-v1.0.md",
-          "title": "Technology and Service Research: Retail POS Consolidation",
-          "documentId": "ARC-004-RSCH-v1.0",
-          "extension": ".md"
-        }
-      ]
-    },
-    {
-      "id": "005-ecommerce-consolidation",
-      "name": "Ecommerce Consolidation",
-      "documents": [
-        {
-          "path": "projects/005-ecommerce-consolidation/ARC-005-REQ-v1.0.md",
-          "title": "Requirements",
-          "category": "Discovery",
-          "documentId": "ARC-005-REQ-v1.0",
-          "extension": ".md"
+          "path": "projects/002-lecture-capture/vendors/microsoft-profile.md",
+          "title": "Microsoft"
         },
         {
-          "path": "projects/005-ecommerce-consolidation/ARC-005-STKE-v1.0.md",
-          "title": "Stakeholder Analysis",
-          "category": "Discovery",
-          "documentId": "ARC-005-STKE-v1.0",
-          "extension": ".md"
+          "path": "projects/002-lecture-capture/vendors/panopto-profile.md",
+          "title": "Panopto"
+        },
+        {
+          "path": "projects/002-lecture-capture/vendors/yuja-profile.md",
+          "title": "Yuja"
         }
       ],
-      "decisions": [
+      "techNotes": [
         {
-          "path": "projects/005-ecommerce-consolidation/decisions/ARC-005-ADR-001-v1.0.md",
-          "title": "Architecture Decision Record: Rationalise to ≤ 3 B2C Storefronts + 1 B2B Portal on SaaS/PaaS, Hub-Sourced Availability",
-          "documentId": "ARC-005-ADR-001-v1.0",
-          "extension": ".md"
+          "path": "projects/002-lecture-capture/tech-notes/asr-caption-accuracy.md",
+          "title": "Tech Note: ASR and Caption Accuracy for Accessibility Conformance"
+        },
+        {
+          "path": "projects/002-lecture-capture/tech-notes/australian-data-residency-saas.md",
+          "title": "Tech Note: Australian Data Residency for SaaS Platforms"
+        },
+        {
+          "path": "projects/002-lecture-capture/tech-notes/lti-1-3-advantage.md",
+          "title": "Tech Note: LTI 1.3 and LTI Advantage for LMS Tool Integration"
         }
       ],
-      "research": [
+      "external": [
         {
-          "path": "projects/005-ecommerce-consolidation/research/ARC-005-RSCH-v1.0.md",
-          "title": "Technology and Service Research: E-Commerce Consolidation",
-          "documentId": "ARC-005-RSCH-v1.0",
-          "extension": ".md"
+          "path": "projects/002-lecture-capture/external/consultant-brief.md",
+          "title": "consultant-brief.md",
+          "type": "md"
+        },
+        {
+          "path": "projects/002-lecture-capture/external/privacy-context.md",
+          "title": "privacy-context.md",
+          "type": "md"
+        },
+        {
+          "path": "projects/002-lecture-capture/external/requirements-register.md",
+          "title": "requirements-register.md",
+          "type": "md"
+        },
+        {
+          "path": "projects/002-lecture-capture/external/stakeholders.md",
+          "title": "stakeholders.md",
+          "type": "md"
+        },
+        {
+          "path": "projects/002-lecture-capture/external/system-landscape.md",
+          "title": "system-landscape.md",
+          "type": "md"
         }
       ]
     }
   ],
   "dependencyGraph": {
     "nodes": {
-      "ARC-000-PORT-v1.0": {
-        "type": "PORT",
-        "project": "000-global",
-        "path": "projects/000-global/ARC-000-PORT-v1.0.md",
-        "title": "Portfolio Roadmap & Sequencing: Spoke & Rim Digital Transformation",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": "2026-07-06",
-        "version": "1.0",
-        "owner": "Fred Flintstone, CEO — Executive Sponsor",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": null,
-        "controlFields": {
-          "Document ID": "ARC-000-PORT-v1.0",
-          "Document Type": "Portfolio Roadmap & Sequencing",
-          "Project": "Cross-project (000-global)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Last Modified": "2026-07-06",
-          "Review Cycle": "Quarterly",
-          "Next Review Date": "2026-10-06",
-          "Owner": "Fred Flintstone, CEO — Executive Sponsor",
-          "Reviewed By": "[PENDING]",
-          "Approved By": "[PENDING]",
-          "Distribution": "Executive team, project sponsors, solution architecture advisor"
-        },
-        "reqIds": [],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
       "ARC-000-PRIN-v1.0": {
         "type": "PRIN",
         "project": "000-global",
         "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
-        "title": "Cycle Motion Enterprise Architecture Principles",
+        "title": "The University of Funk — Enterprise Architecture Principles",
         "status": "DRAFT",
         "severity": "MEDIUM",
-        "createdDate": "2026-06-29",
-        "lastModified": "2026-06-29",
+        "createdDate": "2026-07-26",
+        "lastModified": "2026-07-26",
         "version": "1.0",
-        "owner": "Fred, CEO — Cycle Motion (Executive Sponsor)",
+        "owner": "Cassandra \"Cas\" Rhodes, Chief Information Officer",
         "classification": "OFFICIAL",
         "vendor": null,
         "subdir": null,
         "controlFields": {
           "Document ID": "ARC-000-PRIN-v1.0",
           "Document Type": "Enterprise Architecture Principles",
-          "Project": "Cycle Motion — Cross-Project Standards (Project 000)",
+          "Project": "Global / Cross-Project (The University of Funk)",
           "Classification": "OFFICIAL",
           "Status": "DRAFT",
           "Version": "1.0",
-          "Created Date": "2026-06-29",
-          "Last Modified": "2026-06-29",
+          "Created Date": "2026-07-26",
+          "Last Modified": "2026-07-26",
           "Review Cycle": "Annual",
-          "Next Review Date": "2027-06-29",
-          "Owner": "Fred, CEO — Cycle Motion (Executive Sponsor)",
-          "Reviewed By": "PENDING",
-          "Approved By": "PENDING",
-          "Distribution": "Cycle Motion leadership, delivery partners, and implementation vendors"
+          "Next Review Date": "2027-07-26",
+          "Owner": "Cassandra \"Cas\" Rhodes, Chief Information Officer",
+          "Reviewed By": "Dr. Benny Moog, Director Learning Technologies; Sam Okafor, Integration Architect",
+          "Approved By": "PENDING — Education Committee (A/Prof. Pearl Clavinet, Chair)",
+          "Distribution": "University Executive; Education Committee; Operations Committee; Digital & IT; Learning Innovation; School and Faculty leadership"
         },
         "reqIds": [],
         "health": {
           "stale": false,
           "draft": true,
-          "orphan": false,
-          "ageDays": 10
+          "orphan": true,
+          "ageDays": 2
         }
       },
-      "ARC-001-EVAL-v1.0": {
-        "type": "EVAL",
-        "project": "001-inventory-warehouse-uplift",
-        "path": "projects/001-inventory-warehouse-uplift/ARC-001-EVAL-v1.0.md",
-        "title": "Vendor Evaluation Criteria: Inventory & Warehouse Management Uplift",
+      "ARC-001-DATA-v1.0": {
+        "type": "DATA",
+        "project": "001-lt-ecosystem",
+        "path": "projects/001-lt-ecosystem/ARC-001-DATA-v1.0.md",
+        "title": "Data Model: Learning & Teaching Baseline Strategy",
         "status": "DRAFT",
-        "severity": "LOW",
-        "createdDate": "2026-06-30",
-        "lastModified": "2026-06-30",
+        "severity": "MEDIUM",
+        "createdDate": "2026-07-26",
+        "lastModified": "2026-07-26",
         "version": "1.0",
-        "owner": "Wilma Flintstone (COO, Cycle Motion) — Evaluation Lead",
-        "classification": "OFFICIAL",
+        "owner": "Sam Okafor, Integration Architect (Digital & IT)",
+        "classification": "OFFICIAL-SENSITIVE",
         "vendor": null,
         "subdir": null,
         "controlFields": {
-          "Document ID": "ARC-001-EVAL-v1.0",
-          "Document Type": "Vendor Evaluation Framework",
-          "Project": "Inventory & Warehouse Management Uplift (Project 001)",
-          "Classification": "OFFICIAL",
+          "Document ID": "ARC-001-DATA-v1.0",
+          "Document Type": "Data Model and Data Governance Specification",
+          "Project": "Learning & Teaching Baseline Strategy (Project 001)",
+          "Classification": "OFFICIAL-SENSITIVE",
           "Status": "DRAFT",
           "Version": "1.0",
-          "Created Date": "2026-06-30",
-          "Last Modified": "2026-06-30",
-          "Review Date": "2026-07-30",
-          "Owner": "Wilma Flintstone (COO, Cycle Motion) — Evaluation Lead",
-          "Reviewed By": "[PENDING]",
-          "Approved By": "[PENDING]",
-          "Distribution": "Cycle Motion leadership (Fred & Wilma Flintstone), solution architecture advisor",
-          "MQ-1": "Integrates with **MYOB AccountRight** (native connector or proven, maintained middleware) — per ADR-001 / INT-001",
-          "MQ-2": "Compatible with Cycle Motion's in-use MYOB AccountRight edition/version",
-          "MQ-3": "Connects to **Shopify (multiple stores)** and **Magento/Adobe Commerce**",
-          "MQ-4": "Supports **bill-of-materials / manufacturing** work orders",
-          "MQ-5": "Provides **WMS capability** — bins, barcode-directed picking, cycle counts",
-          "MQ-6": "**Idempotent / oversell-safe** synchronisation demonstrable",
-          "MQ-7": "**Australian** support presence / AU business-hours support",
-          "MQ-8": "At least **2 reference customers** on a comparable AU multichannel + MYOB stack",
-          "MQ-9": "**Pilot / proof-of-concept** possible before full commitment",
-          "MQ-10": "No raw cardholder data stored in the product (PCI scope acceptable)",
-          "1. Integration & Data Architecture": "30%",
-          "2. Functional Fit (inventory, WMS, BOM)": "25%",
-          "3. Reliability, Support & Vendor Viability": "20%",
-          "4. Implementation & Change": "10%",
-          "5. Security & Compliance": "10%",
-          "6. Usability & Operability (small team)": "5%",
-          "TOTAL": "**100%**",
-          "1.1 MYOB integration depth": "10",
-          "1.2 Multichannel sync — Shopify (multi-store) + Magento": "8",
-          "1.3 Idempotency & oversell prevention": "7",
-          "1.4 Loose coupling & exception handling": "5",
-          "2.1 Single source of truth & product/SKU master": "7",
-          "2.2 WMS depth": "7",
-          "2.3 Manufacturing / BOM": "7",
-          "2.4 Orders, returns, backorders, shipping": "4",
-          "3.1 Sync reliability reputation": "8",
-          "3.2 Support quality & SLA": "7",
-          "3.3 Vendor viability & roadmap": "5",
-          "4.1 Implementation approach & partner": "4",
-          "4.2 Pilot & phased rollout support": "3",
-          "4.3 Data migration & training": "3",
-          "5.1 Access control & secrets": "4",
-          "5.2 Encryption & PCI posture": "3",
-          "5.3 Australian privacy & data residency": "3",
-          "6.1 Ease of use & day-to-day fit": "3",
-          "6.2 Low admin overhead": "2",
-          "Excellent": "90–100%",
-          "Good": "75–89%",
-          "Adequate": "60–74%",
-          "Weak": "40–59%",
-          "Unacceptable": "0–39%",
-          "TOTAL TECHNICAL": "**100**",
-          "Datapel": "Strong — **MYOB-native**",
-          "Ostendo": "Strong — **MYOB-native**",
-          "Unleashed": "Medium — **middleware to MYOB**",
-          "Cin7 Core": "Medium — **middleware to MYOB**; broad connectors (native Magento)"
+          "Created Date": "2026-07-26",
+          "Last Modified": "2026-07-26",
+          "Review Date": "2026-08-25",
+          "Owner": "Sam Okafor, Integration Architect (Digital & IT)",
+          "Reviewed By": "[PENDING] — Eleanor Frame (Privacy & Records Officer)",
+          "Approved By": "[PENDING] — Cassandra Rhodes, Chief Information Officer",
+          "Distribution": "Project Team, Digital & IT, Privacy & Records, Steering Committee",
+          "Total entities": "20",
+          "Bounded contexts": "4 (Canonical Core, Learning & Assessment, Placement, Governance Registers)",
+          "Total attributes": "178",
+          "Attributes flagged as personal information": "22",
+          "Attributes flagged as sensitive information": "3 (E-014 clearance_metadata, health_context_notes; E-016 assessment_notes)",
+          "Entities holding personal or sensitive information directly": "12 of 20",
+          "Entities containing sensitive information": "2 (E-014, E-016)",
+          "Relationships defined (foreign keys)": "34",
+          "One-to-many": "31",
+          "One-to-zero-or-one": "2 (E-012 Grade to its two possible origins)",
+          "One-to-one": "1 (E-004 UnitOffering to E-007 UnitSite)",
+          "Many-to-many resolved via associative entity": "4 (E-005, E-006, E-008, E-014)",
+          "Relationships drawn in the domain ERDs": "23 — platform and register links are omitted from the diagrams for readability and appear in the entity catalog",
+          "Data requirements modelled": "8 of 8 (100%)",
+          "Primary regime": "Privacy Act 1988 (Cth); Australian Privacy Principles 1–13",
+          "Regulator": "Office of the Australian Information Commissioner (OAIC)",
+          "Breach regime": "Notifiable Data Breach scheme, Privacy Act Part IIIC",
+          "Personal information present": "YES — 8 classes across 12 entities [DM-C3]",
+          "Sensitive information present": "YES — placement records including clearance metadata and health-context notes [DM-C4]",
+          "Cross-border disclosure (APP 8)": "YES — 4 data classes disclosed offshore under assessed hosting [DM-C5]",
+          "Privacy Impact Assessment": "**REQUIRED** — sensitive information at scale, offshore disclosure, and derived analytics profiling all independently trigger assessment",
+          "Security classification": "OFFICIAL-SENSITIVE for this document; per-entity classification in the catalog",
+          "Sector frameworks": "ASD Essential Eight (target ML2 by end 2027) [DM-C6]; TEQSA assessment integrity expectations",
+          "Not applicable": "PCI-DSS (no payment card data in L&T scope), HIPAA (US), FCA (UK)",
+          "Placement records (sensitive)": "**APP 3.3 — consent required**",
+          "ASD Essential Eight": "**YES**",
+          "TEQSA": "**YES**",
+          "State records legislation": "**YES**"
         },
         "reqIds": [
-          "BR-006",
-          "BR-009",
-          "BR-007",
-          "INT-001",
-          "INT-002",
-          "INT-003",
-          "BR-005",
-          "FR-008",
-          "BR-004",
-          "FR-005",
-          "BR-003",
-          "FR-004",
-          "NFR-M-003",
-          "NFR-SEC-005",
-          "FR-003",
-          "NFR-P-001",
-          "NFR-I-001",
-          "FR-015",
-          "BR-001",
-          "FR-001",
-          "FR-010",
-          "NFR-A-003",
-          "NFR-M-001",
-          "NFR-A-002",
-          "NFR-SEC-001",
+          "DR-001",
+          "DR-002",
+          "DR-003",
+          "DR-005",
+          "NFR-C-003",
           "NFR-SEC-003",
-          "NFR-C-001"
+          "NFR-SEC-001",
+          "INT-004",
+          "INT-007",
+          "NFR-A-001",
+          "NFR-A-002",
+          "NFR-P-001",
+          "INT-001",
+          "NFR-M-001",
+          "INT-002",
+          "FR-001",
+          "NFR-U-001",
+          "NFR-U-002",
+          "FR-007",
+          "FR-014",
+          "INT-006",
+          "FR-009",
+          "FR-010",
+          "NFR-P-002",
+          "NFR-C-001",
+          "FR-016",
+          "FR-017",
+          "NFR-S-001",
+          "NFR-C-002",
+          "INT-005",
+          "DR-008",
+          "FR-015",
+          "NFR-I-002",
+          "DR-004",
+          "FR-018",
+          "DR-006",
+          "FR-020",
+          "FR-022",
+          "INT-009",
+          "DR-007",
+          "BR-001",
+          "BR-007",
+          "BR-002",
+          "INT-003",
+          "NFR-SEC-002",
+          "INT-008"
         ],
         "health": {
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 9
+          "ageDays": 2
         }
       },
       "ARC-001-REQ-v1.0": {
         "type": "REQ",
-        "project": "001-inventory-warehouse-uplift",
-        "path": "projects/001-inventory-warehouse-uplift/ARC-001-REQ-v1.0.md",
-        "title": "Project Requirements: Inventory & Warehouse Management Uplift",
+        "project": "001-lt-ecosystem",
+        "path": "projects/001-lt-ecosystem/ARC-001-REQ-v1.0.md",
+        "title": "Project Requirements: Learning & Teaching Baseline Strategy",
         "status": "DRAFT",
         "severity": "LOW",
-        "createdDate": "2026-06-30",
-        "lastModified": "2026-06-30",
+        "createdDate": "2026-07-26",
+        "lastModified": "2026-07-26",
         "version": "1.0",
-        "owner": "Wilma Flintstone (COO, Cycle Motion) — Operational Sponsor",
+        "owner": "Dr. Felix Marimba, Academic Lead (Digital Learning) — custodian of the survey requirements register",
         "classification": "OFFICIAL",
         "vendor": null,
         "subdir": null,
         "controlFields": {
           "Document ID": "ARC-001-REQ-v1.0",
           "Document Type": "Business and Technical Requirements",
-          "Project": "Inventory & Warehouse Management Uplift (Project 001)",
+          "Project": "Learning & Teaching Baseline Strategy (Project 001)",
           "Classification": "OFFICIAL",
           "Status": "DRAFT",
           "Version": "1.0",
-          "Created Date": "2026-06-30",
-          "Last Modified": "2026-06-30",
-          "Review Date": "2026-07-30",
-          "Owner": "Wilma Flintstone (COO, Cycle Motion) — Operational Sponsor",
+          "Created Date": "2026-07-26",
+          "Last Modified": "2026-07-26",
+          "Review Date": "2026-08-25",
+          "Owner": "Dr. Felix Marimba, Academic Lead (Digital Learning) — custodian of the survey requirements register",
           "Reviewed By": "[PENDING]",
           "Approved By": "[PENDING]",
-          "Distribution": "Cycle Motion leadership (Fred & Wilma Flintstone), Order & Supply Chain team, solution architecture advisor, shortlisted vendors",
-          "Path 1 (Datapel/Ostendo, MYOB-native)": "✅ Lowest risk/TCO ✅ MYOB-native ✅ Fast value",
-          "Path 2 (Unleashed/Cin7 hub)": "✅ Single hub solves all three problems ✅ Scales",
-          "Path 4 (MYOB Acumatica)": "✅ MYOB-family platform upgrade ✅ Built-in WMS/mfg",
-          "Indicative 3-yr TCO": "**~A$55k–135k**"
+          "Distribution": "Project Team, Steering Committee, Digital & IT, Education Committee"
         },
         "reqIds": [
+          "BR-001",
+          "BR-007",
+          "BR-004",
+          "INT-001",
+          "INT-009",
+          "BR-002",
+          "BR-005",
           "BR-006",
+          "NFR-U-001",
+          "NFR-U-002",
+          "BR-003",
+          "BR-008",
+          "FR-001",
+          "FR-002",
+          "FR-003",
+          "FR-004",
+          "FR-005",
+          "FR-006",
+          "FR-007",
+          "FR-008",
+          "FR-009",
+          "NFR-P-002",
+          "FR-010",
+          "FR-011",
+          "FR-012",
+          "FR-019",
+          "FR-013",
+          "FR-014",
+          "INT-006",
+          "FR-015",
+          "DR-008",
+          "NFR-I-002",
+          "FR-016",
+          "NFR-C-002",
+          "FR-017",
+          "NFR-A-001",
+          "NFR-C-001",
+          "FR-018",
+          "INT-005",
+          "DR-004",
+          "FR-020",
+          "DR-006",
+          "FR-021",
+          "FR-022",
+          "NFR-P-001",
+          "NFR-A-002",
+          "NFR-S-001",
+          "NFR-SEC-001",
+          "NFR-SEC-003",
+          "NFR-SEC-002",
+          "DR-003",
+          "DR-005",
+          "NFR-C-003",
+          "NFR-M-001",
+          "NFR-M-002",
+          "NFR-I-001",
+          "DR-007",
+          "INT-002",
+          "INT-003",
+          "INT-004",
+          "INT-007",
+          "INT-008",
+          "DR-001",
+          "DR-002"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 2
+        }
+      },
+      "ARC-001-RISK-v1.0": {
+        "type": "RISK",
+        "project": "001-lt-ecosystem",
+        "path": "projects/001-lt-ecosystem/ARC-001-RISK-v1.0.md",
+        "title": "Risk Register: Learning & Teaching Baseline Strategy",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-07-27",
+        "lastModified": "2026-07-27",
+        "version": "1.0",
+        "owner": "Rhonda Bell, Project Manager — L&T Baseline Strategy",
+        "classification": "OFFICIAL-SENSITIVE",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-RISK-v1.0",
+          "Document Type": "Risk Register (HM Treasury Orange Book 2023)",
+          "Project": "Learning & Teaching Baseline Strategy (Project 001)",
+          "Classification": "OFFICIAL-SENSITIVE",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-27",
+          "Last Modified": "2026-07-27",
+          "Review Cycle": "Monthly (Critical/High), Quarterly (Medium/Low)",
+          "Next Review Date": "2026-08-27",
+          "Owner": "Rhonda Bell, Project Manager — L&T Baseline Strategy",
+          "Reviewed By": "[PENDING] — Prof. Otis Hammond, Executive Sponsor",
+          "Approved By": "[PENDING] — Steering Committee",
+          "Distribution": "Steering Committee, Project Team, Digital & IT, Privacy & Records, Cybersecurity",
+          "Total risks identified": "29",
+          "Critical (20–25)": "0 residual (5 inherent)",
+          "High (13–19)": "5 residual (9 inherent)",
+          "Medium (6–12)": "23 residual (15 inherent)",
+          "Low (1–5)": "1 residual (0 inherent)",
+          "Total inherent score": "414",
+          "Total residual score": "281",
+          "Overall risk reduction": "32%",
+          "Risks exceeding provisional appetite": "5",
+          "Risks with named owner": "29 of 29 (100%)",
+          "Likelihood": "3 — Possible",
+          "Impact": "4 — Major",
+          "Inherent Risk Score": "**16** (High)",
+          "Residual Risk Score": "**12** (Medium)",
+          "Tolerate": "2",
+          "Treat": "27",
+          "Transfer": "0",
+          "Terminate": "0",
+          "A. Governance and Leadership": "✅",
+          "B. Integration": "✅",
+          "C. Collaboration": "✅",
+          "D. Risk Management Processes": "✅",
+          "E. Continual Improvement": "⚠️ Partial",
+          "Risk appetite": "⚠️ **Provisional only**",
+          "Risk culture": "⚠️ Partial",
+          "Risk assessment": "✅",
+          "Risk response": "✅",
+          "L=5": "5",
+          "L=4": "4",
+          "L=3": "3",
+          "L=2": "2",
+          "L=1": "1"
+        },
+        "reqIds": [
+          "INT-005",
+          "BR-002",
+          "NFR-P-001",
+          "INT-001",
+          "INT-002",
+          "DR-005",
+          "INT-003",
+          "NFR-A-001",
+          "NFR-SEC-001",
+          "NFR-I-002",
+          "NFR-U-001"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 1
+        }
+      },
+      "ARC-001-STKE-v1.0": {
+        "type": "STKE",
+        "project": "001-lt-ecosystem",
+        "path": "projects/001-lt-ecosystem/ARC-001-STKE-v1.0.md",
+        "title": "Stakeholder Drivers & Goals Analysis: Learning & Teaching Baseline Strategy",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-07-26",
+        "lastModified": "2026-07-26",
+        "version": "1.0",
+        "owner": "Rhonda Bell, Project Manager — L&T Baseline Strategy",
+        "classification": "OFFICIAL-SENSITIVE",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-STKE-v1.0",
+          "Document Type": "Stakeholder Drivers & Goals Analysis",
+          "Project": "001-lt-ecosystem — Learning & Teaching Baseline Strategy",
+          "Classification": "OFFICIAL-SENSITIVE",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-26",
+          "Last Modified": "2026-07-26",
+          "Review Cycle": "Fortnightly during engagement",
+          "Next Review Date": "2026-08-09",
+          "Owner": "Rhonda Bell, Project Manager — L&T Baseline Strategy",
+          "Reviewed By": "Prof. Otis Hammond, Deputy Vice-Chancellor (Education) — Executive Sponsor",
+          "Approved By": "PENDING — Prof. Otis Hammond, Executive Sponsor",
+          "Distribution": "Steering Committee; Project Team; Digital & IT leadership. Not for general circulation."
+        },
+        "reqIds": [],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 2
+        }
+      },
+      "ARC-001-ADR-001-v1.0": {
+        "type": "ADR",
+        "project": "001-lt-ecosystem",
+        "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-001-v1.0.md",
+        "title": "ADR-001: Integration Mediation Approach for the L&T Ecosystem",
+        "status": "**Proposed**",
+        "severity": "MEDIUM",
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
+        "version": "1.0",
+        "owner": "Sam Okafor, Integration Architect",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-001-ADR-001-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "ADR Number": "ADR-001",
+          "Project": "Learning & Teaching Baseline Strategy (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "**Proposed**",
+          "Version": "1.0",
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Escalation Level": "Department",
+          "Governance Forum": "RIFF Review → Education Committee → Operations Committee",
+          "Owner": "Sam Okafor, Integration Architect",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team; Digital & IT; Learning Technologies; Student Administration; Steering Committee",
+          "Candidate successor": "ADR-003 (not yet raised)",
+          "Consumed by": "Project 002 platform decision"
+        },
+        "reqIds": [
+          "INT-001",
+          "INT-009",
+          "BR-004",
+          "DR-003",
+          "NFR-C-001",
+          "NFR-SEC-002",
+          "NFR-P-001",
+          "NFR-I-001",
+          "NFR-M-001",
+          "NFR-M-002",
+          "NFR-SEC-003",
+          "NFR-A-001",
+          "BR-002",
+          "BR-003",
+          "BR-007",
+          "DR-001",
+          "DR-002",
+          "NFR-C-003",
+          "NFR-I-002",
+          "INT-005",
+          "DR-004",
+          "INT-002",
+          "DR-005",
+          "NFR-C-002",
+          "INT-004"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-ANAL-v1.0": {
+        "type": "ANAL",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/ARC-002-ANAL-v1.0.md",
+        "title": "Architecture Governance Analysis Report",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
+        "version": "1.0",
+        "owner": "Rhonda Bell, Project Manager",
+        "classification": "OFFICIAL-SENSITIVE",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-ANAL-v1.0",
+          "Document Type": "Governance Analysis Report",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
+          "Classification": "OFFICIAL-SENSITIVE",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Owner": "Rhonda Bell, Project Manager",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team; Steering Committee; Evaluation Panel",
+          "Total findings": "**15**",
+          "Total": "**62**",
+          "Privacy Act 1988 / APPs": "⚠️ Assessment pending",
+          "APP 8 cross-border": "⚠️ Assessment pending",
+          "ASD Essential Eight": "⚠️ Gap acknowledged",
+          "NDB scheme": "✅ Contractually addressed",
+          "WCAG 2.2 AA": "✅ Gated",
+          "Requirements quality": "**92%**",
+          "Principles compliance": "**100%**",
+          "Traceability": "**94%**",
+          "Stakeholder alignment": "**78%**",
+          "Risk management": "**88%**",
+          "Procurement readiness": "**72%**",
+          "Business case": "**N/A — blocked**",
+          "Design / test coverage": "**N/A — phase**",
+          "Compliance": "**80%**"
+        },
+        "reqIds": [
+          "BR-002",
+          "NFR-A-003",
+          "BR-004",
+          "INT-004",
+          "BR-005",
+          "BR-001",
+          "NFR-U-002",
+          "FR-016",
+          "DR-004",
+          "DR-002",
+          "DR-003",
+          "NFR-C-001",
+          "DR-006",
+          "NFR-I-002",
+          "NFR-I-001",
+          "INT-001",
+          "NFR-M-002",
+          "NFR-C-002",
+          "NFR-A-001",
+          "BR-006",
+          "NFR-SEC-001",
+          "BR-008",
+          "NFR-M-001",
+          "DR-001",
+          "DR-007",
+          "DR-005",
+          "NFR-C-005"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-EVAL-v1.0": {
+        "type": "EVAL",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/ARC-002-EVAL-v1.0.md",
+        "title": "Vendor Evaluation Criteria: Lecture Capture Platform Consolidation",
+        "status": "DRAFT — unsigned",
+        "severity": "LOW",
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
+        "version": "1.0",
+        "owner": "Grace Tanaka, Procurement & Vendor Manager (STKE RACI: Accountable for evaluation criteria)",
+        "classification": "OFFICIAL-SENSITIVE",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "0": "Absent",
+          "1": "Weak",
+          "2": "Partial",
+          "3": "Adequate",
+          "4": "Strong",
+          "Document ID": "ARC-002-EVAL-v1.0",
+          "Document Type": "Vendor Evaluation Framework",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
+          "Classification": "OFFICIAL-SENSITIVE",
+          "Status": "DRAFT — unsigned",
+          "Version": "1.0",
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Owner": "Grace Tanaka, Procurement & Vendor Manager (STKE RACI: Accountable for evaluation criteria)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Evaluation Panel; Steering Committee; Procurement. **Not for supplier disclosure until formally issued.**",
+          "A. Echo360": "Incumbent capture platform, retained and consolidated onto",
+          "B. Panopto": "Specialist capture platform, replacing the incumbent",
+          "C. Microsoft (Teams / Stream)": "Consolidate onto already-licensed capability",
+          "D. Retain both, bounded": "Declare a primary platform per capability with a documented boundary; no replacement",
+          "MQ-1": "University SSO with MFA enforced; **no local accounts** and no platform-native passwords, including for room devices and service identities",
+          "MQ-2": "WCAG 2.2 Level AA conformance for the platform **as it will be configured** — see qualification below",
+          "MQ-3": "Bulk export of recordings **with captions and metadata** in open, documented formats, at any time and on termination, without additional fee",
+          "MQ-4": "Australian data residency for recordings, transcripts and derived analytics — **or** a written statement of storage *and processing* locations sufficient to support an APP 8 assessment",
+          "MQ-5": "Submission complete, on time, and in the required format, with the cost envelope submitted separately",
+          "A. Capture & Delivery Capability": "12",
+          "B. Accessibility & Captioning": "4",
+          "C. Integration & Provisioning": "10",
+          "D. Privacy, Security & Compliance": "12",
+          "E. Portability, Migration & Exit": "8",
+          "F. Operability & Support": "10",
+          "H. Commercial & Cost": "—",
+          "I. Supplier & Service": "—",
+          "TOTAL": "|",
+          "A.1 Timetable-driven automatic capture": "5",
+          "A.2 Publication to the unit site within 4 hours": "3",
+          "A.3 Academic workflow effort": "3",
+          "A.4 Failure detection and recovery": "2",
+          "A.5 Live delivery with recording": "2",
+          "A.6 Student playback and engagement data": "1",
+          "B.1 Caption coverage and timeliness": "1",
+          "B.2 Caption accuracy on discipline vocabulary": "3",
+          "B.3 Correction workflow": "1",
+          "C.1 Event-driven provisioning": "5",
+          "C.2 LMS integration depth": "4",
+          "C.3 Timetable feed": "3",
+          "C.4 Identity and canonical model fit": "1",
+          "C.5 Room device management": "1",
+          "D.1 Data residency and APP 8 position": "5",
+          "D.2 Authentication and privileged access": "4",
+          "D.3 Encryption": "2",
+          "D.4 Audit logging": "2",
+          "D.5 Vulnerability and patch management": "2",
+          "D.6 Breach notification and E8 evidence": "1",
+          "D.7 Student notification support": "1",
+          "E.1 Export completeness and cost": "4",
+          "E.2 Archive ingestion": "3",
+          "E.3 Retention and disposal": "3",
+          "E.4 Reconciliation support": "2",
+          "F.1 Availability commitment": "3",
+          "F.2 Capture continuity": "3",
+          "F.3 Observability": "2",
+          "F.4 Performance": "2",
+          "F.5 Capture policy configuration": "2",
+          "F.6 Documentation and supportability": "1",
+          "I.1 Higher-education track record": "3",
+          "I.2 Viability and roadmap": "2",
+          "I.3 Implementation and transition support": "2",
+          "I.4 Contractual posture": "1",
+          "G.1 Multi-camera and high-fidelity audio": "5",
+          "G.2 Integration through the core": "4",
+          "G.3 Support and sustainability": "3",
+          "H.1 Five-year whole-of-life cost": "8",
+          "H.2 Cost shape and predictability": "4",
+          "H.3 Transparency and lock-in": "3"
+        },
+        "reqIds": [
+          "BR-004",
+          "BR-001",
+          "NFR-SEC-001",
+          "NFR-C-002",
+          "NFR-I-002",
+          "NFR-C-001",
+          "DR-006",
+          "FR-001",
+          "FR-005",
+          "FR-008",
+          "FR-010",
+          "FR-011",
+          "FR-018",
+          "NFR-U-001",
+          "NFR-U-002",
+          "FR-002",
+          "FR-003",
+          "FR-004",
+          "FR-006",
+          "FR-007",
+          "NFR-U-003",
+          "FR-016",
+          "INT-001",
+          "INT-006",
+          "NFR-I-001",
+          "DR-002",
+          "DR-004",
+          "INT-003",
+          "INT-002",
+          "NFR-SEC-002",
+          "NFR-C-003",
+          "DR-001",
+          "DR-003",
+          "FR-013",
+          "NFR-SEC-003",
+          "NFR-SEC-004",
+          "NFR-C-005",
+          "NFR-C-004",
+          "FR-014",
+          "FR-015",
+          "FR-017",
+          "INT-007",
+          "DR-005",
+          "DR-007",
+          "BR-007",
+          "NFR-A-001",
+          "NFR-P-001",
+          "NFR-P-002",
+          "NFR-M-001",
+          "NFR-M-002",
+          "NFR-S-001",
+          "FR-012",
+          "BR-006",
+          "NFR-A-002",
+          "FR-009",
+          "BR-005",
+          "BR-003",
+          "BR-008",
+          "INT-005"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-REQ-v1.0": {
+        "type": "REQ",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/ARC-002-REQ-v1.0.md",
+        "title": "Project Requirements: Lecture Capture Platform Consolidation",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-07-27",
+        "lastModified": "2026-07-27",
+        "version": "1.0",
+        "owner": "Dr. Benny Moog, Director Learning Technologies — capability evidence owner",
+        "classification": "OFFICIAL-SENSITIVE",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-REQ-v1.0",
+          "Document Type": "Business and Technical Requirements",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
+          "Classification": "OFFICIAL-SENSITIVE",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-27",
+          "Last Modified": "2026-07-27",
+          "Review Date": "2026-08-26",
+          "Owner": "Dr. Benny Moog, Director Learning Technologies — capability evidence owner",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Steering Committee, Procurement, Digital & IT, Education Committee",
+          "Total": "**Pending baselines**",
+          "APP": "Australian Privacy Principle — the 13 principles of the Privacy Act 1988; APP 8 governs cross-border disclosure",
+          "Capture-equipped room": "A teaching space with installed capture appliance capability",
+          "Essential Eight (E8)": "ASD mitigation strategies with maturity levels ML0 to ML3; the university targets ML2 by end 2027",
+          "Learning Capture": "Category 4 of the capability taxonomy — systems enabling capture of course delivery for streaming or later consumption [CT-C1]",
+          "Learning Delivery": "Category 3 of the capability taxonomy — systems enabling delivery of course resources to students",
+          "LTI": "Learning Tools Interoperability — the standard for integrating tools with an LMS",
+          "MoSCoW": "Must / Should / Could / Won't prioritisation, assigned to register requirements by the project team with Education Committee [RR-C10]",
+          "NDB": "Notifiable Data Breach scheme under the Privacy Act 1988",
+          "RIFF Review": "Review of Innovation, Fit & Function — the university's solution governance gate [SGP-C1]",
+          "Unit": "A single subject of study; the LMS unit site is the student entry point",
+          "WCAG 2.2 AA": "Web Content Accessibility Guidelines conformance level required by REQ-029"
+        },
+        "reqIds": [
+          "INT-006",
           "BR-001",
           "BR-002",
           "BR-003",
           "BR-004",
           "BR-005",
+          "BR-006",
           "BR-007",
           "BR-008",
-          "BR-009",
-          "BR-010",
-          "FR-001",
-          "INT-001",
+          "FR-012",
+          "NFR-A-002",
+          "FR-004",
           "INT-002",
+          "DR-003",
+          "NFR-P-002",
+          "DR-006",
+          "FR-001",
+          "FR-016",
+          "FR-002",
           "INT-003",
+          "FR-006",
+          "FR-003",
+          "INT-004",
+          "NFR-M-001",
+          "FR-005",
+          "NFR-U-003",
+          "NFR-C-002",
+          "NFR-I-002",
+          "FR-007",
+          "FR-008",
+          "FR-009",
+          "FR-010",
+          "FR-011",
+          "INT-005",
+          "FR-013",
+          "DR-001",
+          "FR-014",
+          "DR-005",
+          "NFR-C-003",
+          "FR-015",
+          "INT-007",
+          "INT-001",
+          "FR-017",
+          "NFR-A-001",
+          "FR-018",
+          "NFR-P-001",
+          "NFR-A-003",
+          "NFR-S-001",
+          "NFR-SEC-001",
+          "NFR-SEC-002",
+          "NFR-SEC-003",
+          "NFR-SEC-004",
+          "NFR-C-001",
+          "NFR-C-004",
+          "NFR-C-005",
+          "NFR-U-001",
+          "NFR-U-002",
+          "NFR-M-002",
+          "NFR-I-001",
+          "DR-002",
+          "DR-004",
+          "DR-007"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 1
+        }
+      },
+      "ARC-002-RISK-v1.0": {
+        "type": "RISK",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/ARC-002-RISK-v1.0.md",
+        "title": "Risk Register",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-07-27",
+        "lastModified": "2026-07-27",
+        "version": "1.0",
+        "owner": "Rhonda Bell, Project Manager — Risk Register Owner",
+        "classification": "OFFICIAL-SENSITIVE",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-RISK-v1.0",
+          "Document Type": "Risk Register (HM Treasury Orange Book 2023)",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
+          "Classification": "OFFICIAL-SENSITIVE",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-27",
+          "Last Modified": "2026-07-27",
+          "Review Cycle": "Monthly (Medium risks); fortnightly during procurement and transition",
+          "Next Review Date": "2026-08-27",
+          "Owner": "Rhonda Bell, Project Manager — Risk Register Owner",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Steering Committee; Project Team; Procurement; Digital & IT leadership; Privacy & Records",
+          "TOTAL SCORE": "266",
+          "STRATEGIC": "5",
+          "OPERATIONAL": "5",
+          "FINANCIAL": "2",
+          "COMPLIANCE": "5",
+          "REPUTATIONAL": "2",
+          "TECHNOLOGY": "3",
+          "Likelihood": "1 - Rare",
+          "Impact": "4 - Major",
+          "Inherent Risk Score": "**8** (Medium)",
+          "Residual Risk Score": "**4** (Low)",
+          "TOTAL": "22",
+          "TOLERATE": "4",
+          "TREAT": "17",
+          "TRANSFER": "1",
+          "TERMINATE": "0",
+          "Critical (20-25)": "Weekly",
+          "High (13-19)": "Fortnightly",
+          "Medium (6-12)": "Monthly",
+          "Low (1-5)": "Quarterly",
+          "Appetite breaches": "Fortnightly regardless of level",
+          "Risk Register Owner": "Rhonda Bell, Project Manager",
+          "Senior Responsible Owner": "Prof. Otis Hammond, DVC (Education)",
+          "Technology Risk Owner": "Cassandra Rhodes, CIO",
+          "Compliance Risk Owner": "Eleanor Frame, Privacy & Records Officer",
+          "Steering Committee Chair": "Prof. Otis Hammond"
+        },
+        "reqIds": [
+          "NFR-C-001",
+          "BR-004",
+          "BR-002",
+          "BR-001",
+          "BR-006",
+          "BR-005",
+          "FR-009",
+          "BR-003",
+          "BR-008",
+          "NFR-M-002",
+          "INT-001",
+          "FR-016",
+          "NFR-I-001",
+          "NFR-I-002",
+          "DR-006",
+          "NFR-S-001",
+          "BR-007",
+          "DR-005",
+          "FR-014",
+          "NFR-C-002",
+          "NFR-U-003",
+          "FR-006",
+          "NFR-SEC-002",
+          "NFR-SEC-004",
+          "NFR-C-003",
+          "NFR-C-005",
+          "NFR-SEC-001",
+          "NFR-SEC-003",
+          "FR-013",
+          "FR-012",
+          "FR-015",
+          "INT-007",
+          "DR-007"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 1
+        }
+      },
+      "ARC-002-SOW-v1.0": {
+        "type": "SOW",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/ARC-002-SOW-v1.0.md",
+        "title": "Statement of Work (SOW): Lecture Capture Platform Consolidation",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
+        "version": "1.0",
+        "owner": "Grace Tanaka, Procurement & Vendor Manager",
+        "classification": "OFFICIAL-SENSITIVE — pre-issue; becomes PUBLIC on release to suppliers",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-SOW-v1.0",
+          "Document Type": "Statement of Work / Request for Proposal",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
+          "Classification": "OFFICIAL-SENSITIVE — pre-issue; becomes PUBLIC on release to suppliers",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Owner": "Grace Tanaka, Procurement & Vendor Manager",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Evaluation Panel; Steering Committee; Procurement; Legal. Released to suppliers on issue.",
+          "Capability sought": "Automatic capture, processing, captioning, publication and lifecycle management of recorded teaching",
+          "Scale": "All capture-equipped teaching spaces across the University; all enrolled students and teaching staff. **Room count and archive volume to be confirmed in the Supplier Information Pack at issue**",
+          "Deployment target": "Pilot Semester 1 2027; full production before Semester 2 2027",
+          "Cutover window": "July 2027 inter-semester break. **No cutover activity in a teaching period will be accepted**",
+          "Contract shape": "Hybrid — fixed subscription, fixed-price implementation, time-and-materials for agreed change (Section 9.1)",
+          "Term": "Initial term with at least one renewal modelled; five-year whole-of-life basis",
+          "MQ-1": "University SSO with MFA enforced. **No local accounts, no platform-native passwords**, including for room devices and service identities (NFR-SEC-001, REQ-031)",
+          "MQ-2": "WCAG 2.2 Level AA conformance for the platform as configured (NFR-C-002, REQ-029)",
+          "MQ-3": "Bulk export of recordings **with captions and metadata** in open, documented formats, at any time and on termination, **without additional fee** (NFR-I-002, REQ-034)",
+          "MQ-4": "Australian data residency for recordings, transcripts and derived analytics — or a written statement of storage **and processing** locations sufficient for the University to complete a cross-border disclosure assessment (NFR-C-001, REQ-030)",
+          "Pilot — Semester 1 2027": "17 weeks",
+          "Production — Semester 2 2027": "—",
+          "Proposals due": "**2026-09-07, 17:00 AEST**",
+          "APP": "Australian Privacy Principle under the Privacy Act 1988",
+          "Capture-equipped room": "A teaching space with installed capture appliance capability",
+          "Essential Eight": "ASD cyber mitigation strategies with maturity levels ML0–ML3",
+          "LTI 1.3 / LTI Advantage": "Learning Tools Interoperability standard for LMS integration",
+          "RIFF Review": "Review of Innovation, Fit & Function — the University's solution governance gate",
+          "Teaching period": "Weeks in which timetabled teaching occurs, excluding inter-semester breaks",
+          "Unit": "A single subject of study; the Blackboard Ultra unit site is the student entry point",
+          "WCAG 2.2 AA": "Web Content Accessibility Guidelines, conformance level AA"
+        },
+        "reqIds": [
+          "BR-004",
+          "BR-001",
+          "FR-001",
+          "FR-002",
+          "FR-006",
+          "INT-003",
+          "FR-008",
+          "FR-016",
+          "INT-001",
+          "INT-004",
+          "INT-002",
+          "INT-006",
+          "NFR-SEC-004",
+          "FR-015",
+          "INT-007",
+          "BR-007",
+          "FR-014",
+          "DR-005",
+          "FR-011",
+          "INT-005",
+          "BR-006",
+          "NFR-M-002",
+          "NFR-A-001",
+          "FR-009",
+          "NFR-SEC-001",
+          "NFR-C-002",
+          "NFR-I-002",
+          "NFR-C-001",
+          "BR-003",
+          "BR-008",
+          "FR-003",
+          "FR-004",
+          "FR-005",
+          "FR-007",
+          "FR-010",
+          "FR-012",
+          "FR-013",
+          "FR-017",
+          "FR-018",
+          "NFR-SEC-002",
+          "NFR-SEC-003",
+          "NFR-C-003",
+          "NFR-C-004",
+          "NFR-C-005",
+          "NFR-A-002",
+          "NFR-A-003",
+          "NFR-P-001",
+          "NFR-P-002",
+          "NFR-S-001",
+          "NFR-M-001",
+          "NFR-U-001",
+          "NFR-U-002",
+          "NFR-U-003",
+          "NFR-I-001",
+          "DR-001",
+          "DR-002",
+          "DR-003",
+          "DR-004",
+          "DR-006",
+          "DR-007"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-STKE-v1.0": {
+        "type": "STKE",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/ARC-002-STKE-v1.0.md",
+        "title": "Stakeholder Drivers & Goals Analysis: Lecture Capture Platform Consolidation",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-07-27",
+        "lastModified": "2026-07-27",
+        "version": "1.0",
+        "owner": "Rhonda Bell, Project Manager — L&T Baseline Strategy",
+        "classification": "OFFICIAL-SENSITIVE",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-STKE-v1.0",
+          "Document Type": "Stakeholder Drivers & Goals Analysis",
+          "Project": "002-lecture-capture — Lecture Capture Platform Consolidation",
+          "Classification": "OFFICIAL-SENSITIVE",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-27",
+          "Last Modified": "2026-07-27",
+          "Review Cycle": "Monthly during procurement; fortnightly during transition",
+          "Next Review Date": "2026-08-27",
+          "Owner": "Rhonda Bell, Project Manager — L&T Baseline Strategy",
+          "Reviewed By": "Grace Tanaka, Procurement & Vendor Manager; Dr. Benny Moog, Director Learning Technologies",
+          "Approved By": "PENDING — Prof. Otis Hammond, Deputy Vice-Chancellor (Education), Executive Sponsor",
+          "Distribution": "Steering Committee; Project Team; Procurement; Digital & IT leadership. **Not for vendor disclosure.**"
+        },
+        "reqIds": [],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 1
+        }
+      },
+      "ARC-002-TRAC-v1.0": {
+        "type": "TRAC",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/ARC-002-TRAC-v1.0.md",
+        "title": "Requirements Traceability Matrix: Lecture Capture Platform Consolidation",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
+        "version": "1.0",
+        "owner": "Rhonda Bell, Project Manager",
+        "classification": "OFFICIAL-SENSITIVE",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-TRAC-v1.0",
+          "Document Type": "Requirements Traceability Matrix",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
+          "Classification": "OFFICIAL-SENSITIVE",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Owner": "Rhonda Bell, Project Manager",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team; Evaluation Panel; Steering Committee",
+          "BR-002": "Decision endorsed through governance by 9 October 2026",
+          "INT-004": "Identity provider SSO with MFA",
+          "BR-005": "Bounded, funded discipline exception",
+          "NFR-A-003": "Graceful degradation — room-level failure isolation, audio-only fallback, retry with backoff, playback available when capture is degraded",
+          "TOTAL": "**100**",
+          "Baselines slip past 2026-08-28": "BR-003 unassessable → EVAL Category H cannot be scored → risk R-006 materialises → five other risk assessments become unreliable"
+        },
+        "reqIds": [
+          "BR-004",
+          "BR-001",
+          "BR-002",
+          "BR-003",
+          "BR-005",
+          "BR-006",
+          "BR-007",
+          "BR-008",
+          "FR-001",
           "FR-002",
           "FR-003",
-          "NFR-P-001",
           "FR-004",
           "FR-005",
           "FR-006",
@@ -2345,979 +3237,366 @@
           "FR-009",
           "FR-010",
           "FR-011",
-          "INT-004",
           "FR-012",
           "FR-013",
           "FR-014",
           "FR-015",
           "FR-016",
-          "NFR-SEC-002",
+          "FR-017",
+          "FR-018",
+          "NFR-P-001",
           "NFR-P-002",
           "NFR-A-001",
           "NFR-A-002",
           "NFR-A-003",
           "NFR-S-001",
           "NFR-SEC-001",
+          "NFR-SEC-002",
           "NFR-SEC-003",
           "NFR-SEC-004",
-          "NFR-SEC-005",
           "NFR-C-001",
           "NFR-C-002",
           "NFR-C-003",
+          "NFR-C-004",
+          "NFR-C-005",
+          "NFR-U-001",
+          "NFR-U-002",
+          "NFR-U-003",
           "NFR-M-001",
           "NFR-M-002",
-          "NFR-M-003",
           "NFR-I-001",
           "NFR-I-002",
-          "INT-005"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 9
-        }
-      },
-      "ARC-001-STKE-v1.0": {
-        "type": "STKE",
-        "project": "001-inventory-warehouse-uplift",
-        "path": "projects/001-inventory-warehouse-uplift/ARC-001-STKE-v1.0.md",
-        "title": "Stakeholder Drivers & Goals Analysis: Inventory & Warehouse Management Uplift",
-        "status": "DRAFT",
-        "severity": "LOW",
-        "createdDate": "2026-06-29",
-        "lastModified": "2026-06-29",
-        "version": "1.0",
-        "owner": "Fred Flintstone, CEO — Cycle Motion (Executive Sponsor)",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": null,
-        "controlFields": {
-          "Document ID": "ARC-001-STKE-v1.0",
-          "Document Type": "Stakeholder Drivers & Goals Analysis",
-          "Project": "Inventory & Warehouse Management Uplift (Project 001)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT",
-          "Version": "1.0",
-          "Created Date": "2026-06-29",
-          "Last Modified": "2026-06-29",
-          "Review Cycle": "Quarterly",
-          "Next Review Date": "2026-09-29",
-          "Owner": "Fred Flintstone, CEO — Cycle Motion (Executive Sponsor)",
-          "Reviewed By": "PENDING",
-          "Approved By": "PENDING",
-          "Distribution": "Cycle Motion leadership (Fred & Wilma Flintstone), Order & Supply Chain team, solution architecture advisor"
-        },
-        "reqIds": [],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 10
-        }
-      },
-      "ARC-001-ADR-001-v1.0": {
-        "type": "ADR",
-        "project": "001-inventory-warehouse-uplift",
-        "path": "projects/001-inventory-warehouse-uplift/decisions/ARC-001-ADR-001-v1.0.md",
-        "title": "Architecture Decision Record: Retain MYOB AccountRight as the Accounting System of Record",
-        "status": "DRAFT",
-        "severity": "MEDIUM",
-        "createdDate": "2026-06-30",
-        "lastModified": "2026-06-30",
-        "version": "1.0",
-        "owner": "Fred Flintstone (CEO, Cycle Motion) — Decision Authority",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": "decisions",
-        "controlFields": {
-          "Document ID": "ARC-001-ADR-001-v1.0",
-          "Document Type": "Architecture Decision Record",
-          "Project": "Inventory & Warehouse Management Uplift (Project 001)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT",
-          "Version": "1.0",
-          "Created Date": "2026-06-30",
-          "Last Modified": "2026-06-30",
-          "Review Date": "2026-12-30",
-          "Owner": "Fred Flintstone (CEO, Cycle Motion) — Decision Authority",
-          "Reviewed By": "[PENDING]",
-          "Approved By": "[PENDING]",
-          "Distribution": "Cycle Motion leadership (Fred & Wilma Flintstone), Order & Supply Chain team, solution architecture advisor, shortlisted vendors",
-          "Phase 1: Confirm": "Confirm MYOB edition; communicate constraint to vendors",
-          "Phase 2: Decide inventory master": "ADR-002 (Path 1 vs Path 2)",
-          "Phase 3: Integrate": "Implement MYOB-compatible inventory/WMS; idempotent sync",
-          "Phase 4: Validate": "Pilot, reconcile, cut over in phases",
-          "Decision Authority (CEO)": "Fred Flintstone",
-          "Operational Sponsor (COO)": "Wilma Flintstone",
-          "Solution Architecture Advisor": "Velma Dinkley"
-        },
-        "reqIds": [
-          "BR-006",
-          "BR-005",
-          "BR-010",
-          "INT-001",
-          "NFR-I-001",
-          "NFR-I-002",
-          "NFR-P-001",
-          "NFR-C-001",
-          "NFR-SEC-005",
-          "BR-007",
-          "BR-001",
-          "BR-009",
-          "FR-004",
-          "FR-015",
-          "NFR-M-002"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 9
-        }
-      },
-      "ARC-001-RSCH-v1.0": {
-        "type": "RSCH",
-        "project": "001-inventory-warehouse-uplift",
-        "path": "projects/001-inventory-warehouse-uplift/research/ARC-001-RSCH-v1.0.md",
-        "title": "Technology and Service Research: Inventory & Warehouse Management Uplift",
-        "status": "DRAFT",
-        "severity": "LOW",
-        "createdDate": "2026-06-29",
-        "lastModified": "2026-06-30",
-        "version": "1.0",
-        "owner": "Fred Flintstone, CEO — Cycle Motion (Executive Sponsor)",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": "research",
-        "controlFields": {
-          "Document ID": "ARC-001-RSCH-v1.2",
-          "Document Type": "Technology & Service Research Findings",
-          "Project": "Inventory & Warehouse Management Uplift (Project 001)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT",
-          "Version": "1.2",
-          "Created Date": "2026-06-29",
-          "Last Modified": "2026-06-30",
-          "Review Cycle": "Per phase gate",
-          "Next Review Date": "2026-09-29",
-          "Owner": "Fred Flintstone, CEO — Cycle Motion (Executive Sponsor)",
-          "Reviewed By": "PENDING",
-          "Approved By": "PENDING",
-          "Distribution": "Cycle Motion leadership (Fred & Wilma Flintstone), Order & Supply Chain team, solution architecture advisor (Velma Dinkley)",
-          "BUY/ADOPT — Path 2 (Odoo hub + MYOB connector/middleware + shipping)": "4",
-          "ADOPT — Path 3 (Odoo as near-full ERP, eventually replacing MYOB)": "4+",
-          "RECOMMENDED (blended, phased)": "4",
-          "Total": "**A$43,500**",
-          "3-Year TCO (Datapel core)": "|",
-          "3-Year TCO (Cin7 Core path)": "|",
-          "3-Year TCO (Unleashed path)": "|",
-          "3-Year TCO (Odoo Enterprise hub)": "|",
-          "Fishbowl": "Proprietary inventory/mfg",
-          "Katana MRP": "Proprietary MRP",
-          "inFlow Inventory": "Proprietary inventory",
-          "Linnworks": "Proprietary multichannel",
-          "SkuVault": "Proprietary WMS",
-          "Brightpearl": "Proprietary retail ops",
-          "Lightspeed Retail (X-Series)": "Proprietary POS",
-          "Square for Retail": "Proprietary POS",
-          "SalesIn": "Proprietary sales-order app",
-          "Spotlight": "Reporting/analytics",
-          "Tryton": "Open-source ERP",
-          "Apache OFBiz": "Open-source ERP framework",
-          "Indicative 3-Year TCO": "**~A$45,000–57,000**"
-        },
-        "reqIds": [],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 9
-        }
-      },
-      "ARC-002-REQ-v1.0": {
-        "type": "REQ",
-        "project": "002-crm-customer-360",
-        "path": "projects/002-crm-customer-360/ARC-002-REQ-v1.0.md",
-        "title": "Project Requirements: CRM & Customer 360",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": "2026-07-06",
-        "version": "1.0",
-        "owner": "Wilma Flintstone (COO) — Operational Sponsor",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": null,
-        "controlFields": {
-          "Document ID": "ARC-002-REQ-v1.0",
-          "Document Type": "Business and Technical Requirements",
-          "Project": "CRM & Customer 360 (Project 002)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Last Modified": "2026-07-06",
-          "Review Date": "2026-08-06",
-          "Owner": "Wilma Flintstone (COO) — Operational Sponsor",
-          "Reviewed By": "[PENDING]",
-          "Approved By": "[PENDING]",
-          "Distribution": "Executive team, channel leads, shortlisted vendors, solution architecture advisor"
-        },
-        "reqIds": [
-          "BR-001",
-          "BR-002",
-          "BR-003",
-          "BR-004",
-          "BR-005",
-          "BR-006",
-          "BR-007",
-          "BR-008",
-          "BR-009",
-          "FR-001",
-          "FR-002",
-          "FR-003",
-          "FR-004",
-          "FR-005",
-          "FR-006",
-          "FR-007",
-          "FR-008",
-          "FR-009",
-          "FR-010",
-          "NFR-P-001",
-          "NFR-P-002",
-          "NFR-A-001",
-          "NFR-S-001",
-          "NFR-S-002",
-          "NFR-D-001",
-          "NFR-C-001",
-          "NFR-C-002",
-          "NFR-I-001",
           "INT-001",
           "INT-002",
           "INT-003",
           "INT-004",
-          "INT-005"
+          "INT-005",
+          "INT-006",
+          "INT-007",
+          "DR-001",
+          "DR-002",
+          "DR-003",
+          "DR-004",
+          "DR-005",
+          "DR-006",
+          "DR-007"
         ],
         "health": {
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 0
         }
       },
-      "ARC-002-STKE-v1.0": {
-        "type": "STKE",
-        "project": "002-crm-customer-360",
-        "path": "projects/002-crm-customer-360/ARC-002-STKE-v1.0.md",
-        "title": "Stakeholder Drivers & Goals Analysis: CRM & Customer 360",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": "2026-07-06",
+      "ARC-002-DIAG-001-v1.0": {
+        "type": "DIAG",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/diagrams/ARC-002-DIAG-001-v1.0.md",
+        "title": "Architecture Diagram: System Context — Lecture Capture Platform",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
         "version": "1.0",
-        "owner": "Wilma Flintstone, COO — Operational Sponsor",
+        "owner": "Sam Okafor, Integration Architect",
         "classification": "OFFICIAL",
         "vendor": null,
-        "subdir": null,
+        "subdir": "diagrams",
         "controlFields": {
-          "Document ID": "ARC-002-STKE-v1.0",
-          "Document Type": "Stakeholder Drivers & Goals Analysis",
-          "Project": "CRM & Customer 360 (Project 002)",
+          "Document ID": "ARC-002-DIAG-001-v1.0",
+          "Document Type": "Architecture Diagram — C4 Context (Level 1)",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
           "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
+          "Status": "DRAFT",
           "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Last Modified": "2026-07-06",
-          "Review Cycle": "Quarterly",
-          "Next Review Date": "2026-10-06",
-          "Owner": "Wilma Flintstone, COO — Operational Sponsor",
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Owner": "Sam Okafor, Integration Architect",
           "Reviewed By": "[PENDING]",
           "Approved By": "[PENDING]",
-          "Distribution": "Executive team, wholesale team, retail management, digital team, solution architecture advisor"
+          "Distribution": "Project Team; Evaluation Panel; Education Committee; Steering Committee",
+          "C4 Level": "Level 1 — System Context",
+          "Format": "Mermaid `C4Context`",
+          "Layout direction": "Left-to-right (actors → system → external systems)",
+          "Audience": "Education Committee, Operations Committee, steering group, suppliers",
+          "Purpose": "Establish the system boundary and its seven integration points before a platform is selected",
+          "Student": "Person",
+          "Teaching Staff": "Person",
+          "AV and Support Staff": "Person",
+          "Lecture Capture Platform": "System (in scope)",
+          "Blackboard Ultra": "External system",
+          "Student Information System": "External system",
+          "Timetabling": "External system",
+          "Identity Provider": "External system",
+          "Institutional Data Platform": "External system",
+          "Incumbent Capture Platform": "External system"
         },
         "reqIds": [
-          "NFR-P-002"
+          "INT-001",
+          "INT-007",
+          "FR-010",
+          "NFR-U-002",
+          "FR-003",
+          "FR-005",
+          "FR-007",
+          "NFR-U-001",
+          "FR-004",
+          "NFR-M-001",
+          "INT-006",
+          "BR-001",
+          "FR-001",
+          "FR-018",
+          "INT-003",
+          "FR-016",
+          "INT-002",
+          "INT-004",
+          "NFR-SEC-001",
+          "INT-005",
+          "FR-011",
+          "FR-015",
+          "BR-007",
+          "DR-004",
+          "DR-002",
+          "FR-002"
         ],
         "health": {
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 0
         }
       },
-      "ARC-002-ADR-001-v1.0": {
-        "type": "ADR",
-        "project": "002-crm-customer-360",
-        "path": "projects/002-crm-customer-360/decisions/ARC-002-ADR-001-v1.0.md",
-        "title": "Architecture Decision Record: Single CRM Platform as the Customer Master Across B2B and B2C",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
+      "ARC-002-WARD-001-v1.0": {
+        "type": "WARD",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/wardley-maps/ARC-002-WARD-001-v1.0.md",
+        "title": "Wardley Map: Where Differentiation Actually Lives",
+        "status": "DRAFT",
         "severity": "MEDIUM",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
         "version": "1.0",
-        "owner": "Wilma Flintstone (COO) — Decision Authority (delegated by CEO)",
+        "owner": "Dr. Benny Moog, Director Learning Technologies",
         "classification": "OFFICIAL",
         "vendor": null,
-        "subdir": "decisions",
+        "subdir": "wardley-maps",
         "controlFields": {
-          "Document ID": "ARC-002-ADR-001-v1.0",
-          "Document Type": "Architecture Decision Record",
-          "Project": "CRM & Customer 360 (Project 002)",
+          "Document ID": "ARC-002-WARD-001-v1.0",
+          "Document Type": "Wardley Map — Current State with Evolution",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
           "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
+          "Status": "DRAFT",
           "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Review Date": "2027-01-06",
-          "Owner": "Wilma Flintstone (COO) — Decision Authority (delegated by CEO)",
-          "Distribution": "Executive team, channel leads, Projects 004 & 005"
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Owner": "Dr. Benny Moog, Director Learning Technologies",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Steering Committee; Evaluation Panel; Education Committee",
+          "Teaching Without Technology Overhead": "0.90",
+          "Automatic Capture Scheduling": "Highest actionable D (0.484). Timetable-driven capture with zero academic action is specific to this university's timetabling, room and unit model. No vendor ships it; it is assembled from a feed and a platform API",
+          "Room Capture Appliances": "0.60",
+          "SSO with MFA": "0.22",
+          "Media Storage and Delivery": "0.15",
+          "Cloud Hosting AU Region": "0.08",
+          "Identity and Enrolment Integration": "Event-driven provisioning against the canonical model. D is moderate (0.269) only because visibility is low — its *dependents* are highly visible, which the risk analysis in §6 exposes",
+          "Canonical Data Model": "Delivered by project 001, consumed here. Building once and reusing across the ecosystem is the entire point",
+          "Retention and Disposal": "Institution-specific schedule, approval route and disposal evidence. No product implements a university's records schedule",
+          "Captioning and Transcription": "0.70",
+          "Recording Capture and Processing": "0.68",
+          "Know your users": "I",
+          "Focus on user needs": "I",
+          "Use a common language": "I",
+          "Challenge assumptions": "I",
+          "Remove bias and duplication": "I",
+          "Be transparent": "I",
+          "Use appropriate methods": "II",
+          "Think small, think aptitude": "II",
+          "Move fast": "II",
+          "Manage inertia": "III",
+          "Optimise flow": "III",
+          "Set exceptional standards": "III",
+          "Do better with less": "IV",
+          "Standards game": "Market",
+          "Buyer power": "Market",
+          "Exploiting constraint": "Positional",
+          "Co-creation": "Ecosystem",
+          "Ignoring inertia": "🟠 **Partially present**",
+          "Legacy trap": "🟡 Watch",
+          "Everything evolves": "Captioning, capture and appliances are all moving right. Nothing on this map is stable over the five-year contract term",
+          "Characteristics change as components evolve": "As capture commoditises, competition shifts from features to price and terms. **Evaluation criteria weighted on features will age faster than criteria weighted on terms and integration**",
+          "Efficiency enables innovation": "Commodity storage and cloud make universal capture affordable at all — which is why the coverage target moved from partial to 100%",
+          "No choice over evolution (Red Queen)": "The university cannot opt out of captioning expectations rising as ASR commoditises. Today's accuracy standard becomes tomorrow's baseline",
+          "Inertia": "See §4. The dominant climatic force acting against this project",
+          "Co-evolution of practice": "Universal automatic capture changes teaching practice — attendance, seminar design, what academics are willing to say on record. The capture policy (FR-012, Conflict C-3) is the university's attempt to govern a practice change it is causing",
+          "Future value inversely proportional to certainty": "The integration layer is the least certain and highest future value. The capture product is the most certain and lowest"
         },
         "reqIds": [
+          "BR-004",
+          "BR-003",
+          "FR-012",
+          "FR-001",
           "INT-002",
-          "BR-008",
+          "FR-016",
+          "INT-001",
+          "INT-004",
+          "DR-002",
+          "FR-002",
+          "FR-005",
+          "FR-006",
+          "FR-007",
+          "NFR-U-003",
+          "INT-003",
+          "FR-014",
+          "DR-005",
+          "NFR-C-001",
+          "BR-007",
+          "FR-015",
+          "FR-017",
+          "NFR-I-002",
+          "INT-006",
+          "NFR-SEC-002",
+          "NFR-SEC-004",
+          "NFR-SEC-001",
+          "DR-006"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-RSCH-v1.0": {
+        "type": "RSCH",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/research/ARC-002-RSCH-v1.0.md",
+        "title": "Technology and Service Research: Lecture Capture Platform Consolidation",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-07-27",
+        "lastModified": "2026-07-27",
+        "version": "1.0",
+        "owner": "Dr. Benny Moog, Director Learning Technologies — capability evidence owner",
+        "classification": "OFFICIAL-SENSITIVE",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-002-RSCH-v1.0",
+          "Document Type": "Technology and Service Research Findings",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
+          "Classification": "OFFICIAL-SENSITIVE",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-27",
+          "Last Modified": "2026-07-27",
+          "Review Date": "2026-08-26",
+          "Owner": "Dr. Benny Moog, Director Learning Technologies — capability evidence owner",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Steering Committee, Procurement, Digital & IT, Education Committee",
+          "TOTAL": "6",
+          "Echo360": "Caption and transcript files use the **WEBVTT** standard [E360ASR-C2] — an open, documented format satisfying the caption half of NFR-I-002. Published REST APIs and SDKs exist for data transfer [E360API-C1]. **No published bulk export or termination-assistance documentation found**",
+          "Panopto": "Individual caption download in WebVTT/text from the viewer and settings [PANEXP2-C1]. For full migration, a **data extract is requested from Panopto**, takes **3–4 weeks**, and is delivered as **access to an AWS S3 bucket** [PANEXP-C1]. Community discussion indicates bulk download capturing all streams and source files is not currently available in a single self-service action [PANEXP3-C1]",
+          "Kaltura": "YuJa publishes a Kaltura migration checklist for requesting a data extract [YUJAMIG-C1]. UQ's Kaltura-to-Echo360 migration was executed as a **vendor migration** with media re-linked to Blackboard, but the UQ page provides no information about bulk export capability or costs [UQ-C1]",
+          "YuJa": "Users can download auto-captions for their own media [YUJA-C1]; custom metadata managed via the Admin Panel [YUJAMETA-C1]; an API is published [YUJAAPI-C1]. YuJa publishes migration checklists for **Panopto, Kaltura and Mediasite** requesting data extracts from those vendors, with a Mediasite extract quoted at **2–3 weeks** to transfer to a YuJa S3 bucket [YUJAMIG-C1]",
+          "Enghouse Mediasite": "Paramus, NJ per MEEC listing. Not researched in depth.",
+          "Purpose-built scheduled room capture": "Yes — capture schedules linked to LMS courses [E360API-C1]",
+          "AU data residency": "NOT CONFIRMED — no published statement found [E360SEC-C1]",
+          "Published WCAG position": "**2.2 AA** across five products, Level Access audited, VPATs complete (29 Apr 2026) [E360A-C1] [E360A-C2]",
+          "LTI 1.3 / Advantage": "LTI Advantage certified via 1EdTech (Deep Linking, NRPS, AGS) [E360LTI-C1]",
+          "Blackboard Ultra specifics": "LTI 1.1 + LTI 1.3 deep linking + REST API (course linking, roster sync, analytics); vendor supports migrating **to LTI 1.1 only** [E360BB-C1] [E360BB2-C1] [E360BB3-C1]",
+          "Provisioning path (REQ-025, Principle 12)": "REST APIs and SDKs published; roster sync via REST API integration [E360API-C1] [E360BB3-C1]",
+          "Captioning engine": "AWS Transcribe; custom dictionaries **configured by Echo360 Support on the institution's behalf**, not self-service [E360ASR-C1]",
+          "Multi-track audio": "NOT CONFIRMED",
+          "Room hardware dependency": "Universal Capture software (Win 10+, macOS 10.14+) or Pro/Pod appliances; SCHD appliance EOL 30 Dec 2020 [E360UC-C1] [E360UC2-C1] [E360SCHD-C1]",
+          "Public review position": "G2 4.3/5, 56 reviews",
+          "Microsoft 365": "**Confirmed, strongest**",
+          "Zoom": "Live transcription \"approximately 90% accuracy depending on audio quality and speaker accents\"; not available in breakout rooms; transcripts saveable alongside recordings.",
+          "Microsoft": "Videos stored in SharePoint/OneDrive with \"admin control of storage, management, compliance, governance, & life cycle capabilities\" [MSSTR-C1]. Files are standard objects in the tenant",
+          "Kaltura / YuJa": "Not established. YuJa publishes an API [YUJAAPI-C1]",
+          "D-1": "Echo360 and Zoom contract values, terms, renewal dates",
+          "D-2": "Microsoft entitlement position — what capture/streaming capability is already licensed",
+          "D-3": "Appliance inventory — models, age, patch status, telemetry capability",
+          "NFR-S-001 / Entity 1": "Archive volume and growth rate",
+          "Epiphan Pearl Nexus": "Records and streams **up to 3 channels of 1080p** with SDI, HDMI, USB, SRT and NDI video inputs and **XLR, USB and 3.5mm audio inputs**; cloud management tools",
+          "Epiphan Pearl (family)": "Can capture **perfectly synchronized video at 1080p30 from up to six sources**; Pearl Mini offers the same production functionality in a portable chassis; Pearl Nano for small-scale events",
+          "Epiphan EC20 PTZ camera": "4K, AI tracking; supports **Dante**, HDMI, SDI and USB; integrates with Q-SYS and Crestron",
+          "Dante networked audio": "\"one of the easiest methods of capturing live recordings with a large number of audio channels\""
+        },
+        "reqIds": [
+          "BR-004",
+          "BR-003",
           "BR-001",
+          "BR-008",
+          "FR-001",
+          "FR-018",
+          "INT-001",
+          "INT-007",
+          "DR-001",
+          "DR-007",
+          "FR-012",
+          "NFR-P-001",
+          "NFR-C-001",
+          "DR-006",
+          "FR-006",
+          "FR-007",
+          "NFR-C-002",
+          "NFR-U-003",
+          "NFR-I-001",
+          "INT-003",
+          "NFR-I-002",
+          "FR-017",
+          "FR-009",
+          "BR-005",
+          "NFR-SEC-004",
+          "INT-006",
+          "NFR-U-001",
+          "INT-002",
+          "FR-008",
+          "FR-010",
+          "FR-013",
+          "NFR-P-002",
+          "NFR-A-001",
+          "NFR-A-002",
+          "NFR-A-003",
+          "NFR-U-002",
+          "NFR-M-001",
+          "FR-002",
+          "NFR-SEC-001",
+          "INT-004",
+          "FR-016",
+          "DR-005",
+          "NFR-SEC-002",
           "BR-006",
+          "NFR-S-001",
+          "FR-015",
           "BR-007"
         ],
         "health": {
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-002-RSCH-v1.0": {
-        "type": "RSCH",
-        "project": "002-crm-customer-360",
-        "path": "projects/002-crm-customer-360/research/ARC-002-RSCH-v1.0.md",
-        "title": "Technology and Service Research: CRM & Customer 360",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "Wilma Flintstone (COO)",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": "research",
-        "controlFields": {
-          "Document ID": "ARC-002-RSCH-v1.0",
-          "Document Type": "Technology & Service Research Findings",
-          "Project": "CRM & Customer 360 (Project 002)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Owner": "Wilma Flintstone (COO)",
-          "Distribution": "Executive team, channel leads, solution architecture advisor",
-          "HubSpot (Sales + Marketing Hub Pro)": "Suite",
-          "Salesforce (Sales Cloud + Marketing Cloud Growth)": "Enterprise suite",
-          "Microsoft Dynamics 365 (Sales + Customer Insights)": "Enterprise suite",
-          "Zoho CRM Plus": "Suite",
-          "Klaviyo + lightweight B2B CRM (dual-stack)": "Best-of-breed pair",
-          "Retail-native loyalty (e.g. Marsello) on top of POS/e-com": "Point solution"
-        },
-        "reqIds": [
-          "BR-008",
-          "NFR-D-001",
-          "BR-006",
-          "BR-001",
-          "FR-006",
-          "BR-004",
-          "FR-004"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-003-REQ-v1.0": {
-        "type": "REQ",
-        "project": "003-erp-modernisation",
-        "path": "projects/003-erp-modernisation/ARC-003-REQ-v1.0.md",
-        "title": "Project Requirements: ERP Modernisation",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "Jane Jetson (Finance Manager) — Sponsor",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": null,
-        "controlFields": {
-          "Document ID": "ARC-003-REQ-v1.0",
-          "Document Type": "Business and Technical Requirements",
-          "Project": "ERP Modernisation (Project 003)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Review Date": "2026-08-06",
-          "Owner": "Jane Jetson (Finance Manager) — Sponsor",
-          "Distribution": "Executive team, finance team, shortlisted vendors, solution architecture advisor"
-        },
-        "reqIds": [
-          "BR-001",
-          "BR-002",
-          "BR-003",
-          "BR-004",
-          "BR-005",
-          "BR-006",
-          "BR-007",
-          "BR-008",
-          "BR-009",
-          "BR-010",
-          "FR-001",
-          "FR-002",
-          "FR-003",
-          "FR-004",
-          "FR-005",
-          "FR-006",
-          "FR-007",
-          "FR-008",
-          "FR-009",
-          "NFR-A-001",
-          "NFR-S-001",
-          "NFR-D-001",
-          "NFR-I-001",
-          "NFR-M-001",
-          "NFR-C-001",
-          "INT-001",
-          "INT-002",
-          "INT-003",
-          "INT-004",
-          "INT-005"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-003-STKE-v1.0": {
-        "type": "STKE",
-        "project": "003-erp-modernisation",
-        "path": "projects/003-erp-modernisation/ARC-003-STKE-v1.0.md",
-        "title": "Stakeholder Drivers & Goals Analysis: ERP Modernisation",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "Jane Jetson, Finance Manager — Project Sponsor",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": null,
-        "controlFields": {
-          "Document ID": "ARC-003-STKE-v1.0",
-          "Document Type": "Stakeholder Drivers & Goals Analysis",
-          "Project": "ERP Modernisation (Project 003)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Review Cycle": "Quarterly",
-          "Owner": "Jane Jetson, Finance Manager — Project Sponsor",
-          "Distribution": "Executive team, finance team, Order & Supply Chain team, solution architecture advisor"
-        },
-        "reqIds": [],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-003-ADR-001-v1.0": {
-        "type": "ADR",
-        "project": "003-erp-modernisation",
-        "path": "projects/003-erp-modernisation/decisions/ARC-003-ADR-001-v1.0.md",
-        "title": "Architecture Decision Record: Adopt Cloud ERP as Future Financial System of Record — Governed Supersession of ARC-001-ADR-001",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "MEDIUM",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "Fred Flintstone (CEO) — Decision Authority",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": "decisions",
-        "controlFields": {
-          "Document ID": "ARC-003-ADR-001-v1.0",
-          "Document Type": "Architecture Decision Record",
-          "Project": "ERP Modernisation (Project 003)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Review Date": "2027-01-06",
-          "Owner": "Fred Flintstone (CEO) — Decision Authority",
-          "Distribution": "Executive team, finance, all portfolio project leads",
-          "C — Open evaluation, cloud ERP, gated timing (chosen)": "Compete Acumatica / Business Central / Odoo; cutover last"
-        },
-        "reqIds": [
-          "BR-010",
-          "BR-009"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-003-RSCH-v1.0": {
-        "type": "RSCH",
-        "project": "003-erp-modernisation",
-        "path": "projects/003-erp-modernisation/research/ARC-003-RSCH-v1.0.md",
-        "title": "Technology and Service Research: ERP Modernisation",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "Jane Jetson (Finance Manager)",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": "research",
-        "controlFields": {
-          "Document ID": "ARC-003-RSCH-v1.0",
-          "Document Type": "Technology & Service Research Findings",
-          "Project": "ERP Modernisation (Project 003)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Owner": "Jane Jetson (Finance Manager)",
-          "Distribution": "Executive team, finance team, solution architecture advisor",
-          "MYOB Acumatica": "Mid-market cloud ERP",
-          "Oracle NetSuite": "Mid-market cloud ERP",
-          "Microsoft Dynamics 365 Business Central": "Mid-market cloud ERP",
-          "Odoo Enterprise": "Open-core ERP",
-          "ERPNext": "Open-source ERP",
-          "Best-of-breed payroll (Employment Hero / KeyPay-class) + any ERP": "Pattern, not product"
-        },
-        "reqIds": [
-          "BR-008",
-          "BR-009",
-          "BR-003",
-          "BR-001",
-          "BR-006",
-          "FR-005",
-          "INT-001",
-          "NFR-I-001"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-004-REQ-v1.0": {
-        "type": "REQ",
-        "project": "004-retail-pos-consolidation",
-        "path": "projects/004-retail-pos-consolidation/ARC-004-REQ-v1.0.md",
-        "title": "Project Requirements: Retail POS Consolidation",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "Betty Rubble (GM Retail) — Sponsor",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": null,
-        "controlFields": {
-          "Document ID": "ARC-004-REQ-v1.0",
-          "Document Type": "Business and Technical Requirements",
-          "Project": "Retail POS Consolidation (Project 004)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Review Date": "2026-08-06",
-          "Owner": "Betty Rubble (GM Retail) — Sponsor",
-          "Distribution": "Executive team, store managers, shortlisted vendors, solution architecture advisor"
-        },
-        "reqIds": [
-          "BR-001",
-          "BR-002",
-          "BR-003",
-          "BR-004",
-          "BR-005",
-          "BR-006",
-          "BR-007",
-          "BR-008",
-          "BR-009",
-          "BR-010",
-          "FR-001",
-          "FR-002",
-          "FR-003",
-          "FR-004",
-          "FR-006",
-          "FR-005",
-          "FR-007",
-          "FR-008",
-          "FR-009",
-          "FR-010",
-          "NFR-P-001",
-          "NFR-A-001",
-          "NFR-S-001",
-          "NFR-S-002",
-          "NFR-C-001",
-          "NFR-C-002",
-          "NFR-I-001",
-          "NFR-T-001",
-          "INT-001",
-          "INT-002",
-          "INT-003",
-          "INT-004"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-004-STKE-v1.0": {
-        "type": "STKE",
-        "project": "004-retail-pos-consolidation",
-        "path": "projects/004-retail-pos-consolidation/ARC-004-STKE-v1.0.md",
-        "title": "Stakeholder Drivers & Goals Analysis: Retail POS Consolidation",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "Betty Rubble, GM Retail — Project Sponsor",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": null,
-        "controlFields": {
-          "Document ID": "ARC-004-STKE-v1.0",
-          "Document Type": "Stakeholder Drivers & Goals Analysis",
-          "Project": "Retail POS Consolidation (Project 004)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Review Cycle": "Quarterly",
-          "Owner": "Betty Rubble, GM Retail — Project Sponsor",
-          "Distribution": "Executive team, store managers, digital team, solution architecture advisor"
-        },
-        "reqIds": [
-          "FR-008"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-004-ADR-001-v1.0": {
-        "type": "ADR",
-        "project": "004-retail-pos-consolidation",
-        "path": "projects/004-retail-pos-consolidation/decisions/ARC-004-ADR-001-v1.0.md",
-        "title": "Architecture Decision Record: POS Integrates Hub-First — Single Platform, No Direct Financial or Web Coupling",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "MEDIUM",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "Betty Rubble (GM Retail) — Decision Authority (platform); Wilma Flintstone (COO) — Decision Authority (integration pattern)",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": "decisions",
-        "controlFields": {
-          "Document ID": "ARC-004-ADR-001-v1.0",
-          "Document Type": "Architecture Decision Record",
-          "Project": "Retail POS Consolidation (Project 004)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Review Date": "2027-01-06",
-          "Owner": "Betty Rubble (GM Retail) — Decision Authority (platform); Wilma Flintstone (COO) — Decision Authority (integration pattern)",
-          "Distribution": "Executive team, store managers, Projects 001/002/005",
-          "C — Single platform, hub-first, CRM-tokenised (chosen)": "Pattern above"
-        },
-        "reqIds": [
-          "INT-001",
-          "NFR-I-001",
-          "BR-009"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-004-RSCH-v1.0": {
-        "type": "RSCH",
-        "project": "004-retail-pos-consolidation",
-        "path": "projects/004-retail-pos-consolidation/research/ARC-004-RSCH-v1.0.md",
-        "title": "Technology and Service Research: Retail POS Consolidation",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "Betty Rubble (GM Retail)",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": "research",
-        "controlFields": {
-          "Document ID": "ARC-004-RSCH-v1.0",
-          "Document Type": "Technology & Service Research Findings",
-          "Project": "Retail POS Consolidation (Project 004)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Owner": "Betty Rubble (GM Retail)",
-          "Distribution": "Executive team, store managers, solution architecture advisor",
-          "Lightspeed Retail (X-Series)": "Specialty retail cloud POS",
-          "Shopify POS Pro": "Commerce-native POS",
-          "Hike / Kounta-class AU POS": "SMB POS"
-        },
-        "reqIds": [
-          "BR-006",
-          "FR-005",
-          "FR-006",
-          "BR-005",
-          "NFR-I-001"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-005-REQ-v1.0": {
-        "type": "REQ",
-        "project": "005-ecommerce-consolidation",
-        "path": "projects/005-ecommerce-consolidation/ARC-005-REQ-v1.0.md",
-        "title": "Project Requirements: E-Commerce Consolidation",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "George Jetson (Digital & E-Commerce Lead) — Sponsor",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": null,
-        "controlFields": {
-          "Document ID": "ARC-005-REQ-v1.0",
-          "Document Type": "Business and Technical Requirements",
-          "Project": "E-Commerce Consolidation (Project 005)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Review Date": "2026-08-06",
-          "Owner": "George Jetson (Digital & E-Commerce Lead) — Sponsor",
-          "Distribution": "Executive team, wholesale team, shortlisted vendors, solution architecture advisor"
-        },
-        "reqIds": [
-          "BR-001",
-          "BR-002",
-          "BR-003",
-          "BR-004",
-          "BR-005",
-          "BR-006",
-          "BR-007",
-          "BR-008",
-          "BR-009",
-          "BR-010",
-          "FR-001",
-          "FR-002",
-          "FR-003",
-          "FR-004",
-          "FR-005",
-          "FR-006",
-          "FR-007",
-          "FR-008",
-          "FR-009",
-          "FR-010",
-          "NFR-P-001",
-          "NFR-A-001",
-          "NFR-S-001",
-          "NFR-S-002",
-          "NFR-C-001",
-          "NFR-C-002",
-          "NFR-D-001",
-          "NFR-I-001",
-          "INT-001",
-          "INT-002",
-          "INT-003",
-          "INT-004",
-          "INT-005"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-005-STKE-v1.0": {
-        "type": "STKE",
-        "project": "005-ecommerce-consolidation",
-        "path": "projects/005-ecommerce-consolidation/ARC-005-STKE-v1.0.md",
-        "title": "Stakeholder Drivers & Goals Analysis: E-Commerce Consolidation",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "George Jetson, Digital & E-Commerce Lead — Project Sponsor",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": null,
-        "controlFields": {
-          "Document ID": "ARC-005-STKE-v1.0",
-          "Document Type": "Stakeholder Drivers & Goals Analysis",
-          "Project": "E-Commerce Consolidation (Project 005)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Review Cycle": "Quarterly",
-          "Owner": "George Jetson, Digital & E-Commerce Lead — Project Sponsor",
-          "Distribution": "Executive team, wholesale team, retail management, solution architecture advisor"
-        },
-        "reqIds": [],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-005-ADR-001-v1.0": {
-        "type": "ADR",
-        "project": "005-ecommerce-consolidation",
-        "path": "projects/005-ecommerce-consolidation/decisions/ARC-005-ADR-001-v1.0.md",
-        "title": "Architecture Decision Record: Rationalise to ≤ 3 B2C Storefronts + 1 B2B Portal on SaaS/PaaS, Hub-Sourced Availability",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "MEDIUM",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "Fred Flintstone (CEO) — storefront count; George Jetson (Digital) — platform architecture",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": "decisions",
-        "controlFields": {
-          "Document ID": "ARC-005-ADR-001-v1.0",
-          "Document Type": "Architecture Decision Record",
-          "Project": "E-Commerce Consolidation (Project 005)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Review Date": "2027-01-06",
-          "Owner": "Fred Flintstone (CEO) — storefront count; George Jetson (Digital) — platform architecture",
-          "Distribution": "Executive team, wholesale team, brand principals, Projects 001/002/004",
-          "C — Rationalised multi-storefront, SaaS, hub-sourced (chosen)": "Pattern above"
-        },
-        "reqIds": [
-          "BR-004",
-          "FR-007",
-          "BR-006",
-          "BR-005"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
-        }
-      },
-      "ARC-005-RSCH-v1.0": {
-        "type": "RSCH",
-        "project": "005-ecommerce-consolidation",
-        "path": "projects/005-ecommerce-consolidation/research/ARC-005-RSCH-v1.0.md",
-        "title": "Technology and Service Research: E-Commerce Consolidation",
-        "status": "DRAFT — FICTIONAL DEMONSTRATION",
-        "severity": "LOW",
-        "createdDate": "2026-07-06",
-        "lastModified": null,
-        "version": "1.0",
-        "owner": "George Jetson (Digital & E-Commerce Lead)",
-        "classification": "OFFICIAL",
-        "vendor": null,
-        "subdir": "research",
-        "controlFields": {
-          "Document ID": "ARC-005-RSCH-v1.0",
-          "Document Type": "Technology & Service Research Findings",
-          "Project": "E-Commerce Consolidation (Project 005)",
-          "Classification": "OFFICIAL",
-          "Status": "DRAFT — FICTIONAL DEMONSTRATION",
-          "Version": "1.0",
-          "Created Date": "2026-07-06",
-          "Owner": "George Jetson (Digital & E-Commerce Lead)",
-          "Distribution": "Executive team, wholesale team, solution architecture advisor",
-          "Shopify Plus (B2C + B2B on Shopify)": "One platform",
-          "Adobe Commerce Cloud (PaaS)": "One platform",
-          "BigCommerce Enterprise (B2B Edition)": "One platform",
-          "Split: Shopify Plus (B2C) + BigCommerce B2B or Adobe Commerce Cloud (B2B)": "Two platforms",
-          "Headless/composable (commercetools-class)": "Composable"
-        },
-        "reqIds": [
-          "BR-010",
-          "BR-005",
-          "BR-001",
-          "FR-001",
-          "NFR-I-001"
-        ],
-        "health": {
-          "stale": false,
-          "draft": true,
-          "orphan": false,
-          "ageDays": 3
+          "ageDays": 1
         }
       }
     },
     "edges": [
       {
-        "from": "ARC-000-PORT-v1.0",
-        "to": "ARC-001-ADR-001",
-        "type": "references"
-      },
-      {
-        "from": "ARC-000-PORT-v1.0",
+        "from": "ARC-001-DATA-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
       },
       {
-        "from": "ARC-001-EVAL-v1.0",
+        "from": "ARC-001-DATA-v1.0",
         "to": "ARC-001-REQ",
         "type": "references"
       },
       {
-        "from": "ARC-001-EVAL-v1.0",
-        "to": "ARC-000-PRIN",
-        "type": "references"
-      },
-      {
-        "from": "ARC-001-EVAL-v1.0",
-        "to": "ARC-001-RSCH",
-        "type": "references"
-      },
-      {
-        "from": "ARC-001-EVAL-v1.0",
-        "to": "ARC-001-ADR-001",
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-001-STKE",
         "type": "references"
       },
       {
@@ -3331,8 +3610,23 @@
         "type": "references"
       },
       {
-        "from": "ARC-001-REQ-v1.0",
-        "to": "ARC-001-RSCH",
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-REQ",
         "type": "references"
       },
       {
@@ -3347,12 +3641,12 @@
       },
       {
         "from": "ARC-001-ADR-001-v1.0",
-        "to": "ARC-001-RSCH",
+        "to": "ARC-001-DATA",
         "type": "references"
       },
       {
         "from": "ARC-001-ADR-001-v1.0",
-        "to": "ARC-001-STKE",
+        "to": "ARC-000-PRIN",
         "type": "references"
       },
       {
@@ -3362,32 +3656,112 @@
       },
       {
         "from": "ARC-001-ADR-001-v1.0",
-        "to": "ARC-000-PRIN",
-        "type": "references"
-      },
-      {
-        "from": "ARC-001-RSCH-v1.0",
-        "to": "ARC-000-PRIN",
-        "type": "references"
-      },
-      {
-        "from": "ARC-001-RSCH-v1.0",
-        "to": "ARC-001-REQ",
-        "type": "references"
-      },
-      {
-        "from": "ARC-001-RSCH-v1.0",
         "to": "ARC-001-STKE",
         "type": "references"
       },
       {
-        "from": "ARC-002-REQ-v1.0",
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-TRAC",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-001-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-001-ADR-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-EVAL",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
         "to": "ARC-002-RSCH",
         "type": "references"
       },
       {
-        "from": "ARC-002-REQ-v1.0",
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-SOW",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-DIAG-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-WARD-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-EVAL-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-EVAL-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-EVAL-v1.0",
+        "to": "ARC-002-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-EVAL-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-EVAL-v1.0",
+        "to": "ARC-002-VEND",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-EVAL-v1.0",
         "to": "ARC-002-ADR-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-EVAL-v1.0",
+        "to": "ARC-000-PRIN",
         "type": "references"
       },
       {
@@ -3402,203 +3776,208 @@
       },
       {
         "from": "ARC-002-REQ-v1.0",
-        "to": "ARC-000-PORT",
+        "to": "ARC-001-REQ",
         "type": "references"
       },
       {
-        "from": "ARC-002-STKE-v1.0",
+        "from": "ARC-002-REQ-v1.0",
+        "to": "ARC-001-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-REQ-v1.0",
+        "to": "ARC-001-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RISK-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RISK-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RISK-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-SOW-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-SOW-v1.0",
+        "to": "ARC-002-EVAL",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-SOW-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-SOW-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-SOW-v1.0",
         "to": "ARC-002-RSCH",
         "type": "references"
       },
       {
+        "from": "ARC-002-SOW-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-STKE-v1.0",
-        "to": "ARC-000-PORT",
+        "to": "ARC-000-PRIN",
         "type": "references"
       },
       {
-        "from": "ARC-002-ADR-001-v1.0",
-        "to": "ARC-000-PORT",
+        "from": "ARC-002-STKE-v1.0",
+        "to": "ARC-001-STKE",
         "type": "references"
       },
       {
-        "from": "ARC-002-ADR-001-v1.0",
+        "from": "ARC-002-STKE-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-STKE-v1.0",
+        "to": "ARC-001-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-TRAC-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-TRAC-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-TRAC-v1.0",
+        "to": "ARC-002-EVAL",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-TRAC-v1.0",
+        "to": "ARC-002-SOW",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-TRAC-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-TRAC-v1.0",
         "to": "ARC-002-RSCH",
         "type": "references"
       },
       {
-        "from": "ARC-002-ADR-001-v1.0",
+        "from": "ARC-002-TRAC-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-EVAL",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-TRAC",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-002-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-002-EVAL",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
       },
       {
         "from": "ARC-002-RSCH-v1.0",
-        "to": "ARC-000-PORT",
+        "to": "ARC-002-REQ",
         "type": "references"
       },
       {
         "from": "ARC-002-RSCH-v1.0",
-        "to": "ARC-003-RSCH",
+        "to": "ARC-002-STKE",
         "type": "references"
       },
       {
-        "from": "ARC-003-REQ-v1.0",
-        "to": "ARC-003-STKE",
+        "from": "ARC-002-RSCH-v1.0",
+        "to": "ARC-002-RISK",
         "type": "references"
       },
       {
-        "from": "ARC-003-REQ-v1.0",
-        "to": "ARC-001-ADR-001",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-REQ-v1.0",
-        "to": "ARC-000-PORT",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-REQ-v1.0",
+        "from": "ARC-002-RSCH-v1.0",
         "to": "ARC-000-PRIN",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-STKE-v1.0",
-        "to": "ARC-001-ADR-001",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-STKE-v1.0",
-        "to": "ARC-000-PORT",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-STKE-v1.0",
-        "to": "ARC-003-RSCH",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-ADR-001-v1.0",
-        "to": "ARC-001-ADR-001",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-ADR-001-v1.0",
-        "to": "ARC-003-STKE",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-ADR-001-v1.0",
-        "to": "ARC-003-RSCH",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-ADR-001-v1.0",
-        "to": "ARC-000-PORT",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-RSCH-v1.0",
-        "to": "ARC-001-RSCH",
-        "type": "references"
-      },
-      {
-        "from": "ARC-003-RSCH-v1.0",
-        "to": "ARC-002-RSCH",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-REQ-v1.0",
-        "to": "ARC-004-ADR-001",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-REQ-v1.0",
-        "to": "ARC-004-STKE",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-REQ-v1.0",
-        "to": "ARC-000-PRIN",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-REQ-v1.0",
-        "to": "ARC-000-PORT",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-STKE-v1.0",
-        "to": "ARC-000-PORT",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-STKE-v1.0",
-        "to": "ARC-004-RSCH",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-ADR-001-v1.0",
-        "to": "ARC-000-PORT",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-ADR-001-v1.0",
-        "to": "ARC-004-RSCH",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-ADR-001-v1.0",
-        "to": "ARC-003-ADR-001",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-RSCH-v1.0",
-        "to": "ARC-001-RSCH",
-        "type": "references"
-      },
-      {
-        "from": "ARC-004-RSCH-v1.0",
-        "to": "ARC-000-PORT",
-        "type": "references"
-      },
-      {
-        "from": "ARC-005-REQ-v1.0",
-        "to": "ARC-005-ADR-001",
-        "type": "references"
-      },
-      {
-        "from": "ARC-005-REQ-v1.0",
-        "to": "ARC-005-STKE",
-        "type": "references"
-      },
-      {
-        "from": "ARC-005-REQ-v1.0",
-        "to": "ARC-000-PRIN",
-        "type": "references"
-      },
-      {
-        "from": "ARC-005-REQ-v1.0",
-        "to": "ARC-000-PORT",
-        "type": "references"
-      },
-      {
-        "from": "ARC-005-STKE-v1.0",
-        "to": "ARC-005-RSCH",
-        "type": "references"
-      },
-      {
-        "from": "ARC-005-STKE-v1.0",
-        "to": "ARC-004-RSCH",
-        "type": "references"
-      },
-      {
-        "from": "ARC-005-RSCH-v1.0",
-        "to": "ARC-004-RSCH",
         "type": "references"
       }
     ]
   },
   "projectHealth": {
-    "baseline": "2026-07-09T22:45:14.503Z",
+    "baseline": "2026-07-28T07:45:46.734Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -3666,7 +4045,7 @@
     ],
     "projects": [
       {
-        "project": "001-inventory-warehouse-uplift",
+        "project": "001-lt-ecosystem",
         "projectId": "001",
         "artifactCount": 5,
         "edgeCount": 16,
@@ -3675,15 +4054,10 @@
           "essentialPresent": [
             "REQ",
             "STKE",
+            "RISK",
             "ADR"
           ],
           "essentialMissing": [
-            {
-              "type": "RISK",
-              "command": "/arckit:risk",
-              "label": "Risk Register",
-              "tier": 1
-            },
             {
               "type": "SOBC",
               "command": "/arckit:sobc",
@@ -3709,42 +4083,169 @@
               "tier": 4
             }
           ],
-          "essentialPct": 38,
+          "essentialPct": 50,
           "presentTypes": [
             "ADR",
+            "DATA",
+            "REQ",
+            "RISK",
+            "STKE"
+          ],
+          "presentByCategory": {
+            "Architecture": 2,
+            "Discovery": 2,
+            "Governance": 1
+          }
+        },
+        "compliance": {
+          "presentHigh": [
+            "RISK"
+          ],
+          "missingHigh": [
+            "TCOP",
+            "SECD",
+            "SECD-MOD",
+            "DPIA",
+            "SVCASS",
+            "TRAC",
+            "CONF",
+            "PRIN-COMP",
+            "AIPB",
+            "ATRS",
+            "JSP936"
+          ],
+          "pct": 8,
+          "total": 12
+        },
+        "health": {
+          "stale": 0,
+          "draft": 4,
+          "orphan": 0
+        },
+        "contextualSuggestions": [
+          {
+            "command": "/arckit:dpia",
+            "type": "DPIA",
+            "trigger": "processing personal data"
+          },
+          {
+            "command": "/arckit:secure",
+            "type": "SECD",
+            "trigger": "security-sensitive system"
+          },
+          {
+            "command": "/arckit:tcop",
+            "type": "TCOP",
+            "trigger": "UK Gov Service Standard"
+          }
+        ],
+        "hasGlobalPrin": true,
+        "recommendations": [
+          {
+            "command": "/arckit:sobc",
+            "label": "Strategic Outline Business Case",
+            "type": "SOBC",
+            "tier": 2,
+            "reason": "Tier 2 essential missing"
+          },
+          {
+            "command": "/arckit:hld-review",
+            "label": "High-Level Design Review",
+            "type": "HLDR",
+            "tier": 3,
+            "reason": "Tier 3 essential missing"
+          },
+          {
+            "command": "/arckit:traceability",
+            "label": "Traceability Matrix",
+            "type": "TRAC",
+            "tier": 4,
+            "reason": "Tier 4 essential missing"
+          }
+        ]
+      },
+      {
+        "project": "002-lecture-capture",
+        "projectId": "002",
+        "artifactCount": 10,
+        "edgeCount": 62,
+        "density": 6.2,
+        "coverage": {
+          "essentialPresent": [
+            "REQ",
+            "STKE",
+            "RISK",
+            "TRAC"
+          ],
+          "essentialMissing": [
+            {
+              "type": "SOBC",
+              "command": "/arckit:sobc",
+              "label": "Strategic Outline Business Case",
+              "tier": 2
+            },
+            {
+              "type": "ADR",
+              "command": "/arckit:adr",
+              "label": "Architecture Decision Record",
+              "tier": 3
+            },
+            {
+              "type": "HLDR",
+              "command": "/arckit:hld-review",
+              "label": "High-Level Design Review",
+              "tier": 3
+            },
+            {
+              "type": "CONF",
+              "command": "/arckit:conformance",
+              "label": "Conformance Assessment",
+              "tier": 4
+            }
+          ],
+          "essentialPct": 50,
+          "presentTypes": [
+            "ANAL",
+            "DIAG",
             "EVAL",
             "REQ",
+            "RISK",
             "RSCH",
-            "STKE"
+            "SOW",
+            "STKE",
+            "TRAC",
+            "WARD"
           ],
           "presentByCategory": {
-            "Procurement": 1,
+            "Governance": 3,
+            "Procurement": 2,
             "Discovery": 3,
-            "Architecture": 1
+            "Architecture": 2
           }
         },
         "compliance": {
-          "presentHigh": [],
+          "presentHigh": [
+            "RISK",
+            "TRAC"
+          ],
           "missingHigh": [
             "TCOP",
             "SECD",
             "SECD-MOD",
             "DPIA",
             "SVCASS",
-            "RISK",
-            "TRAC",
             "CONF",
             "PRIN-COMP",
             "AIPB",
             "ATRS",
             "JSP936"
           ],
-          "pct": 0,
+          "pct": 17,
           "total": 12
         },
         "health": {
           "stale": 0,
-          "draft": 5,
+          "draft": 10,
           "orphan": 0
         },
         "contextualSuggestions": [
@@ -3772,13 +4273,6 @@
         "hasGlobalPrin": true,
         "recommendations": [
           {
-            "command": "/arckit:risk",
-            "label": "Risk Register",
-            "type": "RISK",
-            "tier": 1,
-            "reason": "Tier 1 essential missing"
-          },
-          {
             "command": "/arckit:sobc",
             "label": "Strategic Outline Business Case",
             "type": "SOBC",
@@ -3786,512 +4280,11 @@
             "reason": "Tier 2 essential missing"
           },
           {
-            "command": "/arckit:hld-review",
-            "label": "High-Level Design Review",
-            "type": "HLDR",
+            "command": "/arckit:adr",
+            "label": "Architecture Decision Record",
+            "type": "ADR",
             "tier": 3,
             "reason": "Tier 3 essential missing"
-          }
-        ]
-      },
-      {
-        "project": "002-crm-customer-360",
-        "projectId": "002",
-        "artifactCount": 4,
-        "edgeCount": 12,
-        "density": 3,
-        "coverage": {
-          "essentialPresent": [
-            "REQ",
-            "STKE",
-            "ADR"
-          ],
-          "essentialMissing": [
-            {
-              "type": "RISK",
-              "command": "/arckit:risk",
-              "label": "Risk Register",
-              "tier": 1
-            },
-            {
-              "type": "SOBC",
-              "command": "/arckit:sobc",
-              "label": "Strategic Outline Business Case",
-              "tier": 2
-            },
-            {
-              "type": "HLDR",
-              "command": "/arckit:hld-review",
-              "label": "High-Level Design Review",
-              "tier": 3
-            },
-            {
-              "type": "TRAC",
-              "command": "/arckit:traceability",
-              "label": "Traceability Matrix",
-              "tier": 4
-            },
-            {
-              "type": "CONF",
-              "command": "/arckit:conformance",
-              "label": "Conformance Assessment",
-              "tier": 4
-            }
-          ],
-          "essentialPct": 38,
-          "presentTypes": [
-            "ADR",
-            "REQ",
-            "RSCH",
-            "STKE"
-          ],
-          "presentByCategory": {
-            "Discovery": 3,
-            "Architecture": 1
-          }
-        },
-        "compliance": {
-          "presentHigh": [],
-          "missingHigh": [
-            "TCOP",
-            "SECD",
-            "SECD-MOD",
-            "DPIA",
-            "SVCASS",
-            "RISK",
-            "TRAC",
-            "CONF",
-            "PRIN-COMP",
-            "AIPB",
-            "ATRS",
-            "JSP936"
-          ],
-          "pct": 0,
-          "total": 12
-        },
-        "health": {
-          "stale": 0,
-          "draft": 4,
-          "orphan": 0
-        },
-        "contextualSuggestions": [
-          {
-            "command": "/arckit:dpia",
-            "type": "DPIA",
-            "trigger": "processing personal data"
-          },
-          {
-            "command": "/arckit:secure",
-            "type": "SECD",
-            "trigger": "security-sensitive system"
-          },
-          {
-            "command": "/arckit:tcop",
-            "type": "TCOP",
-            "trigger": "UK Gov Service Standard"
-          },
-          {
-            "command": "/arckit:data-model",
-            "type": "DATA",
-            "trigger": "DR-* requirements present"
-          }
-        ],
-        "hasGlobalPrin": true,
-        "recommendations": [
-          {
-            "command": "/arckit:risk",
-            "label": "Risk Register",
-            "type": "RISK",
-            "tier": 1,
-            "reason": "Tier 1 essential missing"
-          },
-          {
-            "command": "/arckit:sobc",
-            "label": "Strategic Outline Business Case",
-            "type": "SOBC",
-            "tier": 2,
-            "reason": "Tier 2 essential missing"
-          },
-          {
-            "command": "/arckit:hld-review",
-            "label": "High-Level Design Review",
-            "type": "HLDR",
-            "tier": 3,
-            "reason": "Tier 3 essential missing"
-          }
-        ]
-      },
-      {
-        "project": "003-erp-modernisation",
-        "projectId": "003",
-        "artifactCount": 4,
-        "edgeCount": 13,
-        "density": 3.25,
-        "coverage": {
-          "essentialPresent": [
-            "REQ",
-            "STKE",
-            "ADR"
-          ],
-          "essentialMissing": [
-            {
-              "type": "RISK",
-              "command": "/arckit:risk",
-              "label": "Risk Register",
-              "tier": 1
-            },
-            {
-              "type": "SOBC",
-              "command": "/arckit:sobc",
-              "label": "Strategic Outline Business Case",
-              "tier": 2
-            },
-            {
-              "type": "HLDR",
-              "command": "/arckit:hld-review",
-              "label": "High-Level Design Review",
-              "tier": 3
-            },
-            {
-              "type": "TRAC",
-              "command": "/arckit:traceability",
-              "label": "Traceability Matrix",
-              "tier": 4
-            },
-            {
-              "type": "CONF",
-              "command": "/arckit:conformance",
-              "label": "Conformance Assessment",
-              "tier": 4
-            }
-          ],
-          "essentialPct": 38,
-          "presentTypes": [
-            "ADR",
-            "REQ",
-            "RSCH",
-            "STKE"
-          ],
-          "presentByCategory": {
-            "Discovery": 3,
-            "Architecture": 1
-          }
-        },
-        "compliance": {
-          "presentHigh": [],
-          "missingHigh": [
-            "TCOP",
-            "SECD",
-            "SECD-MOD",
-            "DPIA",
-            "SVCASS",
-            "RISK",
-            "TRAC",
-            "CONF",
-            "PRIN-COMP",
-            "AIPB",
-            "ATRS",
-            "JSP936"
-          ],
-          "pct": 0,
-          "total": 12
-        },
-        "health": {
-          "stale": 0,
-          "draft": 4,
-          "orphan": 0
-        },
-        "contextualSuggestions": [
-          {
-            "command": "/arckit:dpia",
-            "type": "DPIA",
-            "trigger": "processing personal data"
-          },
-          {
-            "command": "/arckit:secure",
-            "type": "SECD",
-            "trigger": "security-sensitive system"
-          },
-          {
-            "command": "/arckit:tcop",
-            "type": "TCOP",
-            "trigger": "UK Gov Service Standard"
-          },
-          {
-            "command": "/arckit:data-model",
-            "type": "DATA",
-            "trigger": "DR-* requirements present"
-          }
-        ],
-        "hasGlobalPrin": true,
-        "recommendations": [
-          {
-            "command": "/arckit:risk",
-            "label": "Risk Register",
-            "type": "RISK",
-            "tier": 1,
-            "reason": "Tier 1 essential missing"
-          },
-          {
-            "command": "/arckit:sobc",
-            "label": "Strategic Outline Business Case",
-            "type": "SOBC",
-            "tier": 2,
-            "reason": "Tier 2 essential missing"
-          },
-          {
-            "command": "/arckit:hld-review",
-            "label": "High-Level Design Review",
-            "type": "HLDR",
-            "tier": 3,
-            "reason": "Tier 3 essential missing"
-          }
-        ]
-      },
-      {
-        "project": "004-retail-pos-consolidation",
-        "projectId": "004",
-        "artifactCount": 4,
-        "edgeCount": 11,
-        "density": 2.75,
-        "coverage": {
-          "essentialPresent": [
-            "REQ",
-            "STKE",
-            "ADR"
-          ],
-          "essentialMissing": [
-            {
-              "type": "RISK",
-              "command": "/arckit:risk",
-              "label": "Risk Register",
-              "tier": 1
-            },
-            {
-              "type": "SOBC",
-              "command": "/arckit:sobc",
-              "label": "Strategic Outline Business Case",
-              "tier": 2
-            },
-            {
-              "type": "HLDR",
-              "command": "/arckit:hld-review",
-              "label": "High-Level Design Review",
-              "tier": 3
-            },
-            {
-              "type": "TRAC",
-              "command": "/arckit:traceability",
-              "label": "Traceability Matrix",
-              "tier": 4
-            },
-            {
-              "type": "CONF",
-              "command": "/arckit:conformance",
-              "label": "Conformance Assessment",
-              "tier": 4
-            }
-          ],
-          "essentialPct": 38,
-          "presentTypes": [
-            "ADR",
-            "REQ",
-            "RSCH",
-            "STKE"
-          ],
-          "presentByCategory": {
-            "Discovery": 3,
-            "Architecture": 1
-          }
-        },
-        "compliance": {
-          "presentHigh": [],
-          "missingHigh": [
-            "TCOP",
-            "SECD",
-            "SECD-MOD",
-            "DPIA",
-            "SVCASS",
-            "RISK",
-            "TRAC",
-            "CONF",
-            "PRIN-COMP",
-            "AIPB",
-            "ATRS",
-            "JSP936"
-          ],
-          "pct": 0,
-          "total": 12
-        },
-        "health": {
-          "stale": 0,
-          "draft": 4,
-          "orphan": 0
-        },
-        "contextualSuggestions": [
-          {
-            "command": "/arckit:dpia",
-            "type": "DPIA",
-            "trigger": "processing personal data"
-          },
-          {
-            "command": "/arckit:secure",
-            "type": "SECD",
-            "trigger": "security-sensitive system"
-          },
-          {
-            "command": "/arckit:tcop",
-            "type": "TCOP",
-            "trigger": "UK Gov Service Standard"
-          },
-          {
-            "command": "/arckit:data-model",
-            "type": "DATA",
-            "trigger": "DR-* requirements present"
-          }
-        ],
-        "hasGlobalPrin": true,
-        "recommendations": [
-          {
-            "command": "/arckit:risk",
-            "label": "Risk Register",
-            "type": "RISK",
-            "tier": 1,
-            "reason": "Tier 1 essential missing"
-          },
-          {
-            "command": "/arckit:sobc",
-            "label": "Strategic Outline Business Case",
-            "type": "SOBC",
-            "tier": 2,
-            "reason": "Tier 2 essential missing"
-          },
-          {
-            "command": "/arckit:hld-review",
-            "label": "High-Level Design Review",
-            "type": "HLDR",
-            "tier": 3,
-            "reason": "Tier 3 essential missing"
-          }
-        ]
-      },
-      {
-        "project": "005-ecommerce-consolidation",
-        "projectId": "005",
-        "artifactCount": 4,
-        "edgeCount": 7,
-        "density": 1.75,
-        "coverage": {
-          "essentialPresent": [
-            "REQ",
-            "STKE",
-            "ADR"
-          ],
-          "essentialMissing": [
-            {
-              "type": "RISK",
-              "command": "/arckit:risk",
-              "label": "Risk Register",
-              "tier": 1
-            },
-            {
-              "type": "SOBC",
-              "command": "/arckit:sobc",
-              "label": "Strategic Outline Business Case",
-              "tier": 2
-            },
-            {
-              "type": "HLDR",
-              "command": "/arckit:hld-review",
-              "label": "High-Level Design Review",
-              "tier": 3
-            },
-            {
-              "type": "TRAC",
-              "command": "/arckit:traceability",
-              "label": "Traceability Matrix",
-              "tier": 4
-            },
-            {
-              "type": "CONF",
-              "command": "/arckit:conformance",
-              "label": "Conformance Assessment",
-              "tier": 4
-            }
-          ],
-          "essentialPct": 38,
-          "presentTypes": [
-            "ADR",
-            "REQ",
-            "RSCH",
-            "STKE"
-          ],
-          "presentByCategory": {
-            "Discovery": 3,
-            "Architecture": 1
-          }
-        },
-        "compliance": {
-          "presentHigh": [],
-          "missingHigh": [
-            "TCOP",
-            "SECD",
-            "SECD-MOD",
-            "DPIA",
-            "SVCASS",
-            "RISK",
-            "TRAC",
-            "CONF",
-            "PRIN-COMP",
-            "AIPB",
-            "ATRS",
-            "JSP936"
-          ],
-          "pct": 0,
-          "total": 12
-        },
-        "health": {
-          "stale": 0,
-          "draft": 4,
-          "orphan": 0
-        },
-        "contextualSuggestions": [
-          {
-            "command": "/arckit:dpia",
-            "type": "DPIA",
-            "trigger": "processing personal data"
-          },
-          {
-            "command": "/arckit:secure",
-            "type": "SECD",
-            "trigger": "security-sensitive system"
-          },
-          {
-            "command": "/arckit:tcop",
-            "type": "TCOP",
-            "trigger": "UK Gov Service Standard"
-          },
-          {
-            "command": "/arckit:data-model",
-            "type": "DATA",
-            "trigger": "DR-* requirements present"
-          }
-        ],
-        "hasGlobalPrin": true,
-        "recommendations": [
-          {
-            "command": "/arckit:risk",
-            "label": "Risk Register",
-            "type": "RISK",
-            "tier": 1,
-            "reason": "Tier 1 essential missing"
-          },
-          {
-            "command": "/arckit:sobc",
-            "label": "Strategic Outline Business Case",
-            "type": "SOBC",
-            "tier": 2,
-            "reason": "Tier 2 essential missing"
           },
           {
             "command": "/arckit:hld-review",
