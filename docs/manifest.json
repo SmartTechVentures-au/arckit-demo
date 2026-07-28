@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T07:41:22.142Z",
+  "generated": "2026-07-28T08:25:27.574Z",
   "repository": {
     "name": "arckit-demo"
   },
@@ -1911,6 +1911,14 @@
           "extension": ".md"
         }
       ],
+      "decisions": [
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-001-v1.0.md",
+          "title": "ADR-001: Integration Mediation Approach for the L&T Ecosystem",
+          "documentId": "ARC-001-ADR-001-v1.0",
+          "extension": ".md"
+        }
+      ],
       "external": [
         {
           "path": "projects/001-lt-ecosystem/external/consultant-brief.md",
@@ -1937,19 +1945,19 @@
           "title": "system-landscape.md",
           "type": "md"
         }
-      ],
-      "decisions": [
-        {
-          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-001-v1.0.md",
-          "title": "ADR-001: Integration Mediation Approach for the L&T Ecosystem",
-          "documentId": "ARC-001-ADR-001-v1.0"
-        }
       ]
     },
     {
       "id": "002-lecture-capture",
       "name": "Lecture Capture",
       "documents": [
+        {
+          "path": "projects/002-lecture-capture/ARC-002-ANAL-v1.0.md",
+          "title": "Analysis Report",
+          "category": "Governance",
+          "documentId": "ARC-002-ANAL-v1.0",
+          "extension": ".md"
+        },
         {
           "path": "projects/002-lecture-capture/ARC-002-EVAL-v1.0.md",
           "title": "Evaluation Criteria",
@@ -1986,17 +1994,32 @@
           "extension": ".md"
         },
         {
-          "path": "projects/002-lecture-capture/ARC-002-TRAC-v1.0.md",
-          "title": "Traceability Matrix",
-          "category": "Governance",
-          "documentId": "ARC-002-TRAC-v1.0",
-          "extension": ".md"
+          "path": "projects/002-lecture-capture/ARC-002-DATA-v1.0.md",
+          "title": "Data Model",
+          "documentId": "ARC-002-DATA-v1.0",
+          "category": "Architecture"
         },
         {
-          "path": "projects/002-lecture-capture/ARC-002-ANAL-v1.0.md",
-          "title": "Analysis Report",
-          "documentId": "ARC-002-ANAL-v1.0",
+          "path": "projects/002-lecture-capture/ARC-002-TRAC-v1.1.md",
+          "title": "Traceability Matrix",
+          "documentId": "ARC-002-TRAC-v1.1",
           "category": "Governance"
+        }
+      ],
+      "diagrams": [
+        {
+          "path": "projects/002-lecture-capture/diagrams/ARC-002-DIAG-001-v1.0.md",
+          "title": "Architecture Diagram: System Context — Lecture Capture Platform",
+          "documentId": "ARC-002-DIAG-001-v1.0",
+          "extension": ".md"
+        }
+      ],
+      "wardleyMaps": [
+        {
+          "path": "projects/002-lecture-capture/wardley-maps/ARC-002-WARD-001-v1.0.md",
+          "title": "Wardley Map: Where Differentiation Actually Lives",
+          "documentId": "ARC-002-WARD-001-v1.0",
+          "extension": ".md"
         }
       ],
       "research": [
@@ -2068,13 +2091,6 @@
           "path": "projects/002-lecture-capture/external/system-landscape.md",
           "title": "system-landscape.md",
           "type": "md"
-        }
-      ],
-      "diagrams": [
-        {
-          "path": "projects/002-lecture-capture/diagrams/ARC-002-DIAG-001-v1.0.md",
-          "title": "Architecture Diagram: System Context — Lecture Capture Platform",
-          "documentId": "ARC-002-DIAG-001-v1.0"
         }
       ]
     }
@@ -2451,6 +2467,155 @@
           "draft": true,
           "orphan": false,
           "ageDays": 2
+        }
+      },
+      "ARC-001-ADR-001-v1.0": {
+        "type": "ADR",
+        "project": "001-lt-ecosystem",
+        "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-001-v1.0.md",
+        "title": "ADR-001: Integration Mediation Approach for the L&T Ecosystem",
+        "status": "**Proposed**",
+        "severity": "MEDIUM",
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
+        "version": "1.0",
+        "owner": "Sam Okafor, Integration Architect",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-001-ADR-001-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "ADR Number": "ADR-001",
+          "Project": "Learning & Teaching Baseline Strategy (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "**Proposed**",
+          "Version": "1.0",
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Escalation Level": "Department",
+          "Governance Forum": "RIFF Review → Education Committee → Operations Committee",
+          "Owner": "Sam Okafor, Integration Architect",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team; Digital & IT; Learning Technologies; Student Administration; Steering Committee",
+          "Candidate successor": "ADR-003 (not yet raised)",
+          "Consumed by": "Project 002 platform decision"
+        },
+        "reqIds": [
+          "INT-001",
+          "INT-009",
+          "BR-004",
+          "DR-003",
+          "NFR-C-001",
+          "NFR-SEC-002",
+          "NFR-P-001",
+          "NFR-I-001",
+          "NFR-M-001",
+          "NFR-M-002",
+          "NFR-SEC-003",
+          "NFR-A-001",
+          "BR-002",
+          "BR-003",
+          "BR-007",
+          "DR-001",
+          "DR-002",
+          "NFR-C-003",
+          "NFR-I-002",
+          "INT-005",
+          "DR-004",
+          "INT-002",
+          "DR-005",
+          "NFR-C-002",
+          "INT-004"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-ANAL-v1.0": {
+        "type": "ANAL",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/ARC-002-ANAL-v1.0.md",
+        "title": "Architecture Governance Analysis Report",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
+        "version": "1.0",
+        "owner": "Rhonda Bell, Project Manager",
+        "classification": "OFFICIAL-SENSITIVE",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-ANAL-v1.0",
+          "Document Type": "Governance Analysis Report",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
+          "Classification": "OFFICIAL-SENSITIVE",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Owner": "Rhonda Bell, Project Manager",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team; Steering Committee; Evaluation Panel",
+          "Total findings": "**15**",
+          "Total": "**62**",
+          "Privacy Act 1988 / APPs": "⚠️ Assessment pending",
+          "APP 8 cross-border": "⚠️ Assessment pending",
+          "ASD Essential Eight": "⚠️ Gap acknowledged",
+          "NDB scheme": "✅ Contractually addressed",
+          "WCAG 2.2 AA": "✅ Gated",
+          "Requirements quality": "**92%**",
+          "Principles compliance": "**100%**",
+          "Traceability": "**94%**",
+          "Stakeholder alignment": "**78%**",
+          "Risk management": "**88%**",
+          "Procurement readiness": "**72%**",
+          "Business case": "**N/A — blocked**",
+          "Design / test coverage": "**N/A — phase**",
+          "Compliance": "**80%**"
+        },
+        "reqIds": [
+          "BR-002",
+          "NFR-A-003",
+          "BR-004",
+          "INT-004",
+          "BR-005",
+          "BR-001",
+          "NFR-U-002",
+          "FR-016",
+          "DR-004",
+          "DR-002",
+          "DR-003",
+          "NFR-C-001",
+          "DR-006",
+          "NFR-I-002",
+          "NFR-I-001",
+          "INT-001",
+          "NFR-M-002",
+          "NFR-C-002",
+          "NFR-A-001",
+          "BR-006",
+          "NFR-SEC-001",
+          "BR-008",
+          "NFR-M-001",
+          "DR-001",
+          "DR-007",
+          "DR-005",
+          "NFR-C-005"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
         }
       },
       "ARC-002-EVAL-v1.0": {
@@ -3087,6 +3252,187 @@
           "ageDays": 0
         }
       },
+      "ARC-002-DIAG-001-v1.0": {
+        "type": "DIAG",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/diagrams/ARC-002-DIAG-001-v1.0.md",
+        "title": "Architecture Diagram: System Context — Lecture Capture Platform",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
+        "version": "1.0",
+        "owner": "Sam Okafor, Integration Architect",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "diagrams",
+        "controlFields": {
+          "Document ID": "ARC-002-DIAG-001-v1.0",
+          "Document Type": "Architecture Diagram — C4 Context (Level 1)",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Owner": "Sam Okafor, Integration Architect",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team; Evaluation Panel; Education Committee; Steering Committee",
+          "C4 Level": "Level 1 — System Context",
+          "Format": "Mermaid `C4Context`",
+          "Layout direction": "Left-to-right (actors → system → external systems)",
+          "Audience": "Education Committee, Operations Committee, steering group, suppliers",
+          "Purpose": "Establish the system boundary and its seven integration points before a platform is selected",
+          "Student": "Person",
+          "Teaching Staff": "Person",
+          "AV and Support Staff": "Person",
+          "Lecture Capture Platform": "System (in scope)",
+          "Blackboard Ultra": "External system",
+          "Student Information System": "External system",
+          "Timetabling": "External system",
+          "Identity Provider": "External system",
+          "Institutional Data Platform": "External system",
+          "Incumbent Capture Platform": "External system"
+        },
+        "reqIds": [
+          "INT-001",
+          "INT-007",
+          "FR-010",
+          "NFR-U-002",
+          "FR-003",
+          "FR-005",
+          "FR-007",
+          "NFR-U-001",
+          "FR-004",
+          "NFR-M-001",
+          "INT-006",
+          "BR-001",
+          "FR-001",
+          "FR-018",
+          "INT-003",
+          "FR-016",
+          "INT-002",
+          "INT-004",
+          "NFR-SEC-001",
+          "INT-005",
+          "FR-011",
+          "FR-015",
+          "BR-007",
+          "DR-004",
+          "DR-002",
+          "FR-002"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-WARD-001-v1.0": {
+        "type": "WARD",
+        "project": "002-lecture-capture",
+        "path": "projects/002-lecture-capture/wardley-maps/ARC-002-WARD-001-v1.0.md",
+        "title": "Wardley Map: Where Differentiation Actually Lives",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-07-28",
+        "lastModified": "2026-07-28",
+        "version": "1.0",
+        "owner": "Dr. Benny Moog, Director Learning Technologies",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "wardley-maps",
+        "controlFields": {
+          "Document ID": "ARC-002-WARD-001-v1.0",
+          "Document Type": "Wardley Map — Current State with Evolution",
+          "Project": "Lecture Capture Platform Consolidation (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-07-28",
+          "Last Modified": "2026-07-28",
+          "Review Date": "2026-08-27",
+          "Owner": "Dr. Benny Moog, Director Learning Technologies",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Steering Committee; Evaluation Panel; Education Committee",
+          "Teaching Without Technology Overhead": "0.90",
+          "Automatic Capture Scheduling": "Highest actionable D (0.484). Timetable-driven capture with zero academic action is specific to this university's timetabling, room and unit model. No vendor ships it; it is assembled from a feed and a platform API",
+          "Room Capture Appliances": "0.60",
+          "SSO with MFA": "0.22",
+          "Media Storage and Delivery": "0.15",
+          "Cloud Hosting AU Region": "0.08",
+          "Identity and Enrolment Integration": "Event-driven provisioning against the canonical model. D is moderate (0.269) only because visibility is low — its *dependents* are highly visible, which the risk analysis in §6 exposes",
+          "Canonical Data Model": "Delivered by project 001, consumed here. Building once and reusing across the ecosystem is the entire point",
+          "Retention and Disposal": "Institution-specific schedule, approval route and disposal evidence. No product implements a university's records schedule",
+          "Captioning and Transcription": "0.70",
+          "Recording Capture and Processing": "0.68",
+          "Know your users": "I",
+          "Focus on user needs": "I",
+          "Use a common language": "I",
+          "Challenge assumptions": "I",
+          "Remove bias and duplication": "I",
+          "Be transparent": "I",
+          "Use appropriate methods": "II",
+          "Think small, think aptitude": "II",
+          "Move fast": "II",
+          "Manage inertia": "III",
+          "Optimise flow": "III",
+          "Set exceptional standards": "III",
+          "Do better with less": "IV",
+          "Standards game": "Market",
+          "Buyer power": "Market",
+          "Exploiting constraint": "Positional",
+          "Co-creation": "Ecosystem",
+          "Ignoring inertia": "🟠 **Partially present**",
+          "Legacy trap": "🟡 Watch",
+          "Everything evolves": "Captioning, capture and appliances are all moving right. Nothing on this map is stable over the five-year contract term",
+          "Characteristics change as components evolve": "As capture commoditises, competition shifts from features to price and terms. **Evaluation criteria weighted on features will age faster than criteria weighted on terms and integration**",
+          "Efficiency enables innovation": "Commodity storage and cloud make universal capture affordable at all — which is why the coverage target moved from partial to 100%",
+          "No choice over evolution (Red Queen)": "The university cannot opt out of captioning expectations rising as ASR commoditises. Today's accuracy standard becomes tomorrow's baseline",
+          "Inertia": "See §4. The dominant climatic force acting against this project",
+          "Co-evolution of practice": "Universal automatic capture changes teaching practice — attendance, seminar design, what academics are willing to say on record. The capture policy (FR-012, Conflict C-3) is the university's attempt to govern a practice change it is causing",
+          "Future value inversely proportional to certainty": "The integration layer is the least certain and highest future value. The capture product is the most certain and lowest"
+        },
+        "reqIds": [
+          "BR-004",
+          "BR-003",
+          "FR-012",
+          "FR-001",
+          "INT-002",
+          "FR-016",
+          "INT-001",
+          "INT-004",
+          "DR-002",
+          "FR-002",
+          "FR-005",
+          "FR-006",
+          "FR-007",
+          "NFR-U-003",
+          "INT-003",
+          "FR-014",
+          "DR-005",
+          "NFR-C-001",
+          "BR-007",
+          "FR-015",
+          "FR-017",
+          "NFR-I-002",
+          "INT-006",
+          "NFR-SEC-002",
+          "NFR-SEC-004",
+          "NFR-SEC-001",
+          "DR-006"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-002-RSCH-v1.0": {
         "type": "RSCH",
         "project": "002-lecture-capture",
@@ -3253,6 +3599,101 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-001-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-001-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-TRAC",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-001-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-001-ADR-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-EVAL",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-SOW",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-DIAG-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-002-WARD-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-ANAL-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-EVAL-v1.0",
         "to": "ARC-002-RISK",
         "type": "references"
@@ -3413,6 +3854,71 @@
         "type": "references"
       },
       {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-EVAL",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-TRAC",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-002-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-002-EVAL",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-WARD-001-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-RSCH-v1.0",
         "to": "ARC-002-REQ",
         "type": "references"
@@ -3435,7 +3941,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-07-28T05:29:30.552Z",
+    "baseline": "2026-07-28T07:45:46.734Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -3505,14 +4011,15 @@
       {
         "project": "001-lt-ecosystem",
         "projectId": "001",
-        "artifactCount": 4,
-        "edgeCount": 10,
-        "density": 2.5,
+        "artifactCount": 5,
+        "edgeCount": 16,
+        "density": 3.2,
         "coverage": {
           "essentialPresent": [
             "REQ",
             "STKE",
-            "RISK"
+            "RISK",
+            "ADR"
           ],
           "essentialMissing": [
             {
@@ -3520,12 +4027,6 @@
               "command": "/arckit:sobc",
               "label": "Strategic Outline Business Case",
               "tier": 2
-            },
-            {
-              "type": "ADR",
-              "command": "/arckit:adr",
-              "label": "Architecture Decision Record",
-              "tier": 3
             },
             {
               "type": "HLDR",
@@ -3546,15 +4047,16 @@
               "tier": 4
             }
           ],
-          "essentialPct": 38,
+          "essentialPct": 50,
           "presentTypes": [
+            "ADR",
             "DATA",
             "REQ",
             "RISK",
             "STKE"
           ],
           "presentByCategory": {
-            "Architecture": 1,
+            "Architecture": 2,
             "Discovery": 2,
             "Governance": 1
           }
@@ -3611,27 +4113,27 @@
             "reason": "Tier 2 essential missing"
           },
           {
-            "command": "/arckit:adr",
-            "label": "Architecture Decision Record",
-            "type": "ADR",
-            "tier": 3,
-            "reason": "Tier 3 essential missing"
-          },
-          {
             "command": "/arckit:hld-review",
             "label": "High-Level Design Review",
             "type": "HLDR",
             "tier": 3,
             "reason": "Tier 3 essential missing"
+          },
+          {
+            "command": "/arckit:traceability",
+            "label": "Traceability Matrix",
+            "type": "TRAC",
+            "tier": 4,
+            "reason": "Tier 4 essential missing"
           }
         ]
       },
       {
         "project": "002-lecture-capture",
         "projectId": "002",
-        "artifactCount": 7,
-        "edgeCount": 36,
-        "density": 5.14,
+        "artifactCount": 10,
+        "edgeCount": 62,
+        "density": 6.2,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -3667,18 +4169,22 @@
           ],
           "essentialPct": 50,
           "presentTypes": [
+            "ANAL",
+            "DIAG",
             "EVAL",
             "REQ",
             "RISK",
             "RSCH",
             "SOW",
             "STKE",
-            "TRAC"
+            "TRAC",
+            "WARD"
           ],
           "presentByCategory": {
+            "Governance": 3,
             "Procurement": 2,
             "Discovery": 3,
-            "Governance": 2
+            "Architecture": 2
           }
         },
         "compliance": {
@@ -3703,7 +4209,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 7,
+          "draft": 10,
           "orphan": 0
         },
         "contextualSuggestions": [

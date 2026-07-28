@@ -10,7 +10,7 @@
 | **Document Type** | Requirements Traceability Matrix |
 | **Project** | Lecture Capture Platform Consolidation (Project 002) |
 | **Classification** | OFFICIAL-SENSITIVE |
-| **Status** | DRAFT |
+| **Status** | SUPERSEDED — replaced by [`ARC-002-TRAC-v1.1`](ARC-002-TRAC-v1.1.md) on 2026-07-28 |
 | **Version** | 1.0 |
 | **Created Date** | 2026-07-28 |
 | **Last Modified** | 2026-07-28 |
@@ -452,6 +452,6 @@ _Stamped automatically by the ArcKit plugin's `provenance-stamp.mjs` PostToolUse
 |-------|-------|
 | Requested Effort | `high` |
 | Effective Effort | _unknown — model not parsed from existing footer_ |
-| Stamped at | 2026-07-28T05:27:52.812Z |
+| Stamped at | 2026-07-28T08:26:00.952Z |
 
 <!-- arckit-provenance:end -->

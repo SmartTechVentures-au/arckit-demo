@@ -12,8 +12,8 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 
 ## Project status
 
-- 001-lt-ecosystem: 38% essential coverage · 8% compliance readiness · 4 drafts · next: /arckit:sobc
-- 002-lecture-capture: 50% essential coverage · 17% compliance readiness · 7 drafts · next: /arckit:sobc
+- 001-lt-ecosystem: 50% essential coverage · 8% compliance readiness · 4 drafts · next: /arckit:sobc
+- 002-lecture-capture: 50% essential coverage · 17% compliance readiness · 10 drafts · next: /arckit:sobc
 
 ## Global artifacts
 
@@ -32,15 +32,19 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 - [Requirements](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/001-lt-ecosystem/ARC-001-REQ-v1.0.md): Discovery · `ARC-001-REQ-v1.0`.
 - [Risk Register](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/001-lt-ecosystem/ARC-001-RISK-v1.0.md): Governance · `ARC-001-RISK-v1.0`.
 - [Stakeholder Analysis](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/001-lt-ecosystem/ARC-001-STKE-v1.0.md): Discovery · `ARC-001-STKE-v1.0`.
+- [ADR-001: Integration Mediation Approach for the L&T Ecosystem](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/001-lt-ecosystem/decisions/ARC-001-ADR-001-v1.0.md) · `ARC-001-ADR-001-v1.0`.
 
 ### Lecture Capture
 
+- [Analysis Report](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/ARC-002-ANAL-v1.0.md): Governance · `ARC-002-ANAL-v1.0`.
 - [Evaluation Criteria](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/ARC-002-EVAL-v1.0.md): Procurement · `ARC-002-EVAL-v1.0`.
 - [Requirements](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/ARC-002-REQ-v1.0.md): Discovery · `ARC-002-REQ-v1.0`.
 - [Risk Register](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/ARC-002-RISK-v1.0.md): Governance · `ARC-002-RISK-v1.0`.
 - [Statement of Work](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/ARC-002-SOW-v1.0.md): Procurement · `ARC-002-SOW-v1.0`.
 - [Stakeholder Analysis](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/ARC-002-STKE-v1.0.md): Discovery · `ARC-002-STKE-v1.0`.
 - [Traceability Matrix](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/ARC-002-TRAC-v1.0.md): Governance · `ARC-002-TRAC-v1.0`.
+- [Architecture Diagram: System Context — Lecture Capture Platform](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/diagrams/ARC-002-DIAG-001-v1.0.md) · `ARC-002-DIAG-001-v1.0`.
+- [Wardley Map: Where Differentiation Actually Lives](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/wardley-maps/ARC-002-WARD-001-v1.0.md) · `ARC-002-WARD-001-v1.0`.
 - [Technology and Service Research: Lecture Capture Platform Consolidation](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/research/ARC-002-RSCH-v1.0.md) · `ARC-002-RSCH-v1.0`.
 - [Echo360 profile](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/vendors/echo360-profile.md): Vendor profile.
 - [Kaltura profile](https://raw.githubusercontent.com/SmartTechVentures-au/arckit-demo/main/projects/002-lecture-capture/vendors/kaltura-profile.md): Vendor profile.
