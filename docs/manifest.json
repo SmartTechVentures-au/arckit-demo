@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T10:37:51.075Z",
+  "generated": "2026-07-28T11:18:28.847Z",
   "repository": {
     "name": "arckit-demo"
   },
@@ -1909,6 +1909,18 @@
           "category": "Discovery",
           "documentId": "ARC-001-STKE-v1.0",
           "extension": ".md"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-SOBC-v1.0.md",
+          "title": "Strategic Outline Business Case",
+          "documentId": "ARC-001-SOBC-v1.0",
+          "category": "Planning"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-TRAC-v1.0.md",
+          "title": "Traceability Matrix",
+          "documentId": "ARC-001-TRAC-v1.0",
+          "category": "Governance"
         }
       ],
       "decisions": [
@@ -1956,6 +1968,13 @@
           "path": "projects/001-lt-ecosystem/wardley-maps/ARC-001-WARD-001-v1.0.md",
           "title": "Wardley Map: An Estate With No Differentiation In It",
           "documentId": "ARC-001-WARD-001-v1.0"
+        }
+      ],
+      "diagrams": [
+        {
+          "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-001-v1.0.md",
+          "title": "Architecture Diagrams",
+          "documentId": "ARC-001-DIAG-001-v1.0"
         }
       ]
     },
