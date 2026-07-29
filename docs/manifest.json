@@ -1,9 +1,9 @@
 {
-  "generated": "2026-07-28T11:18:28.847Z",
+  "generated": "2026-07-28T12:15:36.563Z",
   "repository": {
     "name": "arckit-demo"
   },
-  "defaultDocument": "projects/000-global/ARC-000-PRIN-v1.0.md",
+  "defaultDocument": "projects/000-global/ARC-000-PRIN-v1.1.md",
   "guides": [
     {
       "path": "docs/guides/adm-preliminary.md",
@@ -1689,11 +1689,10 @@
   ],
   "global": [
     {
-      "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
+      "path": "projects/000-global/ARC-000-PRIN-v1.1.md",
       "title": "Architecture Principles",
+      "documentId": "ARC-000-PRIN-v1.1",
       "category": "Architecture",
-      "documentId": "ARC-000-PRIN-v1.0",
-      "extension": ".md",
       "isDefault": true
     }
   ],

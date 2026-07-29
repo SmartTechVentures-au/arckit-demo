@@ -1,21 +1,21 @@
 {
-  "generated": "2026-07-26T22:40:55.977Z",
+  "generated": "2026-07-28T12:10:42.246Z",
   "scanned": {
-    "projects": 1,
-    "artifacts": 3
+    "projects": 2,
+    "artifacts": 23
   },
   "summary": {
     "HIGH": 0,
-    "MEDIUM": 1,
+    "MEDIUM": 0,
     "LOW": 0,
-    "total": 1
+    "total": 0
   },
   "byType": {
     "STALE-RSCH": 0,
     "FORGOTTEN-ADR": 0,
     "UNRESOLVED-COND": 0,
     "STALE-EXT": 0,
-    "ORPHAN-REQ": 1,
+    "ORPHAN-REQ": 0,
     "MISSING-TRACE": 0,
     "VERSION-DRIFT": 0,
     "REVIEW-OVERDUE": 0,
@@ -24,16 +24,13 @@
   "projects": [
     {
       "id": "001-lt-ecosystem",
-      "artifacts": 3,
-      "findings": [
-        {
-          "severity": "MEDIUM",
-          "rule": "ORPHAN-REQ",
-          "file": "ARC-001-REQ-v1.0.md",
-          "message": "Total requirements: 64\n  Requirements not referenced by any ADR: 64\n  Examples: BR-001, BR-007, BR-004, INT-001, INT-009 (+59 more)",
-          "action": "Review whether these requirements need architectural decisions documented as ADRs"
-        }
-      ]
+      "artifacts": 10,
+      "findings": []
+    },
+    {
+      "id": "002-lecture-capture",
+      "artifacts": 13,
+      "findings": []
     }
   ]
 }
