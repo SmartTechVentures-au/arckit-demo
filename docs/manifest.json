@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T14:10:10.077Z",
+  "generated": "2026-07-29T22:33:32.164Z",
   "repository": {
     "name": "arckit-demo"
   },
@@ -1971,6 +1971,16 @@
           "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-006-v1.0.md",
           "title": "ADR-006: Cloud Platform Selection for University-Controlled Integration and Hosting Workloads",
           "documentId": "ARC-001-ADR-006-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-007-v1.0.md",
+          "title": "ADR-007: Build versus Buy and Procurement Approach for Capability Gaps",
+          "documentId": "ARC-001-ADR-007-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-008-v1.0.md",
+          "title": "ADR-008: Identity and Access Enforcement Across L&T Platforms",
+          "documentId": "ARC-001-ADR-008-v1.0"
         }
       ],
       "external": [
@@ -2005,6 +2015,11 @@
           "path": "projects/001-lt-ecosystem/wardley-maps/ARC-001-WARD-001-v1.0.md",
           "title": "Wardley Map: An Estate With No Differentiation In It",
           "documentId": "ARC-001-WARD-001-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/wardley-maps/ARC-001-WARD-002-v1.0.md",
+          "title": "Wardley Map: The Integration Value Chain — An Estate Built Upside Down",
+          "documentId": "ARC-001-WARD-002-v1.0"
         }
       ],
       "diagrams": [

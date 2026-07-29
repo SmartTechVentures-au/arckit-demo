@@ -6,50 +6,271 @@
   "recipe_path": "skills/arckit-build/recipes/uk-saas.yaml",
   "recipe_note": "uk-saas is a jurisdictional mismatch for this AU private-sector project. Excluded on this run: TCOP, SBD, DPIA, SVCASS, GOV_REUSE. ADR topics were retargeted from UK-specific framings (G-Cloud, GOV.UK One Login) to Australian equivalents (institutional procurement, APP 8). Consider authoring .arckit/recipes/au-private.yaml before further builds.",
   "started_at": "2026-07-29T21:00:00Z",
-  "last_wave_completed": null,
-  "current_wave": 1,
-  "halted": true,
-  "halt_reason": "API session limit reached mid-wave-1; 8 of 14 targets completed, 6 outstanding. Resume with --resume.",
+  "last_wave_completed": 1,
+  "current_wave": 2,
+  "halted": false,
   "targets": {
-    "PRIN": {"status": "complete", "path": "projects/000-global/ARC-000-PRIN-v1.1.md", "wave": 0, "source": "pre-existing", "input_hashes": {}},
-    "REQ": {"status": "complete", "path": "projects/001-lt-ecosystem/ARC-001-REQ-v1.0.md", "wave": 1, "source": "pre-existing"},
-    "STKE": {"status": "complete", "path": "projects/001-lt-ecosystem/ARC-001-STKE-v1.0.md", "wave": 1, "source": "pre-existing"},
-    "RISK": {"status": "complete", "path": "projects/001-lt-ecosystem/ARC-001-RISK-v1.0.md", "wave": 3, "source": "pre-existing"},
-    "SOBC": {"status": "complete", "path": "projects/001-lt-ecosystem/ARC-001-SOBC-v1.0.md", "wave": 4, "source": "pre-existing"},
-    "TRACE": {"status": "complete", "path": "projects/001-lt-ecosystem/ARC-001-TRAC-v1.0.md", "wave": 8, "source": "pre-existing"},
-    "ADR-001": {"status": "complete", "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-001-v1.0.md", "wave": 2, "source": "pre-existing", "topic": "Integration mediation approach"},
-    "ADR-002": {"status": "complete", "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-002-v1.0.md", "wave": 2, "source": "pre-existing", "topic": "Authoritative source for institutional role assignment"},
-
-    "ADR-OBSERVABILITY": {"status": "complete", "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-003-v1.0.md", "built_at": "2026-07-29T21:30:00Z", "wave": 1, "line_count": 666, "skill": "arckit:adr", "topic": "Logging and observability stack for integrations", "agent_summary": "Chose layered observability plane (endpoint health / OpenTelemetry flow telemetry / entity-state reconciliation), vendor-neutral instrumentation, backend deferred to Principle 19 test. Layer 3 sequenced first as it works against today's estate pre-broker."},
-    "ADR-OSSLICENCE": {"status": "complete", "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-004-v1.0.md", "built_at": "2026-07-29T21:35:00Z", "wave": 1, "line_count": 669, "skill": "arckit:adr", "topic": "Open-source licence and third-party component policy", "agent_summary": "Chose Register-and-Assess: extend capability map + RIFF checklist with licence_identifier, patch_and_support_owner, deployment_mode. Assessment depth set by deployment mode, not licence type. Estate has only two OSS components (H5P, MuseScore); copyleft obligations dormant, real exposure is operational."},
-    "ADR-TOPOLOGY": {"status": "complete", "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-005-v1.0.md", "built_at": "2026-07-29T21:45:00Z", "wave": 1, "line_count": 561, "skill": "arckit:adr", "topic": "Deployment topology and environment strategy", "agent_summary": "Chose single Australian region multi-AZ with cross-region recovery from code. Three tiers (prod/non-prod/sandpit) separated by subscription + identity boundary; PI prohibited outside production. Discharges ADR-001 Condition 2."},
-    "ADR-CLOUD": {"status": "complete", "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-006-v1.0.md", "built_at": "2026-07-29T21:50:00Z", "wave": 1, "line_count": 679, "skill": "arckit:adr", "topic": "Cloud platform selection for university-controlled workloads", "agent_summary": "Complements ADR-005 (which set region topology but deferred provider). Scoped to UoF-controlled integration plane, not vendor SaaS re-platforming. Agent was killed during final reporting; file written and validated by line count."},
-    "STRATEGY": {"status": "complete", "path": "projects/001-lt-ecosystem/ARC-001-STRAT-v1.0.md", "built_at": "2026-07-29T21:40:00Z", "wave": 1, "line_count": 1010, "skill": "arckit:strategy", "agent_summary": "Five themes partitioning SOBC one-off lines. Top: Governed Integration on a Canonical Model (AUD 1.25-2.25M, 56%); Declared Capability Boundaries (400-730k, 18%); Consistent Accessible Student Experience (300-550k, 14%). Flagged SOBC internal inconsistency in one-off:recurring ratio. Landed in project 001, not 000-global."},
-    "PLAN": {"status": "complete", "path": "projects/001-lt-ecosystem/ARC-001-PLAN-v1.0.md", "built_at": "2026-07-29T21:38:00Z", "wave": 1, "line_count": 663, "skill": "arckit:plan", "agent_summary": "Two-stage: Stage A engagement WP1-WP9 to 31 Aug 2026; Stage B indicative delivery programme Q4 2026-2028+, explicitly unfunded. RIFF gates G0-G6. Critical path 21-31 Aug has no float. Surfaced unlogged gap: SA departs 31 Aug with no scheduled knowledge transfer."},
-    "FINOPS": {"status": "complete", "path": "projects/001-lt-ecosystem/ARC-001-FINOPS-v1.0.md", "built_at": "2026-07-29T21:42:00Z", "wave": 1, "line_count": 1147, "skill": "arckit:finops", "agent_summary": "Reframed from cloud consumption to SaaS licence management. Levers: retire declared duplication (Teams/Zoom/Echo360); realise licensed-but-unconfigured capability; prevent net-new acquisition. Six of seven levers blocked behind the 2026-08-21 licence baseline. No dollar figures invented; 111 TBD-WP3 markers all closed out in section 17."},
-    "ORG_RESEARCH": {"status": "complete", "path": "projects/001-lt-ecosystem/research/ARC-001-RSCH-v1.0.md", "built_at": "2026-07-29T21:52:00Z", "wave": 1, "line_count": 987, "skill": "arckit:research", "topic": "Target organisation strategy, structure, existing systems", "agent_summary": "Agent killed during final reporting; file written. Recipe targeted 000-global/research/ but hook allocated projects/001-lt-ecosystem/research/. Needs review to confirm the fictional-organisation constraint was honoured (no fabricated enrolment/revenue facts)."},
-
-    "ADR-IDENTITY": {"status": "failed", "wave": 1, "skill": "arckit:adr", "topic": "Identity and access management across L&T platforms", "error": "API session limit reached before write completed"},
-    "ADR-RESIDENCY": {"status": "failed", "wave": 1, "skill": "arckit:adr", "topic": "Data residency and cross-border disclosure under APP 8", "error": "API session limit reached before write completed"},
-    "ADR-AI": {"status": "failed", "wave": 1, "skill": "arckit:adr", "topic": "AI and machine-learning services in the learning ecosystem", "error": "API session limit reached before write completed"},
-    "ADR-BUILDBUY": {"status": "failed", "wave": 1, "skill": "arckit:adr", "topic": "Build versus buy and procurement approach for capability gaps", "error": "API session limit reached before write completed"},
-    "GLOSSARY": {"status": "failed", "wave": 1, "skill": "arckit:glossary", "error": "API session limit reached before write completed"},
-    "WARDLEY": {"status": "failed", "wave": 1, "skill": "arckit:wardley", "error": "API session limit reached before write completed; must add a distinct perspective from existing WARD-001 (suggest integration value chain)"},
-
-    "RESEARCH": {"status": "pending"},
-    "AWS_RESEARCH": {"status": "pending"},
-    "AZURE_RESEARCH": {"status": "pending"},
-    "GCP_RESEARCH": {"status": "pending"},
-    "HLD": {"status": "pending"},
-    "DEVOPS": {"status": "pending"},
-    "ROADMAP": {"status": "pending"},
-    "DIAG-C4": {"status": "pending"},
-    "DIAG-SEQ": {"status": "pending"},
-    "DIAG-DEP": {"status": "pending"},
-    "OPS": {"status": "pending"}
+    "PRIN": {
+      "status": "complete",
+      "path": "projects/000-global/ARC-000-PRIN-v1.1.md",
+      "wave": 0,
+      "source": "pre-existing",
+      "input_hashes": {}
+    },
+    "REQ": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-REQ-v1.0.md",
+      "wave": 1,
+      "source": "pre-existing"
+    },
+    "STKE": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-STKE-v1.0.md",
+      "wave": 1,
+      "source": "pre-existing"
+    },
+    "RISK": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-RISK-v1.0.md",
+      "wave": 3,
+      "source": "pre-existing"
+    },
+    "SOBC": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-SOBC-v1.0.md",
+      "wave": 4,
+      "source": "pre-existing"
+    },
+    "TRACE": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-TRAC-v1.0.md",
+      "wave": 8,
+      "source": "pre-existing"
+    },
+    "ADR-001": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-001-v1.0.md",
+      "wave": 2,
+      "source": "pre-existing",
+      "topic": "Integration mediation approach"
+    },
+    "ADR-002": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-002-v1.0.md",
+      "wave": 2,
+      "source": "pre-existing",
+      "topic": "Authoritative source for institutional role assignment"
+    },
+    "ADR-OBSERVABILITY": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-003-v1.0.md",
+      "built_at": "2026-07-29T21:30:00Z",
+      "wave": 1,
+      "line_count": 666,
+      "skill": "arckit:adr",
+      "topic": "Logging and observability stack for integrations",
+      "agent_summary": "Chose layered observability plane (endpoint health / OpenTelemetry flow telemetry / entity-state reconciliation), vendor-neutral instrumentation, backend deferred to Principle 19 test. Layer 3 sequenced first as it works against today's estate pre-broker."
+    },
+    "ADR-OSSLICENCE": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-004-v1.0.md",
+      "built_at": "2026-07-29T21:35:00Z",
+      "wave": 1,
+      "line_count": 669,
+      "skill": "arckit:adr",
+      "topic": "Open-source licence and third-party component policy",
+      "agent_summary": "Chose Register-and-Assess: extend capability map + RIFF checklist with licence_identifier, patch_and_support_owner, deployment_mode. Assessment depth set by deployment mode, not licence type. Estate has only two OSS components (H5P, MuseScore); copyleft obligations dormant, real exposure is operational."
+    },
+    "ADR-TOPOLOGY": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-005-v1.0.md",
+      "built_at": "2026-07-29T21:45:00Z",
+      "wave": 1,
+      "line_count": 561,
+      "skill": "arckit:adr",
+      "topic": "Deployment topology and environment strategy",
+      "agent_summary": "Chose single Australian region multi-AZ with cross-region recovery from code. Three tiers (prod/non-prod/sandpit) separated by subscription + identity boundary; PI prohibited outside production. Discharges ADR-001 Condition 2."
+    },
+    "ADR-CLOUD": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-006-v1.0.md",
+      "built_at": "2026-07-29T21:50:00Z",
+      "wave": 1,
+      "line_count": 679,
+      "skill": "arckit:adr",
+      "topic": "Cloud platform selection for university-controlled workloads",
+      "agent_summary": "Complements ADR-005 (which set region topology but deferred provider). Scoped to UoF-controlled integration plane, not vendor SaaS re-platforming. Agent was killed during final reporting; file written and validated by line count."
+    },
+    "STRATEGY": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-STRAT-v1.0.md",
+      "built_at": "2026-07-29T21:40:00Z",
+      "wave": 1,
+      "line_count": 1010,
+      "skill": "arckit:strategy",
+      "agent_summary": "Five themes partitioning SOBC one-off lines. Top: Governed Integration on a Canonical Model (AUD 1.25-2.25M, 56%); Declared Capability Boundaries (400-730k, 18%); Consistent Accessible Student Experience (300-550k, 14%). Flagged SOBC internal inconsistency in one-off:recurring ratio. Landed in project 001, not 000-global."
+    },
+    "PLAN": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-PLAN-v1.0.md",
+      "built_at": "2026-07-29T21:38:00Z",
+      "wave": 1,
+      "line_count": 663,
+      "skill": "arckit:plan",
+      "agent_summary": "Two-stage: Stage A engagement WP1-WP9 to 31 Aug 2026; Stage B indicative delivery programme Q4 2026-2028+, explicitly unfunded. RIFF gates G0-G6. Critical path 21-31 Aug has no float. Surfaced unlogged gap: SA departs 31 Aug with no scheduled knowledge transfer."
+    },
+    "FINOPS": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-FINOPS-v1.0.md",
+      "built_at": "2026-07-29T21:42:00Z",
+      "wave": 1,
+      "line_count": 1147,
+      "skill": "arckit:finops",
+      "agent_summary": "Reframed from cloud consumption to SaaS licence management. Levers: retire declared duplication (Teams/Zoom/Echo360); realise licensed-but-unconfigured capability; prevent net-new acquisition. Six of seven levers blocked behind the 2026-08-21 licence baseline. No dollar figures invented; 111 TBD-WP3 markers all closed out in section 17."
+    },
+    "ORG_RESEARCH": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/research/ARC-001-RSCH-v1.0.md",
+      "built_at": "2026-07-29T21:52:00Z",
+      "wave": 1,
+      "line_count": 987,
+      "skill": "arckit:research",
+      "topic": "Target organisation strategy, structure, existing systems",
+      "agent_summary": "Agent killed during final reporting; file written. Recipe targeted 000-global/research/ but hook allocated projects/001-lt-ecosystem/research/. Needs review to confirm the fictional-organisation constraint was honoured (no fabricated enrolment/revenue facts)."
+    },
+    "ADR-IDENTITY": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-008-v1.0.md",
+      "built_at": "2026-07-29T22:35:00Z",
+      "wave": 1,
+      "line_count": 840,
+      "skill": "arckit:adr",
+      "agent_summary": "IdP as single enforcement plane: SAML/OIDC federation, MFA once at IdP, LTI 1.3 launch context, SCIM 2.0 event-driven deactivate consuming ADR-002 E-006. Three-outcome disposition for the two local-account platforms. Named admin accounts + vaulted break-glass. 6 conditions. Notes MFA maturity NOT raised, only its exception removed.",
+      "topic": "Identity and access enforcement"
+    },
+    "ADR-RESIDENCY": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-010-v1.0.md",
+      "built_at": "2026-07-29T22:35:00Z",
+      "wave": 1,
+      "line_count": 798,
+      "skill": "arckit:adr",
+      "agent_summary": "Governed accountable offshore disclosure. Four-tier class rule: Tier 0 absolute prohibition for sensitive info (class 5 placement); Tier 1 full-assessment (class 3 work, class 6 exam/proctoring); Tier 2 minimised (class 7, class 4); Tier 3 AU-and-to-remain. Six-question APP 8 assessment, standard cross-border schedule incl. certified destruction. Found REQ gap: NFR-I-002/DR-007 cover retrieval but not recipient destruction (Condition 4).",
+      "topic": "Data residency and cross-border disclosure under APP 8"
+    },
+    "ADR-AI": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-009-v1.0.md",
+      "built_at": "2026-07-29T22:35:00Z",
+      "wave": 1,
+      "line_count": 845,
+      "skill": "arckit:adr",
+      "agent_summary": "Advisory-only inference under human-determinative process + governed AI/ML service register. No AI output determinative; no threshold gate on marking; cohort-disaggregated equity monitoring with suspension trigger; no training on student work. ERROR TO FIX: agent asserted 'no RISK register exists' and held RISK-A1-A12 in-document, but ARC-001-RISK-v1.0 has 28 R-xxx entries. Migrate those risks.",
+      "topic": "AI and ML services in the learning ecosystem"
+    },
+    "ADR-BUILDBUY": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-007-v1.0.md",
+      "built_at": "2026-07-29T22:35:00Z",
+      "wave": 1,
+      "line_count": 557,
+      "skill": "arckit:adr",
+      "agent_summary": "Staged sourcing hierarchy: Realise -> Extend -> Aggregate (consortium) -> Buy -> Build, binding on RIFF gate and renewals. Exhaust licensed capability first. References ADR-001 Condition 1 as worked Gate 1 example. Warning: 3-option cap meant no standalone build option; may want 4-option revision.",
+      "topic": "Build versus buy and procurement approach"
+    },
+    "GLOSSARY": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/GLOSSARY.md",
+      "built_at": "2026-07-29T22:35:00Z",
+      "wave": 1,
+      "line_count": 325,
+      "skill": "arckit:glossary",
+      "agent_summary": "PLUGIN BUG: hook rejected ARC-001-GLOS-v1.0.md \u2014 'GLOS' absent from config/doc-types.mjs though commands/glossary.md:105 specifies it. Written as GLOSSARY.md with canonical ID in Document Control. NOT discoverable by ArcKit tooling (ARC-* prefix). ~93 terms, 34 acronyms."
+    },
+    "WARDLEY": {
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/wardley-maps/ARC-001-WARD-002-v1.0.md",
+      "built_at": "2026-07-29T22:35:00Z",
+      "wave": 1,
+      "line_count": 884,
+      "skill": "arckit:wardley",
+      "agent_summary": "Distinct from WARD-001 (whole-estate, 3 anchors): maps the PeopleSoft-to-platforms data path. Findings: chain is inverted (9 flows avg evolution 0.264 vs substrate 0.662); broker is NOT where risk is (none of 13 edges above R=0.5 pass through it) \u2014 Declared Role Authority and Conflict Resolution Rule are decisions, belong in Phase 0; conflict C-1 splits into substrate vs endpoint-count decisions; INT-007 under-prioritised (MEDIUM but R=0.722).",
+      "topic": "Integration value chain"
+    },
+    "RESEARCH": {
+      "status": "pending"
+    },
+    "AWS_RESEARCH": {
+      "status": "pending"
+    },
+    "AZURE_RESEARCH": {
+      "status": "pending"
+    },
+    "GCP_RESEARCH": {
+      "status": "pending"
+    },
+    "HLD": {
+      "status": "pending"
+    },
+    "DEVOPS": {
+      "status": "pending"
+    },
+    "ROADMAP": {
+      "status": "pending"
+    },
+    "DIAG-C4": {
+      "status": "pending"
+    },
+    "DIAG-SEQ": {
+      "status": "pending"
+    },
+    "DIAG-DEP": {
+      "status": "pending"
+    },
+    "OPS": {
+      "status": "pending"
+    }
   },
-  "excluded_targets": ["TCOP", "SBD", "DPIA", "SVCASS", "GOV_REUSE", "AIP", "DATASCOUT"],
+  "excluded_targets": [
+    "TCOP",
+    "SBD",
+    "DPIA",
+    "SVCASS",
+    "GOV_REUSE",
+    "AIP",
+    "DATASCOUT"
+  ],
   "waves": [
-    {"n": 1, "targets": ["GLOSSARY", "ORG_RESEARCH", "ADR-CLOUD", "ADR-IDENTITY", "ADR-RESIDENCY", "ADR-AI", "ADR-OBSERVABILITY", "ADR-TOPOLOGY", "ADR-BUILDBUY", "ADR-OSSLICENCE", "STRATEGY", "WARDLEY", "PLAN", "FINOPS"], "status": "partial", "completed": 8, "failed": 6}
+    {
+      "n": 1,
+      "targets": [
+        "ADR-AI",
+        "ADR-BUILDBUY",
+        "ADR-CLOUD",
+        "ADR-IDENTITY",
+        "ADR-OBSERVABILITY",
+        "ADR-OSSLICENCE",
+        "ADR-RESIDENCY",
+        "ADR-TOPOLOGY",
+        "FINOPS",
+        "GLOSSARY",
+        "ORG_RESEARCH",
+        "PLAN",
+        "REQ",
+        "STKE",
+        "STRATEGY",
+        "WARDLEY"
+      ],
+      "status": "complete",
+      "completed_at": "2026-07-29T22:35:00Z",
+      "completed": 14,
+      "failed": 0
+    }
+  ],
+  "known_issues": [
+    "GLOS doc-type code missing from arckit 6.7.5 config/doc-types.mjs \u2014 glossary cannot use the ARC-* naming convention.",
+    "ADR-009 wrongly states no risk register exists; its RISK-A1-A12 should be migrated into ARC-001-RISK.",
+    "STRAT and RSCH landed under projects/001-lt-ecosystem/ though uk-saas targets 000-global \u2014 org-level research is not shared across projects as the recipe intends.",
+    "ADR-006 and RSCH agents were killed during final reporting; files validated on line count only, content unreviewed."
   ]
 }
