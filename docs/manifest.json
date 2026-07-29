@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T13:41:14.614Z",
+  "generated": "2026-07-29T14:10:10.077Z",
   "repository": {
     "name": "arckit-demo"
   },
@@ -1920,6 +1920,24 @@
           "title": "Traceability Matrix",
           "documentId": "ARC-001-TRAC-v1.0",
           "category": "Governance"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-PLAN-v1.0.md",
+          "title": "Project Plan",
+          "documentId": "ARC-001-PLAN-v1.0",
+          "category": "Planning"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-FINOPS-v1.0.md",
+          "title": "FinOps Strategy",
+          "documentId": "ARC-001-FINOPS-v1.0",
+          "category": "Operations"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-STRAT-v1.0.md",
+          "title": "Architecture Strategy",
+          "documentId": "ARC-001-STRAT-v1.0",
+          "category": "Planning"
         }
       ],
       "decisions": [
@@ -1938,6 +1956,21 @@
           "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-003-v1.0.md",
           "title": "ADR-003: Logging and Observability Stack for L&T Integrations",
           "documentId": "ARC-001-ADR-003-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-004-v1.0.md",
+          "title": "ADR-004: Open-Source Licence and Third-Party Component Policy",
+          "documentId": "ARC-001-ADR-004-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-005-v1.0.md",
+          "title": "ADR-005: Deployment Topology and Environment Strategy for the Integration Plane",
+          "documentId": "ARC-001-ADR-005-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-006-v1.0.md",
+          "title": "ADR-006: Cloud Platform Selection for University-Controlled Integration and Hosting Workloads",
+          "documentId": "ARC-001-ADR-006-v1.0"
         }
       ],
       "external": [
@@ -1979,6 +2012,13 @@
           "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-001-v1.0.md",
           "title": "Architecture Diagrams",
           "documentId": "ARC-001-DIAG-001-v1.0"
+        }
+      ],
+      "research": [
+        {
+          "path": "projects/001-lt-ecosystem/research/ARC-001-RSCH-v1.0.md",
+          "title": "Technology and Service Research: Target Organisation, Structure and Existing Systems",
+          "documentId": "ARC-001-RSCH-v1.0"
         }
       ]
     },
