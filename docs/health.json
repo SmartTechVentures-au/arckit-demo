@@ -1,21 +1,21 @@
 {
-  "generated": "2026-07-28T12:10:42.246Z",
+  "generated": "2026-07-29T12:17:04.476Z",
   "scanned": {
-    "projects": 2,
-    "artifacts": 23
+    "projects": 4,
+    "artifacts": 31
   },
   "summary": {
-    "HIGH": 0,
-    "MEDIUM": 0,
+    "HIGH": 1,
+    "MEDIUM": 1,
     "LOW": 0,
-    "total": 0
+    "total": 2
   },
   "byType": {
     "STALE-RSCH": 0,
     "FORGOTTEN-ADR": 0,
     "UNRESOLVED-COND": 0,
-    "STALE-EXT": 0,
-    "ORPHAN-REQ": 0,
+    "STALE-EXT": 1,
+    "ORPHAN-REQ": 1,
     "MISSING-TRACE": 0,
     "VERSION-DRIFT": 0,
     "REVIEW-OVERDUE": 0,
@@ -30,6 +30,31 @@
     {
       "id": "002-lecture-capture",
       "artifacts": 13,
+      "findings": []
+    },
+    {
+      "id": "003-lms-ultra-migration",
+      "artifacts": 5,
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "rule": "ORPHAN-REQ",
+          "file": "ARC-003-REQ-v1.0.md",
+          "message": "Total requirements: 55\n  Requirements not referenced by any ADR: 32\n  Examples: BR-003, FR-015, BR-004, NFR-SEC-001, NFR-SEC-004 (+27 more)",
+          "action": "Review whether these requirements need architectural decisions documented as ADRs"
+        },
+        {
+          "severity": "HIGH",
+          "rule": "STALE-EXT",
+          "file": "003-lms-ultra-migration",
+          "message": "Unincorporated external files: 5\n  Files:\n    - consultant-brief.md → Recommended: /arckit:requirements, /arckit:analyze\n    - privacy-context.md → Recommended: /arckit:requirements, /arckit:analyze\n    - requirements-register.md → Recommended: /arckit:requirements, /arckit:analyze\n    - stakeholders.md → Recommended: /arckit:requirements, /arckit:analyze\n    - system-landscape.md → Recommended: /arckit:requirements, /arckit:analyze",
+          "action": "Re-run recommended commands to incorporate external file content into architecture artifacts"
+        }
+      ]
+    },
+    {
+      "id": "004-integration-platform",
+      "artifacts": 3,
       "findings": []
     }
   ]

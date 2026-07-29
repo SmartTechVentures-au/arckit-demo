@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T12:15:36.563Z",
+  "generated": "2026-07-29T13:41:14.614Z",
   "repository": {
     "name": "arckit-demo"
   },
@@ -1933,6 +1933,11 @@
           "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-002-v1.0.md",
           "title": "ADR-002: Authoritative Source for Institutional Role Assignment",
           "documentId": "ARC-001-ADR-002-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-003-v1.0.md",
+          "title": "ADR-003: Logging and Observability Stack for L&T Integrations",
+          "documentId": "ARC-001-ADR-003-v1.0"
         }
       ],
       "external": [
