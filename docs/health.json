@@ -1,21 +1,21 @@
 {
-  "generated": "2026-07-29T12:17:04.476Z",
+  "generated": "2026-07-30T01:05:00Z",
   "scanned": {
-    "projects": 4,
-    "artifacts": 31
+    "projects": 5,
+    "artifacts": 55
   },
   "summary": {
     "HIGH": 1,
-    "MEDIUM": 1,
+    "MEDIUM": 3,
     "LOW": 0,
-    "total": 2
+    "total": 4
   },
   "byType": {
     "STALE-RSCH": 0,
     "FORGOTTEN-ADR": 0,
-    "UNRESOLVED-COND": 0,
-    "STALE-EXT": 1,
-    "ORPHAN-REQ": 1,
+    "UNRESOLVED-COND": 1,
+    "STALE-EXT": 0,
+    "ORPHAN-REQ": 3,
     "MISSING-TRACE": 0,
     "VERSION-DRIFT": 0,
     "REVIEW-OVERDUE": 0,
@@ -23,14 +23,42 @@
   },
   "projects": [
     {
-      "id": "001-lt-ecosystem",
-      "artifacts": 10,
+      "id": "000-global",
+      "artifacts": 2,
       "findings": []
+    },
+    {
+      "id": "001-lt-ecosystem",
+      "artifacts": 32,
+      "findings": [
+        {
+          "severity": "HIGH",
+          "rule": "UNRESOLVED-COND",
+          "file": "ARC-001-HLDR-v1.0.md",
+          "message": "Verdict: APPROVED WITH CONDITIONS — 8 blocking conditions and 9 advisories, none showing resolution evidence. BLOCKING-01 (establish a design baseline) is demonstrably open: all 10 ADRs remain Status: Proposed, 0 Accepted, carrying 38 conditions + 6 open blocking actions (44 gating items). BLOCKING-03 (Principle 19 licensed-capability test) gates ADR-005, ADR-006, ADR-007 and ADR-008 and has not been run.",
+          "action": "Close the 8 blocking conditions and record resolution evidence, or schedule a follow-up review. Start with BLOCKING-03 (run the Principle 19 test once across ADR-001/002/003/006/008) since four downstream decisions depend on it."
+        },
+        {
+          "severity": "MEDIUM",
+          "rule": "ORPHAN-REQ",
+          "file": "ARC-001-REQ-v1.0.md",
+          "message": "Total requirements: 64. Not referenced by any ADR: 9 — FR-001, FR-003, FR-006, FR-008, FR-010, FR-012, INT-006, INT-007, NFR-P-002. HLDR ADVISORY-03 already tracks FR-003, FR-006, FR-008 and FR-012; FR-001, FR-010, INT-006 and NFR-P-002 are not tracked anywhere.",
+          "action": "Review whether these requirements need architectural decisions documented as ADRs. FR-001, FR-010, INT-006 and NFR-P-002 are untracked by both ADRs and the HLDR advisories."
+        }
+      ]
     },
     {
       "id": "002-lecture-capture",
       "artifacts": 13,
-      "findings": []
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "rule": "ORPHAN-REQ",
+          "file": "ARC-002-REQ-v1.0.md",
+          "message": "Total requirements: 62. Not referenced by any ADR: 62 (all). The project has no decisions/ directory and no ADR artifacts at all, despite holding REQ, EVAL, SOW, DATA, RISK, TRAC and ANAL artifacts. Requirement governance currently rests on ARC-002-TRAC-v1.1 alone.",
+          "action": "Run /arckit:adr to record the architectural decisions implied by the completed evaluation and SOW, or confirm in ARC-002-TRAC-v1.1 that traceability-matrix coverage is the intended governance route for this project."
+        }
+      ]
     },
     {
       "id": "003-lms-ultra-migration",
@@ -40,15 +68,8 @@
           "severity": "MEDIUM",
           "rule": "ORPHAN-REQ",
           "file": "ARC-003-REQ-v1.0.md",
-          "message": "Total requirements: 55\n  Requirements not referenced by any ADR: 32\n  Examples: BR-003, FR-015, BR-004, NFR-SEC-001, NFR-SEC-004 (+27 more)",
-          "action": "Review whether these requirements need architectural decisions documented as ADRs"
-        },
-        {
-          "severity": "HIGH",
-          "rule": "STALE-EXT",
-          "file": "003-lms-ultra-migration",
-          "message": "Unincorporated external files: 5\n  Files:\n    - consultant-brief.md → Recommended: /arckit:requirements, /arckit:analyze\n    - privacy-context.md → Recommended: /arckit:requirements, /arckit:analyze\n    - requirements-register.md → Recommended: /arckit:requirements, /arckit:analyze\n    - stakeholders.md → Recommended: /arckit:requirements, /arckit:analyze\n    - system-landscape.md → Recommended: /arckit:requirements, /arckit:analyze",
-          "action": "Re-run recommended commands to incorporate external file content into architecture artifacts"
+          "message": "Total requirements: 55. Not referenced by any ADR: 29 — including the entire NFR set (NFR-A-003, NFR-C-001..003, NFR-I-001..002, NFR-M-001..003, NFR-P-001..003, NFR-SEC-001..004, NFR-U-001..002) plus BR-003, BR-004, BR-006, BR-007, DR-004, DR-005, FR-014, FR-015, INT-003, INT-006, INT-009. The single ADR (ARC-003-ADR-001) covers the functional and integration core but no non-functional requirement.",
+          "action": "Run /arckit:adr for the non-functional decisions (security, performance, maintainability) — no ADR currently owns any NFR in this project."
         }
       ]
     },
@@ -57,5 +78,9 @@
       "artifacts": 3,
       "findings": []
     }
+  ],
+  "notes": [
+    "STALE-EXT: the session-start monitor flagged 5 external files each in 003-lms-ultra-migration and 004-integration-platform. Both are false positives from git-checkout mtimes, not real governance gaps. In 003 the external files and ARC-003-ADR-001 were written by the same commit (2026-07-29T08:52:13Z) and differ by ~0.09s of checkout mtime; in 004 the newest artifact mtime is in fact newer than every external file. No STALE-EXT finding is raised.",
+    "004-integration-platform holds an external requirements-register.md but has no ARC-004-REQ artifact, so the ORPHAN-REQ rule cannot evaluate it. This is a baseline coverage gap rather than a rule finding — see /arckit:navigator."
   ]
 }
