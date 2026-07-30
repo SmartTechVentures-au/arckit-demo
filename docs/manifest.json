@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T13:41:14.614Z",
+  "generated": "2026-07-30T00:17:42.474Z",
   "repository": {
     "name": "arckit-demo"
   },
@@ -1920,6 +1920,48 @@
           "title": "Traceability Matrix",
           "documentId": "ARC-001-TRAC-v1.0",
           "category": "Governance"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-PLAN-v1.0.md",
+          "title": "Project Plan",
+          "documentId": "ARC-001-PLAN-v1.0",
+          "category": "Planning"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-FINOPS-v1.0.md",
+          "title": "FinOps Strategy",
+          "documentId": "ARC-001-FINOPS-v1.0",
+          "category": "Operations"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-STRAT-v1.0.md",
+          "title": "Architecture Strategy",
+          "documentId": "ARC-001-STRAT-v1.0",
+          "category": "Planning"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-ROAD-v1.0.md",
+          "title": "Roadmap",
+          "documentId": "ARC-001-ROAD-v1.0",
+          "category": "Planning"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-HLDR-v1.0.md",
+          "title": "High-Level Design Review",
+          "documentId": "ARC-001-HLDR-v1.0",
+          "category": "Architecture"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-DEVOPS-v1.0.md",
+          "title": "DevOps Strategy",
+          "documentId": "ARC-001-DEVOPS-v1.0",
+          "category": "Operations"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-OPS-v1.0.md",
+          "title": "Operational Readiness",
+          "documentId": "ARC-001-OPS-v1.0",
+          "category": "Operations"
         }
       ],
       "decisions": [
@@ -1938,6 +1980,31 @@
           "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-003-v1.0.md",
           "title": "ADR-003: Logging and Observability Stack for L&T Integrations",
           "documentId": "ARC-001-ADR-003-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-004-v1.0.md",
+          "title": "ADR-004: Open-Source Licence and Third-Party Component Policy",
+          "documentId": "ARC-001-ADR-004-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-005-v1.0.md",
+          "title": "ADR-005: Deployment Topology and Environment Strategy for the Integration Plane",
+          "documentId": "ARC-001-ADR-005-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-006-v1.0.md",
+          "title": "ADR-006: Cloud Platform Selection for University-Controlled Integration and Hosting Workloads",
+          "documentId": "ARC-001-ADR-006-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-007-v1.0.md",
+          "title": "ADR-007: Build versus Buy and Procurement Approach for Capability Gaps",
+          "documentId": "ARC-001-ADR-007-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/decisions/ARC-001-ADR-008-v1.0.md",
+          "title": "ADR-008: Identity and Access Enforcement Across L&T Platforms",
+          "documentId": "ARC-001-ADR-008-v1.0"
         }
       ],
       "external": [
@@ -1972,6 +2039,11 @@
           "path": "projects/001-lt-ecosystem/wardley-maps/ARC-001-WARD-001-v1.0.md",
           "title": "Wardley Map: An Estate With No Differentiation In It",
           "documentId": "ARC-001-WARD-001-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/wardley-maps/ARC-001-WARD-002-v1.0.md",
+          "title": "Wardley Map: The Integration Value Chain — An Estate Built Upside Down",
+          "documentId": "ARC-001-WARD-002-v1.0"
         }
       ],
       "diagrams": [
@@ -1979,6 +2051,38 @@
           "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-001-v1.0.md",
           "title": "Architecture Diagrams",
           "documentId": "ARC-001-DIAG-001-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-002-v1.0.md",
+          "title": "Architecture Diagram: Lifecycle Sequence Flows — Enrolment, De-provisioning, Placement Grades",
+          "documentId": "ARC-001-DIAG-002-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-v1.0.md",
+          "title": "Architecture Diagram: Deployment Topology — University-Controlled Integration and Observability Plane",
+          "documentId": "ARC-001-DIAG-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-003-v1.0.md",
+          "title": "Architecture Diagram: System Context — The L&T Ecosystem, Its People and Its Boundary",
+          "documentId": "ARC-001-DIAG-003-v1.0"
+        }
+      ],
+      "research": [
+        {
+          "path": "projects/001-lt-ecosystem/research/ARC-001-RSCH-v1.0.md",
+          "title": "Technology and Service Research: Target Organisation, Structure and Existing Systems",
+          "documentId": "ARC-001-RSCH-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/research/ARC-001-AZRS-v1.0.md",
+          "title": "Azure Technology Research: Learning & Teaching Baseline Strategy — University-Controlled Integration and Observability Plane",
+          "documentId": "ARC-001-AZRS-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/research/ARC-001-RSCH-002-v1.0.md",
+          "title": "Technology and Vendor Market Research: Build versus Buy and Total Cost of Ownership",
+          "documentId": "ARC-001-RSCH-002-v1.0"
         }
       ]
     },

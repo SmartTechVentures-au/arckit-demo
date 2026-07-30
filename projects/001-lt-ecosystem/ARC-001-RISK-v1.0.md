@@ -39,16 +39,18 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total risks identified** | 29 |
+| **Total risks identified** | 41 |
 | **Critical (20–25)** | 0 residual (5 inherent) |
-| **High (13–19)** | 5 residual (9 inherent) |
-| **Medium (6–12)** | 23 residual (15 inherent) |
+| **High (13–19)** | 6 residual (10 inherent) |
+| **Medium (6–12)** | 34 residual (26 inherent) |
 | **Low (1–5)** | 1 residual (0 inherent) |
-| **Total inherent score** | 414 |
-| **Total residual score** | 281 |
-| **Overall risk reduction** | 32% |
-| **Risks exceeding provisional appetite** | 5 |
-| **Risks with named owner** | 29 of 29 (100%) |
+| **Total inherent score** | 541 |
+| **Total residual score** | 408 |
+| **Overall risk reduction** | 25% |
+| **Risks exceeding provisional appetite** | 6 |
+| **Risks with named owner** | 41 of 41 (100%) |
+
+> **Recount 2026-07-30.** These figures include R-030 to R-041, migrated from `ARC-001-ADR-009-v1.0` §7.4 (see the migration note in Section C). The 12 migrated AI-governance risks contribute 127 inherent and 127 residual, because ADR-009 is status Proposed and none of its controls is yet in force. Overall risk reduction consequently falls from 32% to **25%** — the register previously understated exposure by omitting them. `Risks exceeding provisional appetite` rises from 5 to 6 (R-031, residual 16). The Risk Category Distribution table immediately below, and Sections D and E, were generated against the original 29 and are **not** yet recomputed.
 
 ### Risk Category Distribution
 
@@ -99,7 +101,7 @@ Five risks exceed the provisional thresholds:
 
 **Finding 3 — R-001 is a decision risk, not a delivery risk.** It cannot be mitigated by doing more work; it requires someone to decide. Every week it stays open, WP8 and the roadmap carry unresolved ambiguity. The recommendation is a hard decision deadline, not further analysis.
 
-**Finding 4 — Control effectiveness is weak across the estate.** Of 29 risks, 11 have no effective control today. "Staff are careful" is the current control for the estate's most sensitive data flow.
+**Finding 4 — Control effectiveness is weak across the estate.** Of 41 risks, **23** have no effective control today. "Staff are careful" is the current control for the estate's most sensitive data flow. The count rose from 11 of 29 on 2026-07-30: all 12 migrated AI-governance risks (R-030 to R-041) have no control in force, because the ADR-009 rules that would provide them are still Proposed. More than half the register is now uncontrolled.
 
 **Recommendation**: Escalate R-017 and R-018 to the Steering Committee at the next fortnightly meeting. Both are live compliance exposures with a real regulatory dimension, and both predate this engagement.
 
@@ -1005,6 +1007,22 @@ Accessibility was not a weighted evaluation criterion at procurement, and no con
 | R-027 | TECHNOLOGY | **External supervisor authentication gap.** Institutional SSO does not reach placement providers, so NFR-SEC-001 cannot be met for E-015. | Identity provider scope stops at the institutional boundary | 4/3/**12** | Time-bounded authorisation status modelled (Adequate) | 3/3/**9** | Treat | Tobias Ohm | Decide federation vs formally approved compensating exception at RIFF | 2026-10-31 | 6 |
 | R-028 | TECHNOLOGY | **Export capability unverified.** Backup and export coverage unverified for four platforms; substitution may be impossible. | Export claimed contractually, never tested | 4/4/**16** | Contract terms assert export (Weak) | 3/3/**9** | Treat | Grace Tanaka | Test export by extraction on all four platforms | 2026-10-31 | 4 |
 | R-029 | TECHNOLOGY | **Vendor lock-in via proprietary formats.** Export exists but only in formats requiring vendor tooling, defeating portability. | Open-format requirement not specified at original procurement | 3/4/**12** | REQ-034 and NFR-I-002 now specify open formats (Adequate) | 2/3/**6** | Tolerate | Grace Tanaka | Accept for existing contracts; require open formats at renewal | 2027-06-30 | 6 |
+| R-030 | COMPLIANCE | **Adverse academic-integrity finding driven by a detection score.** A student receives a materially adverse finding driven by an AI-writing detection score rather than corroborating evidence. *(migrated from ADR-009 RISK-A1)* | REQ-016 mandates detection on all submissions; detector accuracy is contested and false positives fall unevenly across cohorts | 3/4/**12** | None — ADR-009 is Proposed; its rules are not yet in force | 3/4/**12** | Treat | A/Prof. Pearl Clavinet | Implement ADR-009 Rule 2 (no AI output determinative), Rule 3 (corroboration as a workflow field), Rule 4 monitoring; brief integrity officers | 2026-11-30 | 6 |
+| R-031 | OPERATIONAL | **Markers treat the advisory signal as determinative in practice.** Policy says advisory; behaviour under deadline pressure does otherwise. *(migrated from ADR-009 RISK-A2)* | Rules cannot fully determine staff behaviour; a displayed score invites reliance | 4/4/**16** | None — ADR-009 is Proposed; its rules are not yet in force | 4/4/**16** | Treat | Dr. Wynton Castle / Dr. Benny Moog | Structural controls: suppress threshold display, require corroboration to escalate; Rule 4 disparity monitoring as the detector; annual refresher for sessional staff | 2026-11-30 | 9 |
+| R-032 | COMPLIANCE | **Vendor trains models on student submissions under existing contract terms.** Student written and creative work is student IP held partly offshore. *(migrated from ADR-009 RISK-A3)* | Training-data exclusion was not a term at original procurement | 3/4/**12** | None — ADR-009 is Proposed; incumbent terms unaudited | 3/4/**12** | Treat | Grace Tanaka | ADR-009 Rule 5 contractual exclusion; Action A-4 audits incumbent terms ahead of renewal; block adoption or renewal without the clause | 2027-06-30 | 6 |
+| R-033 | COMPLIANCE | **Cohort disparity is real but monitoring is too coarse to detect it.** Equity monitoring exists but cannot resolve the disparity it was built to find. *(migrated from ADR-009 RISK-A4)* | Disaggregation dimensions and sample-size floors not yet set | 3/4/**12** | None — ADR-009 is Proposed; monitoring not designed | 3/4/**12** | Treat | Dr. Felix Marimba | Education Committee with Student Guild input sets thresholds and disaggregation; review monitoring design at first report; state sample-size floors | 2027-03-31 | 6 |
+| R-034 | COMPLIANCE | **Equity-monitoring data set becomes its own privacy or discrimination exposure.** The control creates a new sensitive holding. *(migrated from ADR-009 RISK-A5)* | Monitoring requires cohort attributes that are themselves sensitive | 3/3/**9** | None — ADR-009 is Proposed; collection not yet designed | 3/3/**9** | Treat | Eleanor Frame | ADR-009 Rule 4 minimisation and aggregate-only reporting; APP 6 purpose limitation; Privacy & Records sign-off before first collection (Action A-2) | 2027-03-31 | 4 |
+| R-035 | COMPLIANCE | **APP 8 position on information class 3 unresolved at renewal.** Offshore disclosure of student work continues without an assessed Australian alternative. *(migrated from ADR-009 RISK-A6)* | Cross-border assessment not performed at original procurement | 3/3/**9** | None — ADR-009 and ADR-010 both Proposed | 3/3/**9** | Treat | Eleanor Frame / Grace Tanaka | NFR-C-002 assessment ahead of renewal; DR-005 register; document AU-region alternative practicability including where none exists | 2027-06-30 | 6 |
+| R-036 | TECHNOLOGY | **At-risk indicators drift from descriptive to predictive, or acquire automated intervention.** Scope creep turns a dashboard into an automated decision. *(migrated from ADR-009 RISK-A7)* | No gate on dashboard change requests | 3/3/**9** | None — ADR-009 is Proposed | 3/3/**9** | Treat | Dr. Benny Moog | ADR-009 Rule 7 stated in the service-register entry and re-tested at annual review; route dashboard change requests through Rule 8 | 2027-03-31 | 4 |
+| R-037 | TECHNOLOGY | **Individual-level at-risk scores leak to the institutional data platform via INT-009.** Derived personal information escapes its purpose. *(migrated from ADR-009 RISK-A8)* | REQ-022 wants analytics export; no export cap specified | 3/3/**9** | None — ADR-009 is Proposed; extract schema not built | 3/3/**9** | Treat | Sam Okafor | Enforce ADR-009 Rule 7 export cap in the extract schema rather than by convention; DR-006 retention automation; Privacy & Records review the schema | 2027-03-31 | 4 |
+| R-038 | COMPLIANCE | **December 2026 automated-decision obligation applies more broadly than assumed.** Privacy Act reform scope is wider than the design assumes. *(migrated from ADR-009 RISK-A9)* | Legal reading not yet confirmed | 3/3/**9** | None — ADR-009 assumes it applies but the reading is unconfirmed | 3/3/**9** | Treat | Eleanor Frame | ADR-009 Action A-1 confirms the legal reading before commencement | 2026-09-30 | 4 |
+| R-039 | OPERATIONAL | **AI governance burden lapses and the service register goes stale.** The register becomes a one-off artefact rather than a control. *(migrated from ADR-009 RISK-A10)* | Governance depends on sustained attention from a single named owner | 4/3/**12** | None — ADR-009 is Proposed; register not yet established | 4/3/**12** | Treat | Dr. Benny Moog | Named owner; annual and renewal-triggered review as a Rule 8 gate; surface staleness in project health checks | 2027-03-31 | 6 |
+| R-040 | COMPLIANCE | **Proctoring platform applies undisclosed ML behavioural flagging.** An unregistered AI service operates on exam responses. *(migrated from ADR-009 RISK-A11)* | Vendor ML behaviour not disclosed or interrogated at procurement | 3/4/**12** | None — ADR-009 is Proposed; vendor unconfirmed | 3/4/**12** | Treat | Tobias Ohm / Eleanor Frame | ADR-009 Action A-3 confirms with vendor; if present, register the service and apply Rules 2-7 retrospectively | 2026-11-30 | 6 |
+| R-041 | OPERATIONAL | **Rule 2 read as prohibiting all AI use, chilling legitimate low-stakes tooling.** Over-broad interpretation suppresses useful pedagogy. *(migrated from ADR-009 RISK-A12)* | Prohibition wording could be read beyond determinative outputs | 2/3/**6** | None — ADR-009 is Proposed | 2/3/**6** | Tolerate | Dr. Benny Moog | Scope ADR-009 Rule 2 to determinative outputs only; Rule 8 provides an approval route rather than a blanket bar | 2027-03-31 | 4 |
+
+> **Migration note (2026-07-30).** R-030 to R-041 were migrated from `ARC-001-ADR-009-v1.0` §7.4, where they had been recorded as `RISK-A1`–`RISK-A12` on the mistaken basis that no risk register existed. The `RISK-A*` identifiers are retained in each entry's description for traceability back to the ADR. Because ADR-009 is status **Proposed**, its Rules 1-8 are not yet in force: existing controls are therefore recorded as *None* and residual scores equal inherent scores. The ADR's stated mitigations appear as Key Actions, and Target Scores are post-implementation estimates. Likelihood and impact letters in the source ADR were mapped H=4, M=3, L=2 to match this register's scale.
+>
+> **Not yet recomputed:** Section D (Risk Category Analysis), Section E and the heatmap were generated against the original 29 risks and do **not** include R-030 to R-041. Category counts, averages and reduction percentages in those sections are stale until regenerated. Tracked as a follow-up.
 
 ---
 
@@ -1384,12 +1402,15 @@ Traceability from stakeholder driver through to mitigation, per Orange Book Prin
 
 ## Build Provenance
 
-_Stamped automatically by the ArcKit plugin's `provenance-stamp.mjs` PostToolUse hook. Complements (does not replace) the human-authored footer above. Carries only fields the model can't authoritatively self-report: build context from `.arckit/state.json` and effort levels derived from command frontmatter + the silent-downgrade matrix._
+*Stamped automatically by the ArcKit plugin's `provenance-stamp.mjs` PostToolUse hook. Complements (does not replace) the human-authored footer above. Carries only fields the model can't authoritatively self-report: build context from `.arckit/state.json` and effort levels derived from command frontmatter + the silent-downgrade matrix.*
 
 | Field | Value |
 |-------|-------|
 | Requested Effort | `high` |
 | Effective Effort | _unknown — model not parsed from existing footer_ |
-| Stamped at | 2026-07-27T00:35:27.078Z |
+| Build Recipe | `uk-saas` |
+| Build Wave | 3 |
+| Build Target | `RISK` |
+| Stamped at | 2026-07-30T00:27:41.651Z |
 
 <!-- arckit-provenance:end -->
