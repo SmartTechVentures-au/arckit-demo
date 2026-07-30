@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T22:33:32.164Z",
+  "generated": "2026-07-30T00:17:42.474Z",
   "repository": {
     "name": "arckit-demo"
   },
@@ -1938,6 +1938,30 @@
           "title": "Architecture Strategy",
           "documentId": "ARC-001-STRAT-v1.0",
           "category": "Planning"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-ROAD-v1.0.md",
+          "title": "Roadmap",
+          "documentId": "ARC-001-ROAD-v1.0",
+          "category": "Planning"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-HLDR-v1.0.md",
+          "title": "High-Level Design Review",
+          "documentId": "ARC-001-HLDR-v1.0",
+          "category": "Architecture"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-DEVOPS-v1.0.md",
+          "title": "DevOps Strategy",
+          "documentId": "ARC-001-DEVOPS-v1.0",
+          "category": "Operations"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/ARC-001-OPS-v1.0.md",
+          "title": "Operational Readiness",
+          "documentId": "ARC-001-OPS-v1.0",
+          "category": "Operations"
         }
       ],
       "decisions": [
@@ -2027,6 +2051,21 @@
           "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-001-v1.0.md",
           "title": "Architecture Diagrams",
           "documentId": "ARC-001-DIAG-001-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-002-v1.0.md",
+          "title": "Architecture Diagram: Lifecycle Sequence Flows — Enrolment, De-provisioning, Placement Grades",
+          "documentId": "ARC-001-DIAG-002-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-v1.0.md",
+          "title": "Architecture Diagram: Deployment Topology — University-Controlled Integration and Observability Plane",
+          "documentId": "ARC-001-DIAG-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-003-v1.0.md",
+          "title": "Architecture Diagram: System Context — The L&T Ecosystem, Its People and Its Boundary",
+          "documentId": "ARC-001-DIAG-003-v1.0"
         }
       ],
       "research": [
@@ -2034,6 +2073,16 @@
           "path": "projects/001-lt-ecosystem/research/ARC-001-RSCH-v1.0.md",
           "title": "Technology and Service Research: Target Organisation, Structure and Existing Systems",
           "documentId": "ARC-001-RSCH-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/research/ARC-001-AZRS-v1.0.md",
+          "title": "Azure Technology Research: Learning & Teaching Baseline Strategy — University-Controlled Integration and Observability Plane",
+          "documentId": "ARC-001-AZRS-v1.0"
+        },
+        {
+          "path": "projects/001-lt-ecosystem/research/ARC-001-RSCH-002-v1.0.md",
+          "title": "Technology and Vendor Market Research: Build versus Buy and Total Cost of Ownership",
+          "documentId": "ARC-001-RSCH-002-v1.0"
         }
       ]
     },

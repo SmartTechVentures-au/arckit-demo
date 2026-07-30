@@ -6,8 +6,8 @@
   "recipe_path": "skills/arckit-build/recipes/uk-saas.yaml",
   "recipe_note": "uk-saas is a jurisdictional mismatch for this AU private-sector project. Excluded on this run: TCOP, SBD, DPIA, SVCASS, GOV_REUSE. ADR topics were retargeted from UK-specific framings (G-Cloud, GOV.UK One Login) to Australian equivalents (institutional procurement, APP 8). Consider authoring .arckit/recipes/au-private.yaml before further builds.",
   "started_at": "2026-07-29T21:00:00Z",
-  "last_wave_completed": 1,
-  "current_wave": 2,
+  "last_wave_completed": 3,
+  "current_wave": null,
   "halted": false,
   "targets": {
     "PRIN": {
@@ -198,47 +198,110 @@
       "topic": "Integration value chain"
     },
     "RESEARCH": {
-      "status": "pending"
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/research/ARC-001-RSCH-002-v1.0.md",
+      "built_at": "2026-07-29T23:30:00Z",
+      "wave": 2,
+      "line_count": 1047,
+      "skill": "arckit:research",
+      "agent_summary": "BUY managed on Azure australiaeast: Service Bus Standard + Event Hubs Standard (Schema Registry unavailable on Basic, so Standard is an architectural floor for DR-001). Self-host rejected as building a commodity; Confluent held as contingency with written trigger. FINDING: ADR-001/006 Condition 1 will fail as worded \u2014 a MACC is a spend commitment not an entitlement, and M365 A3/A5 Power Automate excludes Azure premium connectors. FINDING: SOBC broker line $80-150k/yr is 3-7x high vs project 004's A$63-105k/3yr. Badging: 'Milestone' is Anthology Milestone (OB 3.0 US-only at 2025-07-30); Badgr became Parchment Digital Badges (2025-10-31), Canvas-coupled. Deferred spawning 6 vendor profiles + 4 tech notes (write restriction).",
+      "topic": "Technology and vendor market research (build vs buy, TCO)"
     },
     "AWS_RESEARCH": {
-      "status": "pending"
+      "status": "excluded",
+      "reason": "ADR-006 selected Microsoft Azure; AWS/GCP research redundant. GCP also lacks GOOGLE_API_KEY."
     },
     "AZURE_RESEARCH": {
-      "status": "pending"
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/research/ARC-001-AZRS-v1.0.md",
+      "built_at": "2026-07-29T23:30:00Z",
+      "wave": 2,
+      "line_count": 758,
+      "skill": "arckit:azure-research",
+      "agent_summary": "12 findings, 4 HIGH contradicting ADRs. CONFIRMED ADR-006: australiaeast has AZs, australiasoutheast does not (ADR-005 A-2 discharged). F-1 HIGH: Azure Monitor Logs has NO service resilience in any AU region \u2014 observability plane less zone-resilient than the broker it observes, inverting ADR-005 s7.2; dedicated cluster does not fix it. F-2 HIGH: 'telemetry but no PI at rest' in recovery region is self-contradictory \u2014 ADR-003 s6.4 classifies telemetry as CONFIDENTIAL derived PI; fix via export to GZRS storage. F-3 HIGH: Entra MFA stores identity data in global/US datacentres \u2014 ADR-006's 'APP 8 avoided' claim is wrong, ADR-008 has no residency condition. F-4 HIGH: CAE does not reach vendor SaaS and non-CAE CA changes take up to 24h \u2014 ADR-008's 15-min revocation unachievable via Entra alone. Also: Event Grid documents possible zone-failure data loss; Schema Registry validation is client-SDK-side so ADR-001's 'enforced at runtime' needs restating; PIM needs Entra P2. Note CCSL ceased Jul 2020 \u2014 IRAP used instead.",
+      "topic": "Azure service availability + patterns, australiaeast/australiasoutheast (recipe UK regions overridden per ADR-006)"
     },
     "GCP_RESEARCH": {
-      "status": "pending"
+      "status": "excluded",
+      "reason": "ADR-006 selected Microsoft Azure; AWS/GCP research redundant. GCP also lacks GOOGLE_API_KEY."
     },
     "HLD": {
-      "status": "pending"
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-HLDR-v1.0.md",
+      "built_at": "2026-07-29T23:30:00Z",
+      "wave": 2,
+      "line_count": 854,
+      "skill": "arckit:hld-review",
+      "agent_summary": "APPROVED WITH CONDITIONS \u2014 8 blocking, 9 advisory, 6 informational. Reviewed the 10 ADRs + DATA + STRAT as the design (no separate HLD exists). BLOCKING-06: E-020 audit-event store has no hosting decision (DATA requires RPO 0, 7-year immutable, but ADR-006 omits it, ADR-003 excludes it from telemetry, ADR-005 permits no durable state) \u2014 NFR-C-003 is MUST_HAVE. BLOCKING-02: ADR-009's false risk-register claim. BLOCKING-03/04: ADR-001 Condition 1 unrun gates 4 decisions; NFR-A-001 chain arithmetic never shown (serial gives ~99.75% vs 99.9% target). Also found ADR-001/002 cite superseded PRIN-v1.0, and both reserve ADR-003 for course-cloning \u2014 collision with observability, leaving R-007 undecided. Coverage 60/64; FR-003/006/008/012 uncovered."
     },
     "DEVOPS": {
-      "status": "pending"
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-DEVOPS-v1.0.md",
+      "built_at": "2026-07-29T23:30:00Z",
+      "wave": 2,
+      "line_count": 1292,
+      "skill": "arckit:devops",
+      "agent_summary": "Scoped honestly to the 6 ADR-006 components + course-cloning as the only deployable surface; states which estate segments have no pipeline and why. IaC as the DR control (ADR-005 recovery-from-code) with scheduled dr-rehearsal into australiasoutheast and zone-agnostic overrides. Synthetic-data-only non-prod, structurally enforced. Pipeline as enforcement point for canonical-schema back-compat (DR-001) and ADR-004 attributes; OIDC federated identity, no stored credentials. Kubernetes/GitOps/IDP declined with re-open triggers. Raises a real ML2-patch-window vs NFR-A-002 freeze conflict needing ratification. E8 ML2 gap on capture appliances and lab fleets explicitly NOT closed."
     },
     "ROADMAP": {
-      "status": "pending"
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-ROAD-v1.0.md",
+      "built_at": "2026-07-29T23:30:00Z",
+      "wave": 2,
+      "line_count": 855,
+      "skill": "arckit:roadmap",
+      "agent_summary": "3 Australian financial years FY2026/27-FY2028/29 (re-based to Jul-Jun from the template's UK Apr-Mar). Stage A reproduced unchanged; Stage B Phases 0-5 labelled unfunded and contingent on Gate 4 throughout. ADOPTED WARD-002's resequencing challenge in its own section: Declared Role Authority (0.14) moved from ADR-001 Phase 2 to programme Phase 0; Conflict Resolution Rule (0.24) from Phase 4 to Phase 1; A-3 PeopleSoft-change-events becomes a 2-week Phase 0 spike parallel to the Principle 19 test; INT-007 pulled from Phase 3 to Phase 2 on R=0.722. No downstream date moves. Phase 1 worded 'broker confirmed or procured' to survive either Condition 1 outcome. WARNING: knowingly diverges from ADR-001's published phasing \u2014 needs RIFF/Steering acknowledgement at G5."
     },
     "DIAG-C4": {
-      "status": "pending"
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-003-v1.0.md",
+      "built_at": "2026-07-30T00:30:00Z",
+      "wave": 3,
+      "line_count": 523,
+      "skill": "arckit:diagram",
+      "topic": "c4-context",
+      "agent_summary": "3 Mermaid blocks: two native C4Context (actor context; system landscape naming all 16 platforms, 3 institutional systems inside the boundary vs 7 System_Ext groups) plus a flowchart current-state overlay of the 7 integrations with red/amber fragility coding. Differs from DIAG-001 (Level 2 target-state containers as flowchart with hand-applied C4 palette): this is Level 1, native C4Context, full actor set, and draws CURRENT state with the vendor-SaaS/institutional-control split as the subject. New findings: 7 platforms covered by no INT requirement AND no Wardley position; Allocate+ is a system of record outside the control boundary; only 1 of the mediation layer's 3 inbound sources is even claimed able to emit events. All 3 blocks parse OK under mermaid@11.16.0."
     },
     "DIAG-SEQ": {
-      "status": "pending"
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-002-v1.0.md",
+      "built_at": "2026-07-30T00:30:00Z",
+      "wave": 3,
+      "line_count": 571,
+      "skill": "arckit:diagram",
+      "topic": "sequence",
+      "agent_summary": "5 Mermaid sequence diagrams across 3 flows. (1) Enrolment to LMS access, target state, with ADR-001 assumption A-3 drawn as a critical/option block per WARD-002. (2) De-provisioning on withdrawal: current-state 24h window as a loop with --x showing the batch never reaching Echo360/Sonia, plus target state; 15-min SCIM claim marked contested against AZRS F-4 \u2014 conclusion drawn on the diagram that directory state is corrected in 15 min but access is not necessarily stopped. (3) Placement grade flow, manual re-keying vs target, incl. the email/screenshot path ARC-001-DATA prohibits. Classified OFFICIAL-SENSITIVE because current-state diagrams draw an exploitable window and a live sensitive-information leak path. Flagged: no decision apportions the NFR-P-001 15-minute budget across hops."
     },
     "DIAG-DEP": {
-      "status": "pending"
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/diagrams/ARC-001-DIAG-004-v1.0.md",
+      "built_at": "2026-07-30T00:30:00Z",
+      "wave": 3,
+      "line_count": 534,
+      "skill": "arckit:diagram",
+      "topic": "deployment",
+      "agent_summary": "Deployment flowchart TB, 10 nodes + 5 nested boundaries, scoped to the six UoF-controlled components (not Full system). Depicts the AZRS contradictions rather than drawing the ADRs unchallenged: region subgraphs state zone posture literally (australiaeast zones YES/3/VERIFIED; australiasoutheast NO/CONFIRMED absent); F-1 Log Analytics styled in a contradiction class and deliberately NOT drawn as a resilience peer of Service Bus so the ADR-005 s7.2 inversion is visible; F-2 storage labelled as CONFIDENTIAL derived PI with GZRS continuous export as the fix; F-3 Entra drawn OUTSIDE the Australian jurisdiction boundary in offshore style with RBAC/PIM edges crossing inward, contradicting ADR-006 s8.3 and ADR-010 Tier 3. Three subscription subgraphs with identity boundary numbers and PI rules. Sandpit shown as an undesigned placeholder. Parse OK (flowchart-v2)."
     },
     "OPS": {
-      "status": "pending"
+      "status": "complete",
+      "path": "projects/001-lt-ecosystem/ARC-001-OPS-v1.0.md",
+      "built_at": "2026-07-30T00:30:00Z",
+      "wave": 3,
+      "line_count": 1393,
+      "skill": "arckit:operationalize",
+      "agent_summary": "Teaching-calendar-differentiated support model with vendor management as a first-class tier (L0 = vendor). Rostered on-call confined to assessment/exam windows, cutovers and commencement week; 24/7 rejected as unfundable under ADR-003 Condition 4, plain business hours rejected against NFR-A-001. Service tier recorded as 'Important by requirement, Standard as staffed' with the gap named as a funding decision. 14 runbooks RB-01..RB-14. Top gaps: (1) no rostered responder against a MUST availability target whose chain arithmetic is never shown (~99.75% serial vs 99.9%) \u2014 target recorded as NOT demonstrated; (2) continuity concentrated in departing/unbacked individuals \u2014 R-007 course cloning 'None effective', SA departs 31 Aug with no handover against 44 open gating items, no backup for Sam Okafor; (3) monitoring plane less resilient than what it monitors (AZRS F-1) plus zero DR rehearsals \u2014 RB-09 written for operating blind. Handover checklist scores 0/38 by design. NDB never tabletopped."
     }
   },
   "excluded_targets": [
-    "TCOP",
-    "SBD",
-    "DPIA",
-    "SVCASS",
-    "GOV_REUSE",
     "AIP",
-    "DATASCOUT"
+    "AWS_RESEARCH",
+    "DATASCOUT",
+    "DPIA",
+    "GCP_RESEARCH",
+    "GOV_REUSE",
+    "SBD",
+    "SVCASS",
+    "TCOP"
   ],
   "waves": [
     {
@@ -265,12 +328,51 @@
       "completed_at": "2026-07-29T22:35:00Z",
       "completed": 14,
       "failed": 0
+    },
+    {
+      "n": 2,
+      "targets": [
+        "AZURE_RESEARCH",
+        "DEVOPS",
+        "HLD",
+        "RESEARCH",
+        "ROADMAP"
+      ],
+      "status": "complete",
+      "completed_at": "2026-07-29T23:30:00Z",
+      "completed": 5,
+      "failed": 0,
+      "committed": false,
+      "note": "--no-commit: artefacts left uncommitted in working tree"
+    },
+    {
+      "n": 3,
+      "targets": [
+        "DIAG-C4",
+        "DIAG-DEP",
+        "DIAG-SEQ",
+        "OPS"
+      ],
+      "status": "complete",
+      "completed_at": "2026-07-30T00:30:00Z",
+      "completed": 4,
+      "failed": 0,
+      "committed": false,
+      "note": "--no-commit: artefacts left uncommitted in working tree"
     }
   ],
   "known_issues": [
     "GLOS doc-type code missing from arckit 6.7.5 config/doc-types.mjs \u2014 glossary cannot use the ARC-* naming convention.",
     "ADR-009 wrongly states no risk register exists; its RISK-A1-A12 should be migrated into ARC-001-RISK.",
     "STRAT and RSCH landed under projects/001-lt-ecosystem/ though uk-saas targets 000-global \u2014 org-level research is not shared across projects as the recipe intends.",
-    "ADR-006 and RSCH agents were killed during final reporting; files validated on line count only, content unreviewed."
-  ]
+    "ADR-006 and RSCH agents were killed during final reporting; files validated on line count only, content unreviewed.",
+    "ADR NUMBER COLLISION introduced by this build: ADR-001:411 and ADR-002:627 both reserve ADR-003 for 'Course cloning automation approach (INT-004, NFR-M-002, R-007)', but wave 1 allocated ADR-003 to Logging and Observability. R-007 now has no decision and two artefacts have a dangling forward reference. Fix by repointing those two references to a new number (renumbering observability is worse \u2014 ADR-005/006/008/010 all cite it).",
+    "HLD BLOCKING-06: E-020 audit-event store has no hosting decision anywhere in the design, though NFR-C-003 is MUST_HAVE with RPO 0 and 7-year immutable retention.",
+    "AZRS F-1 to F-4 contradict accepted ADR content (Azure Monitor AU resilience; telemetry-as-PI in recovery region; Entra MFA offshore identity data vs ADR-006's APP 8 claim; 15-minute revocation unachievable). ADR-005/006/008 need revision.",
+    "RSCH-002: ADR-001/006 Condition 1 is unanswerable as worded (MACC is a spend commitment, not an entitlement). SOBC broker cost line is 3-7x too high.",
+    "ARC-001-RISK-v1.0 has 29 risks (R-001..R-029), not 28 \u2014 earlier count was table rows only."
+  ],
+  "build_complete": true,
+  "post_build_hooks_run": false,
+  "post_build_hooks_note": "Recipe declares /arckit:health and /arckit:pages. Not run \u2014 user is driving each step."
 }
